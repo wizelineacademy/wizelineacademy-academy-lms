@@ -1,0 +1,18 @@
+<?xmd version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_slide_channel_partner_inherit" model="ir.ui.view">
+            <field name="name">slide.channel.tree.inherit</field>
+            <field name="model">slide.channel.partner</field>
+            <field name="inherit_id" ref="website_slides.slide_channel_partner_view_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='channel_user_id']" position="after">
+                    <field name="student_name"/>
+                </xpath>   
+                <xpath expr="//field[@name='partner_email']" position="after">
+                    <field name="course_skills" widget="many2many_tags"/>
+                </xpath>  
+            </field>
+        </record>
+    </data>
+</odoo>

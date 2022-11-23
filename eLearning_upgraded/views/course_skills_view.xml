@@ -1,0 +1,37 @@
+<?xmd version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_slide_channel_form_inherit" model="ir.ui.view">
+            <field name="name">slide.channel.inherit</field>
+            <field name="model">slide.channel</field>
+            <field name="inherit_id" ref="website_slides.view_slide_channel_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='tag_ids']" position="after">
+                    <div>
+                        <label for="skill_ids" string="Skills"/>
+                        <br></br>
+                        <field name="skill_ids" widget="many2many_tags" placeholder="Skills"/>
+                    </div>
+                </xpath>   
+            </field>
+        </record>
+
+        <record id="slide_channel_skill_view_tree" model="ir.ui.view">
+            <field name="name">slide.channel.tag.view.tree</field>
+            <field name="model">slide.skill.tag</field>
+            <field name="arch" type="xml">
+                <tree string="Course Skills" editable="top" create="false">
+                    <field name="sequence" widget="handle"/>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+    
+        <record id="slide_channel_skill_action" model="ir.actions.act_window">
+            <field name="name">Course Skills</field>
+            <field name="res_model">slide.skill.tag</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    </data>
+
+</odoo>

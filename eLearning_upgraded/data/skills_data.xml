@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<odoo>
+    <data noupdate="1">
+        <record id="update_skills_cron" model="ir.cron">
+            <field name="name">Update course skills</field>
+            <field name="model_id" ref="model_slide_skill_tag"/>
+            <field name="type">ir.actions.server</field>
+            <field name="state">code</field>
+            <field name="code">model.update_skills()</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">weeks</field>
+            <field name="numbercall">-1</field>
+        </record>
+    </data>
+    <data noupdate="1">
+        <record id="export_students_cron" model="ir.cron">
+            <field name="name">Export students</field>
+            <field name="model_id" ref="model_slide_channel_partner"/>
+            <field name="type">ir.actions.server</field>
+            <field name="state">code</field>
+            <field name="code">model.export_students()</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">weeks</field>
+            <field name="numbercall">-1</field>
+        </record>
+    </data>
+</odoo>
