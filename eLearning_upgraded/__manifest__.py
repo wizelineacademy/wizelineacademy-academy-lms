@@ -1,6 +1,6 @@
 {
     'name': "eLearning_upgraded",
-    'version': '1.0',
+    'version': '1.0.1',
     'author': "systemBlue",
     'summary': 'Import courses & add skills',
     'category': 'Website',
@@ -17,5 +17,6 @@
         'views/menu_import_view.xml',
         'views/student_skills_view.xml',
         'data/skills_data.xml'
-    ]
+    ],
+    'license': 'LGPL-3',
 }
