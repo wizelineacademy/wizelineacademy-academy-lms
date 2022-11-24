@@ -15,6 +15,10 @@ class SlideChannelTag(models.Model):
         string='Color Index', default=lambda self: randint(1, 11),
         help="Tag color used in both backend and website. No color means no display in kanban or front-end, to distinguish internal tags from public categorization tags")
     
+    _sql_constraints = [
+        ('slide_skill_unique', 'UNIQUE(name)', 'A skill must be unique!'),
+    ]
+
     # Update the skills, this function is called automatically every week 
     def update_skills(self):
         #client = bigquery.Client()

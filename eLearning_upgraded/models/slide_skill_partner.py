@@ -10,7 +10,7 @@ class CourseStudentSkills(models.Model):
     
     def export_students(self):
         student_list = []
-        save_path = 'src/user/exports'
+        save_path = 'src/user/exports/'
             
         dt = datetime.datetime.today()
         date = f'_{dt.day}_{dt.month}_{dt.year}'
