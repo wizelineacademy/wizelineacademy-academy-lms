@@ -10,7 +10,7 @@ class ImportCourseWizard(models.TransientModel):
         if 'docs.google.com' in self.document_id and self.document_id.split('/')[-2]:
             doc_id = self.document_id.split('/')[-2]
             try:
-                r = requests.get(f'https://docs-to-json-wl.onrender.com/course_import/{doc_id}')
+                r = requests.get(f'https://docs-to-json-wl.herokuapp.com/course_import/{doc_id}')
                 return {
                     'type': 'ir.actions.client',
                     'tag': 'reload'
