@@ -1,5 +1,5 @@
 from odoo import models, fields, api
-import csv, datetime
+import csv, datetime, os
 
 class CourseStudentSkills(models.Model):
     _inherit = 'slide.channel.partner'
@@ -11,6 +11,10 @@ class CourseStudentSkills(models.Model):
     def export_students(self):
         student_list = []
         save_path = 'src/user/exports/'
+        try:
+            os.mkdir(save_path)
+        except FileExistsError as error:
+            print(error)
             
         dt = datetime.datetime.today()
         date = f'_{dt.day}_{dt.month}_{dt.year}'
