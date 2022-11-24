@@ -13,12 +13,7 @@ class ImportCourseWizard(models.TransientModel):
                 r = requests.get(f'https://docs-to-json-wl.onrender.com/course_import/{doc_id}')
                 return {
                     'type': 'ir.actions.client',
-                    'tag': 'display_notification',
-                    'params': {
-                        'message': 'Course created successfully',
-                        'type': 'success',
-                        'sticky': False
-                    }
+                    'tag': 'reload'
                 }
             except requests.exceptions.RequestException as err:
                 errorMessage = err 
