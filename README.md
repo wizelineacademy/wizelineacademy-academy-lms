@@ -35,7 +35,7 @@ You can also create this structure manually, you can visit the official document
 To deploy a custom module to Odoo.sh simply add the folder containing your module to the repository. If you worked on your module locally: 
 
 1. Clone the repository linked to Odoo.sh.
-2. Add the custom module folder, in this case ```eLearning_upgraded```, to the cloned folder.
+2. Add the custom module folder, in this case ```elearning_upgraded```, to the cloned folder.
 3. Commit the changes and push to the remote repository.
 **Note:**
 Your can also follow this [tutorial](https://www.youtube.com/watch?v=rZaHSTvljuA)
