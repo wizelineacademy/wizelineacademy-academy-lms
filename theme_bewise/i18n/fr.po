@@ -3,17 +3,15 @@
 # 	* theme_bewise
 # 
 # Translators:
-# Martin Trigaux, 2021
-# Tivisse <yti@odoo.com>, 2021
-# Cécile Collart <cco@odoo.com>, 2021
+# Wil Odoo, 2023
 # Jolien De Paepe, 2023
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Odoo Server 16.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-13 08:01+0000\n"
-"PO-Revision-Date: 2021-12-13 08:08+0000\n"
+"POT-Creation-Date: 2023-09-28 12:23+0000\n"
+"PO-Revision-Date: 2023-10-12 06:13+0000\n"
 "Last-Translator: Jolien De Paepe, 2023\n"
 "Language-Team: French (https://app.transifex.com/odoo/teams/41243/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -29,10 +27,11 @@ msgstr "16.456"
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_call_to_action
-msgid "<b>3,000 students</b> graduate each year find a job within 2 months"
+msgid ""
+"<b>3,000 students</b> graduate each year and find a job within 2 months"
 msgstr ""
 "<b>3.000 étudiants</b> sont diplômés chaque année et trouvent un emploi dans"
-" les deux mois qui suivent"
+" les 2 mois qui suivent"
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_company_team
@@ -47,7 +46,7 @@ msgstr "<b>Iris DOE</b> • Diplômée en 2019"
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_company_team
 msgid "<b>Iris Joe, team leader professor</b>"
-msgstr "<b>Iris Joe, professeur chef d'équipe</b>"
+msgstr "<b>Iris Joe, chef d'équipe/professeur</b>"
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_quotes_carousel
@@ -89,7 +88,7 @@ msgid ""
 "        Teachers are selected among experts of their domains. They are not just professors, they are professionals in their field of expertise."
 msgstr ""
 "<br/>\n"
-"        Les enseignants sont sélectionnés parmi les experts de leur domaine. Ce ne sont pas seulement des professeurs, ce sont des professionnels dans leur domaine d'expertise."
+"        Les enseignants sont sélectionnés parmi les experts dans leur domaine. Ce ne sont pas seulement des professeurs, ce sont des professionnels dans leur domaine d'expertise."
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_color_blocks_2
@@ -140,7 +139,7 @@ msgid "Always at the top"
 msgstr "Toujours au sommet"
 
 #. module: theme_bewise
-#. openerp-web
+#. odoo-javascript
 #: code:addons/theme_bewise/static/src/js/tour.js:0
 #: code:addons/theme_bewise/static/src/js/tour.js:0
 #, python-format
@@ -212,7 +211,7 @@ msgid ""
 " of excellence."
 msgstr ""
 "Des journalistes, directeurs, développeurs et bien d'autres encore "
-"travaillent efficacement dans leurs domaines d'excellence."
+"travaillent en effet dans leurs domaines d'excellence."
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_numbers
@@ -230,8 +229,8 @@ msgid ""
 "Our university has topped the The World University<br/>Rankings for a fifth "
 "consecutive year."
 msgstr ""
-"Notre université est au tête du classement mondial des universités<br/>pour "
-"la cinquième année consécutive."
+"Notre université est à la tête du classement mondial des "
+"universités<br/>pour la cinquième année consécutive."
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_color_blocks_2
@@ -258,7 +257,7 @@ msgstr ""
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_numbers
 msgid "Students"
-msgstr "Etudiants"
+msgstr "Étudiants"
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_quotes_carousel
@@ -287,10 +286,10 @@ msgid ""
 "degree in 1998 and 2004. After a post-doctoral experience  he joined the "
 "school as professor of mechatronics in 2006. In 2010, he became Head of IT."
 msgstr ""
-"Tony a obtenu le diplôme en Génie électrique et mécanique et un doctorat en "
-"1998 et 2004. Après une expérience post-doctorale, il a rejoint l'école en "
-"tant que professeur de mécatronique en 2006. En 2010, il est devenu chef de "
-"la faculté d'informatique."
+"Tony a obtenu un diplôme en Génie électrique et mécanique en 1998 et un "
+"doctorat et 2004. Après une expérience post-doctorale, il a rejoint l'école "
+"en tant que professeur de mécatronique en 2006. En 2010, il est devenu chef "
+"de la faculté d'informatique."
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_image_text

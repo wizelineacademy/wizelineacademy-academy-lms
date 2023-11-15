@@ -7,5 +7,5 @@ class ThemeBewise(models.AbstractModel):
     def _theme_bewise_post_copy(self, mod):
         self.enable_view('website.template_footer_headline')
 
-        self.enable_asset('Ripple effect SCSS')
-        self.enable_asset('Ripple effect JS')
+        self.enable_asset("website.ripple_effect_scss")
+        self.enable_asset("website.ripple_effect_js")

@@ -3,16 +3,17 @@
 # 	* theme_bewise
 # 
 # Translators:
-# Benson <Benson.Dr@Gmail.com>, 2022
+# Wil Odoo, 2023
+# Benson <Benson.Dr@Gmail.com>, 2023
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Odoo Server 16.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-13 08:01+0000\n"
-"PO-Revision-Date: 2021-12-13 08:08+0000\n"
-"Last-Translator: Benson <Benson.Dr@Gmail.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/odoo/teams/41243/zh_CN/)\n"
+"POT-Creation-Date: 2023-09-28 12:23+0000\n"
+"PO-Revision-Date: 2023-10-12 06:13+0000\n"
+"Last-Translator: Benson <Benson.Dr@Gmail.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/odoo/teams/41243/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -26,8 +27,9 @@ msgstr "16,456"
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_call_to_action
-msgid "<b>3,000 students</b> graduate each year find a job within 2 months"
-msgstr "<b>3,000名学生</b>每年毕业后2个月内找到工作"
+msgid ""
+"<b>3,000 students</b> graduate each year and find a job within 2 months"
+msgstr ""
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_company_team
@@ -134,7 +136,7 @@ msgid "Always at the top"
 msgstr "永远在顶尖"
 
 #. module: theme_bewise
-#. openerp-web
+#. odoo-javascript
 #: code:addons/theme_bewise/static/src/js/tour.js:0
 #: code:addons/theme_bewise/static/src/js/tour.js:0
 #, python-format
@@ -254,7 +256,7 @@ msgstr "校园"
 #. module: theme_bewise
 #: model:ir.model,name:theme_bewise.model_theme_utils
 msgid "Theme Utils"
-msgstr "主题工具"
+msgstr "主题用途"
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_company_team

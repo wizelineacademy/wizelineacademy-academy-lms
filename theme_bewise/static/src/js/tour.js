@@ -1,8 +1,6 @@
 /** @odoo-module */
 import wTourUtils from 'website.tour_utils';
-
-const core = require("web.core");
-const _t = core._t;
+import { _t } from 'web.core';
 
 const snippets = [
     {
@@ -36,6 +34,7 @@ const snippets = [
 ];
 
 wTourUtils.registerThemeHomepageTour("bewise_tour", [
+    wTourUtils.assertCssVariable('--color-palettes-name', '"bewise-1"'),
     wTourUtils.dragNDrop(snippets[0], 'top'),
     wTourUtils.clickOnText(snippets[0], 'h1', 'top'),
     wTourUtils.goBackToBlocks(),

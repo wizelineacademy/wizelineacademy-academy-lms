@@ -3,17 +3,17 @@
 # 	* theme_bewise
 # 
 # Translators:
-# Martin Trigaux, 2021
-# Chris Egal <sodaswed@web.de>, 2021
-# Friederike Fasterling-Nesselbosch, 2021
+# Chris Egal <sodaswed@web.de>, 2023
+# Wil Odoo, 2023
+# Martin Trigaux, 2023
 # Larissa Manderfeld, 2023
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
+"Project-Id-Version: Odoo Server 16.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-13 08:01+0000\n"
-"PO-Revision-Date: 2021-12-13 08:08+0000\n"
+"POT-Creation-Date: 2023-09-28 12:23+0000\n"
+"PO-Revision-Date: 2023-10-12 06:13+0000\n"
 "Last-Translator: Larissa Manderfeld, 2023\n"
 "Language-Team: German (https://app.transifex.com/odoo/teams/41243/de/)\n"
 "MIME-Version: 1.0\n"
@@ -29,7 +29,8 @@ msgstr "16.456"
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_call_to_action
-msgid "<b>3,000 students</b> graduate each year find a job within 2 months"
+msgid ""
+"<b>3,000 students</b> graduate each year and find a job within 2 months"
 msgstr ""
 "<b>3.000 Studenten</b> machen jährlich Ihren Abschluss und finden innerhalb "
 "von 2 Monaten einen Job"
@@ -89,7 +90,7 @@ msgid ""
 "        Teachers are selected among experts of their domains. They are not just professors, they are professionals in their field of expertise."
 msgstr ""
 "<br/>\n"
-"        Lehrkräfte werden aus den Experten ihres Fachgebiets ausgewählt. Sie sind nicht einfach nur Professoren, sondern Profis in ihrem Fachgebiet."
+"        Lehrkräfte werden aus den Experten ihres Fachgebiets ausgewählt. Sie sind nicht einfach nur Professoren, sondern Profis auf ihrem Fachgebiet."
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_color_blocks_2
@@ -100,7 +101,7 @@ msgid ""
 "        <br/>"
 msgstr ""
 "<br/>\n"
-"        Der kleine und moderne Campus liegt nur 10 Gehminuten vom Stadtzentrum entfernt und ist sowohl mit dem Auto als auch mit öffentlichen Verkehrsmitteln leicht zu erreichen. Er liegt auch in der Nähe von Bahnhöfen\n"
+"        Der kleine und moderne Campus liegt nur 10 Gehminuten vom Stadtzentrum entfernt und ist sowohl mit dem Auto als auch mit öffentlichen Verkehrsmitteln leicht zu erreichen. Auch Bahnhöfe sind nur ein paar Gehminuten entfernt.\n"
 "        <br/>\n"
 "        <br/>"
 
@@ -141,7 +142,7 @@ msgid "Always at the top"
 msgstr "Immer an der Spitze"
 
 #. module: theme_bewise
-#. openerp-web
+#. odoo-javascript
 #: code:addons/theme_bewise/static/src/js/tour.js:0
 #: code:addons/theme_bewise/static/src/js/tour.js:0
 #, python-format
@@ -269,7 +270,7 @@ msgid ""
 "Thanks to its innovative system, the school offers a diplomatic training "
 "during which we are followed by a \"mentor\", a sort of \"tutor\"!"
 msgstr ""
-"Dank ihres innovativen Systems bietet die Schule eine diplomatische "
+"Dank ihres innovativen Systems bietet die Schule eine akademische "
 "Ausbildung, bei der wir von einem „Mentor“, einer Art „Tutor“, begleitet "
 "werden!"
 
@@ -281,7 +282,7 @@ msgstr "Der Campus"
 #. module: theme_bewise
 #: model:ir.model,name:theme_bewise.model_theme_utils
 msgid "Theme Utils"
-msgstr "Thema-Werkzeuge"
+msgstr "Designwerkzeuge"
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_company_team
@@ -291,9 +292,9 @@ msgid ""
 "school as professor of mechatronics in 2006. In 2010, he became Head of IT."
 msgstr ""
 "Tony hat 1998 einen Abschluss in Elektrotechnik und Maschinenbau und 2004 "
-"einen Doktortitel in den Jahren erhalten. Nach seiner Promotion kam er 2006 "
-"als Professor für Mechatronik zurück. Im Jahr 2010 wurde er zum Leiter der "
-"IT-Abteilung ernannt."
+"einen Doktortitel erhalten. Nach seiner Promotion kam er 2006 als Professor "
+"für Mechatronik zurück. Im Jahr 2010 wurde er zum Leiter der IT-Abteilung "
+"ernannt."
 
 #. module: theme_bewise
 #: model_terms:theme.ir.ui.view,arch:theme_bewise.s_image_text

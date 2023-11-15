@@ -83,7 +83,7 @@
     </xpath>
     <xpath expr="//p[2]" position="replace">
         <p>Journalists, directors, developers, etc. working effectively in their fields of excellence.</p>
-        <div class="s_hr text-left p0 pb32" data-snippet="s_hr" data-name="Separator">
+        <div class="s_hr text-start p0 pb32" data-snippet="s_hr" data-name="Separator">
             <hr class="w-100 mx-auto" style="border-top-width: 1px; border-top-style: solid; border-top-color: var(--o-color-3) !important;"/>
         </div>
     </xpath>
@@ -109,7 +109,7 @@
     </xpath>
     <xpath expr="//p[2]" position="replace">
         <p>All students benefit from individualised support.</p>
-        <div class="s_hr text-left p0 pb32" data-snippet="s_hr" data-name="Separator">
+        <div class="s_hr text-start p0 pb32" data-snippet="s_hr" data-name="Separator">
             <hr class="w-100 mx-auto" style="border-top-width: 1px; border-top-style: solid; border-top-color: var(--o-color-3) !important;"/>
         </div>
     </xpath>
@@ -191,13 +191,13 @@
     </xpath>
     <!-- Slide #2 - blockquote -->
     <xpath expr="(//blockquote)[2]" position="attributes">
-        <attribute name="class" add="w-75 mx-auto" remove="w-50 mr-auto" separator=" "/>
+        <attribute name="class" add="w-75 mx-auto" remove="w-50 me-auto" separator=" "/>
     </xpath>
     <xpath expr="(//blockquote)[2]//i" position="attributes">
         <attribute name="class" add="bg-o-color-1" remove="bg-o-color-2" separator=" "/>
     </xpath>
     <xpath expr="(//blockquote)[2]//p" position="replace" mode="inner">
-        Thanks to its innovative system, the school offers a diplomatic training during which we are followed by a "mentor", a sort of "tutor"!
+        Thanks to its innovative system, the school offers an academic training during which we are followed by a "mentor", a sort of "tutor"!
     </xpath>
     <xpath expr="(//span[hasclass('s_blockquote_author')])[2]" position="replace" mode="inner">
         <b>Jane DOE</b> • Graduated in 2017
@@ -210,7 +210,7 @@
     </xpath>
     <!-- Slide #3 - blockquote -->
     <xpath expr="(//blockquote)[3]" position="attributes">
-        <attribute name="class" add="w-75 mx-auto" remove="w-50 ml-auto" separator=" "/>
+        <attribute name="class" add="w-75 mx-auto" remove="w-50 ms-auto" separator=" "/>
     </xpath>
     <xpath expr="(//blockquote)[3]//i" position="attributes">
         <attribute name="class" add="bg-o-color-1" remove="bg-o-color-2" separator=" "/>
@@ -234,7 +234,7 @@
     </xpath>
     <!-- Title -->
     <xpath expr="//h3" position="replace">
-        <h4><b>3,000 students</b> graduate each year find a job within 2 months</h4>
+        <h4><b>3,000 students</b> graduate each year and find a job within 2 months</h4>
     </xpath>
     <!-- Subtitle -->
     <xpath expr="//div[hasclass('col-lg-9')]/p" position="replace" mode="inner">
