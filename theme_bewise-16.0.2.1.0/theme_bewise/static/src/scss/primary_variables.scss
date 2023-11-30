@@ -7,11 +7,11 @@
 $o-theme-color-palettes: map-merge($o-theme-color-palettes,
     (
         'bewise-1': (
-            alpha: #11b6a8,
-            beta: #B9EAE8,
-            gamma: #fda301,
-            delta: #febf00,
-            epsilon: #1b7f7e,
+            alpha: #87bd70,
+            beta: #C4E6B5,
+            gamma: #fe5e6d,
+            delta: #F2BFC5,
+            epsilon: #ce2b3a,
         ),
         'bewise-2': (
             alpha: #45AADA,
@@ -28,11 +28,11 @@ $o-theme-color-palettes: map-merge($o-theme-color-palettes,
             epsilon: #dbb132,
         ),
         'bewise-4': (
-            alpha: #87bd70,
-            beta: #C4E6B5,
-            gamma: #fe5e6d,
-            delta: #F2BFC5,
-            epsilon: #ce2b3a,
+            alpha: #11b6a8,
+            beta: #B9EAE8,
+            gamma: #fda301,
+            delta: #febf00,
+            epsilon: #1b7f7e,
         )
     )
 );
