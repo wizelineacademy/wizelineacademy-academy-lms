@@ -69,7 +69,7 @@
 <!-- ======== TEXT-IMAGE ======== -->
 <template id="s_text_image" inherit_id="website.s_text_image" name="Be Wise s_text_image">
     <xpath expr="//h2" position="replace" mode="inner">
-        Driven by Excellence
+        Driven by Tests
     </xpath>
     <xpath expr="//div[hasclass('col-lg-6')]" position="attributes">
         <attribute name="class" add="col-lg-4 offset-lg-1" remove="col-lg-6" separator=" "/>
@@ -128,7 +128,7 @@
         <div class="o_we_shape o_web_editor_Blobs_11 o_we_flip_x"/>
     </xpath>
     <xpath expr="//h6" position="replace" mode="inner">
-        Faculties
+        Tests
     </xpath>
     <xpath expr="//div[hasclass('row')]/div[2]/h6" position="replace" mode="inner">
         Nationalities
