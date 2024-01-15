@@ -11,6 +11,7 @@
         'data/ir_asset.xml',
         'views/image_content.xml',
         'views/customizations.xml',
+        'views/header.xml',
     ],
     'images': [
         'static/description/bewise_description.jpg',
