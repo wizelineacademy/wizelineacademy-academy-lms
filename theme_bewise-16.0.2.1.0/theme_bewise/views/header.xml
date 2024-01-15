@@ -2,8 +2,34 @@
 <odoo>
     <template id="custom_header" inherit_id="website.layout" name="Custom Header">
         <xpath expr="//header" position="replace">
-            <header>
-               Hello
+            <header class="header-sticky">
+               <nav class="header-navigation">
+                <div>
+                    <ul>
+                        <li>
+                            <button string="Work"/>
+                        </li>
+                        <li>
+                            <button string="Insights"/>
+                        </li>
+                        <li>
+                            <button string="About"/>
+                        </li>
+                        <li>
+                            <button string="Work"/>
+                        </li>
+                        <li>
+                            <button string="Careers"/>
+                        </li>
+                        <li>
+                            <button string="Academy"/>
+                        </li>
+                        <li>
+                            <button string="Contact"/>
+                        </li>
+                    </ul>
+                </div>
+               </nav>
             </header>
         </xpath>
     </template>
