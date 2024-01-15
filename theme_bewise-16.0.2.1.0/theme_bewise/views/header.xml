@@ -4,28 +4,28 @@
         <xpath expr="//header" position="replace">
             <header class="header-sticky">
                <nav class="header-navigation">
-                <div>
+                <div class="top_menu_container">
                     <ul>
                         <li>
-                            <button string="Work"/>
+                            <a role="menuitem">Work</a>
                         </li>
                         <li>
-                            <button string="Insights"/>
+                            <a role="menuitem">Insights</a>
                         </li>
                         <li>
-                            <button string="About"/>
+                            <a role="menuitem">About</a>
                         </li>
                         <li>
-                            <button string="Work"/>
+                            <a role="menuitem">Wizeline</a>
                         </li>
                         <li>
-                            <button string="Careers"/>
+                            <a role="menuitem">Careers</a>
                         </li>
                         <li>
-                            <button string="Academy"/>
+                            <a role="menuitem">Academy</a>
                         </li>
                         <li>
-                            <button string="Contact"/>
+                            <a role="menuitem">Contact</a>
                         </li>
                     </ul>
                 </div>
