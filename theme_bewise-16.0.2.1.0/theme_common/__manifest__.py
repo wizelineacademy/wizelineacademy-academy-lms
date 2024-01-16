@@ -11,6 +11,11 @@
         'views/old_snippets/s_page_header.xml',
         'views/old_snippets/s_three_columns_circle.xml',
     ],
+    'assets': {
+        'web._assets_primary_variables': [
+            "theme_bewise/static/src/scss/primary_variables.scss",
+        ]
+    }
     'application': False,
     'license': 'LGPL-3',
 }
