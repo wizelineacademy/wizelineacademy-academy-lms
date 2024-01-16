@@ -4,8 +4,8 @@
         <xpath expr="//header" position="replace">
             <header class="header-sticky">
                <nav class="header-navigation">
-                <div class="top_menu_container bg-epsilon navbar-bg">
-                    <ul style="display: flex; list-style: none; justify-content: space-between; max-width: 75rem;">
+                <div style="background-color: #202529" class="top_menu_container bg-epsilon navbar-bg">
+                    <ul style="display: flex; list-style: none; justify-content: space-between; max-width: 75rem; margin-left: auto; margin-right: auto;">
                         <li>
                             <a role="menuitem">Work</a>
                         </li>
@@ -16,7 +16,9 @@
                             <a role="menuitem">About</a>
                         </li>
                         <li>
-                            <a role="menuitem">Wizeline</a>
+                            <a href="https://www.wizeline.com/" title="Academy">
+                               Wizeline
+                            </a>
                         </li>
                         <li>
                             <a role="menuitem">Careers</a>
