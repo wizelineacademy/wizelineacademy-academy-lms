@@ -34,5 +34,8 @@
         'website.assets_editor': [
             'theme_bewise/static/src/js/tour.js',
         ],
+        'web._assets_primary_variables': [
+            "theme_bewise/static/src/scss/primary_variables.scss",
+        ]
     }
 }
