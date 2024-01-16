@@ -40,4 +40,11 @@
     <field name="path">theme_bewise/static/src/scss/primary_variables.scss</field>
 </record>
 
+<record id="theme_bewise.academy_header_scss" model="theme.ir.asset">
+    <field name="key">theme_bewise.academy_header_scss</field>
+    <field name="name">Academy header variables SCSS</field>
+    <field name="bundle">web._assets_academy_header</field>
+    <field name="path">theme_bewise/static/src/scss/header.scss</field>
+</record>
+
 </odoo>
