@@ -12,8 +12,8 @@
         'views/old_snippets/s_three_columns_circle.xml',
     ],
     'assets': {
-        'web._assets_primary_variables': [
-            "theme_bewise/static/src/scss/primary_variables.scss",
+        'web.assets_primary_variables': [
+            "theme_common/static/src/scss/primary_variables.scss",
         ],
     },
     'application': False,

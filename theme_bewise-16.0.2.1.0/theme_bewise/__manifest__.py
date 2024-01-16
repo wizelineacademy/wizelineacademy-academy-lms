@@ -18,7 +18,7 @@
         'static/description/bewise_screenshot.jpg',
     ],
     'images_preview_theme': {
-        'website.s_cover_default_image': '/theme_bewise/static/src/img/backgrounds/hero4-768x0-c-default.jpg',
+        'website.s_cover_default_image': '/theme_bewise/static/src/img/backgrounds/hero-4-768x0-c-default.jpg',
         'website.s_text_image_default_image': '/theme_bewise/static/src/img/content/college_graduate.jpg',
         'website.s_image_text_default_image': '/theme_bewise/static/src/img/content/college_students.jpg',
         'website.s_media_list_default_image_1': '/theme_bewise/static/src/img/content/college_media_1.jpg',
@@ -34,7 +34,7 @@
         'website.assets_editor': [
             'theme_bewise/static/src/js/tour.js',
         ],
-        'web._assets_primary_variables': [
+        'web.assets_primary_variables': [
             "theme_bewise/static/src/scss/primary_variables.scss",
         ]
     }
