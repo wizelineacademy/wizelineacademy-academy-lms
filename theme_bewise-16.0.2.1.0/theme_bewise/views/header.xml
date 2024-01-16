@@ -5,7 +5,7 @@
             <header class="header-sticky">
                <nav class="header-navigation">
                 <div class="top_menu_container bg-epsilon navbar-bg">
-                    <ul>
+                    <ul style="display: flex; list-style: none; justify-content: space-between; max-width: 75rem;">
                         <li>
                             <a role="menuitem">Work</a>
                         </li>
