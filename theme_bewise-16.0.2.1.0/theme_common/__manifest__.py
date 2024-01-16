@@ -15,7 +15,7 @@
         'web._assets_primary_variables': [
             "theme_bewise/static/src/scss/primary_variables.scss",
         ]
-    }
+    },
     'application': False,
     'license': 'LGPL-3',
 }
