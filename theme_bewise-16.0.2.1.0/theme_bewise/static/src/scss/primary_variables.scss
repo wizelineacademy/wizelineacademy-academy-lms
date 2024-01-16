@@ -6,7 +6,7 @@
 // Theme colors
 $o-theme-color-palettes: map-merge($o-theme-color-palettes,
     (
-        'bewise-1': (
+        'bewise-10': (
             alpha: #87bd70,
             beta: #C4E6B5,
             gamma: #fe5e6d,
@@ -101,7 +101,7 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'bewise-1',
+        'color-palettes-name': 'bewise-10',
 
         'header-font-size': (20 / 16) * 1rem,
         'font-size-base': 1.3125rem,
@@ -121,10 +121,10 @@ $o-website-values-palettes: (
     ),
 );
 
-$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'bewise-1');
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'bewise-10');
 
 $o-color-palettes-compatibility-indexes: (
-    1: 'bewise-1',
+    1: 'bewise-10',
     2: 'bewise-2',
     3: 'bewise-3',
     4: 'generic-1',
@@ -146,7 +146,7 @@ $o-color-palettes-compatibility-indexes: (
     20: 'generic-17',
 );
 $o-theme-color-palettes-compatibility-indexes: (
-    1: 'bewise-1',
+    1: 'bewise-10',
     2: 'bewise-2',
     3: 'bewise-3',
     4: 'bewise-4',
