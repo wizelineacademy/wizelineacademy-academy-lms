@@ -34,7 +34,7 @@ const snippets = [
 ];
 
 wTourUtils.registerThemeHomepageTour("bewise_tour", [
-    wTourUtils.assertCssVariable('--color-palettes-name', '"bewise-10"'),
+    wTourUtils.assertCssVariable('--color-palettes-name', '"academy"'),
     wTourUtils.dragNDrop(snippets[0], 'top'),
     wTourUtils.clickOnText(snippets[0], 'h1', 'top'),
     wTourUtils.goBackToBlocks(),
