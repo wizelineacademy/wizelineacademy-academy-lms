@@ -4,7 +4,7 @@
         <xpath expr="//header" position="replace">
             <header class="header-sticky">
                <nav class="header-navigation">
-                <div class="top_menu_container bg-epsilon navbar-light">
+                <div class="top_menu_container bg-epsilon navbar-bg">
                     <ul>
                         <li>
                             <a role="menuitem">Work</a>

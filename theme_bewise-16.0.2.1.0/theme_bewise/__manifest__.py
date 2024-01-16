@@ -36,6 +36,9 @@
         ],
         'web.assets_primary_variables': [
             "theme_bewise/static/src/scss/primary_variables.scss",
+        ],
+        'web.assets_header_vars': [
+            "theme_bewise/static/src/scss/header.scss",
         ]
     }
 }
