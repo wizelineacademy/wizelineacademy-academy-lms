@@ -4,7 +4,7 @@
         <xpath expr="//header" position="replace">
             <header class="header-sticky">
                <nav class="header-navigation">
-                <div style="background-color: #202529; position: fixed;" class="top_menu_container bg-epsilon navbar-bg">
+                <div style="background-color: #202529; position: fixed; width: 100%; z-index:2" class="top_menu_container bg-epsilon navbar-bg">
                     <ul style="display: flex; list-style: none; justify-content: space-between; max-width: 75rem; margin-left: auto; margin-right: auto;">
                         <li>
                             <a role="menuitem">Work</a>
@@ -30,10 +30,10 @@
                             <a role="menuitem">Contact</a>
                         </li>
                     </ul>
-                    <div style="display: flex; justify-content: space-between">
+                    <div style="display: flex; justify-content: space-between; background-color: #ffffff;">
                         <div>Academy logo</div>
                         <nav>
-                            <ul style="display: flex; list-style: none; color: black">
+                            <ul style="display: flex; list-style: none; color: black; justify-content: space-around; max-width: 70rem;">
                                 <li>
                                     <a role="menuitem">About</a>
                                 </li>
@@ -44,7 +44,7 @@
                                     <a role="menuitem">Start Learning</a>
                                 </li>
                                 <li>
-                                    <button role="menuitem" string="Join Our Mailing List"/>
+                                    <a role="menuitem">Join Our Mailing List</a>
                                 </li>
                             </ul>
                         </nav>
