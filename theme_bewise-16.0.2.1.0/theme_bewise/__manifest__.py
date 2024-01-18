@@ -37,7 +37,7 @@
         'web.assets_primary_variables': [
             "theme_bewise/static/src/scss/primary_variables.scss",
         ],
-        'web.assets_academy_header': [
+        'web.assets_frontend': [
             "theme_bewise/static/src/scss/header.scss",
         ]
     }
