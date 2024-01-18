@@ -4,50 +4,54 @@
         <xpath expr="//header" position="replace">
             <header class="header-sticky">
                <nav class="header-navigation">
-                <div style="background-color: #202529; position: fixed; width: 100%; z-index:2" class="top_menu_container bg-epsilon navbar-bg">
-                    <ul style="display: flex; list-style: none; justify-content: space-between; max-width: 75rem; margin-left: auto; margin-right: auto; margin-bottom: 0">
-                        <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center">
-                            <a role="menuitem">Work</a>
-                        </li>
-                        <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center">
-                            <a role="menuitem">Insights</a>
-                        </li>
-                        <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center">
-                            <a role="menuitem">About</a>
-                        </li>
-                        <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center">
-                            <a href="https://www.wizeline.com/" title="Academy">
-                               <img class="header-logo" src="/theme_bewise/static/src/img/Wordmark_digital-white.png"/>
-                            </a>
-                        </li>
-                        <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center">
-                            <a role="menuitem">Careers</a>
-                        </li>
-                        <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center">
-                            <a role="menuitem">Academy</a>
-                        </li>
-                        <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center">
-                            <a role="menuitem">Contact</a>
-                        </li>
-                    </ul>
-                    <div style="display: flex; justify-content: space-between; background-color: #ffffff; padding: 0 1rem; margin-left:auto; margin-right:auto; max-width: 70rem; background-color: white;">
-                        <div style="color: black">Academy logo</div>
-                        <nav>
-                            <ul style="display: flex; list-style: none; color: black; justify-content: space-around; max-width: 80rem; margin-bottom:0">
-                                <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center; padding: 1rem 0.5rem;">
-                                    <a role="menuitem">About</a>
-                                </li>
-                                <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center; padding: 1rem 0.5rem;">
-                                    <a role="menuitem">Explore</a>
-                                </li>
-                                <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center; padding: 1rem 0.5rem;">
-                                    <a role="menuitem">Start Learning</a>
-                                </li>
-                                <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center; padding: 1rem 0.5rem;">
-                                    <a role="menuitem">Join Our Mailing List</a>
-                                </li>
-                            </ul>
-                        </nav>
+                <div style="position: fixed; width: 100%; z-index:2" class="top_menu_container bg-epsilon navbar-bg">
+                    <div style="background-color: #202529; width: 100%">
+                        <ul style="display: flex; list-style: none; justify-content: space-between; max-width: 75rem; margin-left: auto; margin-right: auto; margin-bottom: 0">
+                            <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center">
+                                <a role="menuitem">Work</a>
+                            </li>
+                            <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center">
+                                <a role="menuitem">Insights</a>
+                            </li>
+                            <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center">
+                                <a role="menuitem">About</a>
+                            </li>
+                            <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center">
+                                <a href="https://www.wizeline.com/" title="Academy">
+                                <img class="header-logo" src="/theme_bewise/static/src/img/Wordmark_digital-white.png"/>
+                                </a>
+                            </li>
+                            <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center">
+                                <a role="menuitem">Careers</a>
+                            </li>
+                            <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center">
+                                <a role="menuitem">Academy</a>
+                            </li>
+                            <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center">
+                                <a role="menuitem">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div style="width: 100%; background-color: #fff">
+                        <div style="display: flex; justify-content: space-between; padding: 0 1rem; margin-left:auto; margin-right:auto; max-width: 70rem;">
+                            <div style="color: black">Academy logo</div>
+                            <nav>
+                                <ul style="display: flex; list-style: none; color: black; justify-content: space-around; max-width: 80rem; margin-bottom:0">
+                                    <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center; padding: 1rem 0.5rem;">
+                                        <a role="menuitem">About</a>
+                                    </li>
+                                    <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center; padding: 1rem 0.5rem;">
+                                        <a role="menuitem">Explore</a>
+                                    </li>
+                                    <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center; padding: 1rem 0.5rem;">
+                                        <a role="menuitem">Start Learning</a>
+                                    </li>
+                                    <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center; padding: 1rem 0.5rem;">
+                                        <a role="menuitem">Join Our Mailing List</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
                 </div>
                </nav>
