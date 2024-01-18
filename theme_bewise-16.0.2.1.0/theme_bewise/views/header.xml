@@ -31,7 +31,7 @@
                         </li>
                     </ul>
                     <div style="display: flex; justify-content: space-between; background-color: #ffffff;">
-                        <div style>Academy logo</div>
+                        <div style="color: black">Academy logo</div>
                         <nav>
                             <ul style="display: flex; list-style: none; color: black; justify-content: space-around; max-width: 70rem; margin-bottom:0">
                                 <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center">
