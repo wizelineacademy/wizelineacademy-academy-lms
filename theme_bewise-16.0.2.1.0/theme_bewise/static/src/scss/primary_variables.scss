@@ -7,11 +7,15 @@
 $o-theme-color-palettes: map-merge($o-theme-color-palettes,
     (
         'bewise-1': (
-            alpha: #87bd70,
-            beta: #C4E6B5,
-            gamma: #fe5e6d,
-            delta: #F2BFC5,
-            epsilon: #ce2b3a,
+            'o-color-1': #43c2ff,
+            'o-color-2': #202529,
+            'o-color-3': #ffffff,
+            'o-color-4': #8edaff,
+            'o-color-5': #d2d2d3,
+            'body': 'o-color-3',
+            'menu': 3,
+            'footer': 1,
+            'copyright': 1,
         ),
         'bewise-2': (
             alpha: #45AADA,
@@ -117,7 +121,7 @@ $o-theme-font-configs: (
 
 $o-website-values-palettes: (
     (
-        'color-palettes-name': 'academy',
+        'color-palettes-name': 'bewise-1',
 
         'header-font-size': (20 / 16) * 1rem,
         'font-size-base': 0.75rem,
@@ -137,10 +141,10 @@ $o-website-values-palettes: (
     ),
 );
 
-$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'academy');
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'bewise-1');
 
 $o-color-palettes-compatibility-indexes: (
-    1: 'bewise-10',
+    1: 'bewise-1',
     2: 'bewise-2',
     3: 'bewise-3',
     4: 'generic-1',
@@ -162,7 +166,7 @@ $o-color-palettes-compatibility-indexes: (
     20: 'generic-17',
 );
 $o-theme-color-palettes-compatibility-indexes: (
-    1: 'bewise-10',
+    1: 'bewise-1',
     2: 'bewise-2',
     3: 'bewise-3',
     4: 'bewise-4',
