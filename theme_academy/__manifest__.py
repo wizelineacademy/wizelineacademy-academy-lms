@@ -26,7 +26,7 @@
     'license': 'LGPL-3',
     'assets': {
         'web._assets_primary_variables': [
-            ('prepend', 'website_airproof/static/src/scss/primary_variables.scss'),
+            ('prepend', 'academy/static/src/scss/primary_variables.scss'),
         ],
     }
 }
