@@ -44,7 +44,7 @@
                                         <a role="menuitem">Explore</a>
                                     </li>
                                     <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center; padding: 1rem 0.5rem;">
-                                        <a role="menuitem">Start Learning</a>
+                                        <a href="/slides" role="menuitem">Start Learning</a>
                                     </li>
                                     <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center; padding: 1rem 0.5rem;">
                                         <a role="menuitem">Join Our Mailing List</a>
