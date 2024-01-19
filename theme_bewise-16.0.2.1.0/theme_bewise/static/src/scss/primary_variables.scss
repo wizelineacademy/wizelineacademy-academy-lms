@@ -3,7 +3,7 @@
 // Colors
 $o-color-palettes: map-merge($o-color-palettes,
    (
-      'bewise': (
+      'bewise-1': (
          'o-color-1':                    #43c2ff,
          'o-color-2':                    #202529,
          'o-color-3':                    #ffffff,
@@ -137,7 +137,7 @@ $o-website-values-palettes: (
         'header-font-size': (20 / 16) * 1rem,
         'font-size-base': 0.75rem,
 
-        'font': 'Nunito',
+        'font': 'Darker Grotesque',
         'headings-font': 'Raleway',
 
         'layout': 'full',
@@ -149,6 +149,11 @@ $o-website-values-palettes: (
         'btn-padding-y-lg': .5rem,
         'btn-padding-x-lg': 2.5rem,
         'btn-ripple': true,
+        'o-cc1-bg': 'o-color-1',
+        'o-cc2-bg': 'o-color-1',
+        'o-cc3-bg': 'o-color-1',
+        'o-cc4-bg': 'o-color-1',
+        'o-cc5-bg': 'o-color-1',
         'o-cc1-btn-primary': #43c2ff,
         'o-cc1-btn-primary-text': #ffffff,
         'o-cc1-btn-secondary': #43c2ff,
@@ -167,7 +172,8 @@ $o-website-values-palettes: (
         'o-cc4-btn-secondary-text': #ffffff,
         'o-cc5-btn-primary': #43c2ff,
         'o-cc5-btn-primary-text': #ffffff,
-        'o-cc5-btn-secondary': #43c2ff,
+        'o-cc5-btn-secondary': 'o-color-4',
+        'o-cc5-link': 'o-color-4',
         'o-cc5-btn-secondary-text': #ffffff,
         
     ),
