@@ -137,7 +137,7 @@ $o-website-values-palettes: (
         'header-font-size': (20 / 16) * 1rem,
         'font-size-base': 0.75rem,
 
-        'font': 'Darker Grotesque',
+        'font': 'Nunito',
         'headings-font': 'Raleway',
 
         'layout': 'full',
@@ -149,6 +149,8 @@ $o-website-values-palettes: (
         'btn-padding-y-lg': .5rem,
         'btn-padding-x-lg': 2.5rem,
         'btn-ripple': true,
+        'o-cc2-btn-secondary': #43c2ff,
+        'o-cc2-btn-secondary-text': #ffffff,
     ),
 );
 
