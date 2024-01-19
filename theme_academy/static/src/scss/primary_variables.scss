@@ -1,4 +1,15 @@
 // Colors
+$o-color-palettes: map-merge($o-color-palettes,
+   (
+      'academy': (
+         'o-color-1':                    #43c2ff,
+         'o-color-2':                    #202529,
+         'o-color-3':                    #ffffff,
+         'o-color-4':                    #8edaff,
+         'o-color-5':                    #d2d2d3,
+      ),
+   )
+);
 
 $o-theme-color-palettes: map-merge($o-theme-color-palettes,
     (
