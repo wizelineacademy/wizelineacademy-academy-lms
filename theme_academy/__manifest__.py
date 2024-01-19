@@ -7,7 +7,7 @@
     'author': 'Wizeline',
     'depends': ['website'],
     'data': [
-        #
+        'views/header.xml',
     ],
     # 'images': [
     #     #
