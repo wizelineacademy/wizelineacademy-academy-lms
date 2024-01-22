@@ -26,11 +26,10 @@
     'license': 'LGPL-3',
     'assets': {
         'web._assets_primary_variables': [
-            ('prepend', 'theme_academy/static/src/scss/primary_variables.scss'),
+            "theme_academy/static/src/scss/primary_variables.scss",
         ],
         'web.assets_primary_variables': [
             "theme_academy/static/src/scss/primary_variables.scss",
-            ('prepend', 'theme_academy/static/src/scss/primary_variables.scss'),
         ],
     },
 }
