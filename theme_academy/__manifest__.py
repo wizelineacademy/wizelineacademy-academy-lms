@@ -30,6 +30,7 @@
         ],
         'web.assets_primary_variables': [
             "theme_academy/static/src/scss/primary_variables.scss",
+            ('prepend', 'theme_academy/static/src/scss/primary_variables.scss'),
         ],
     },
 }
