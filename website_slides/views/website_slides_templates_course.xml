@@ -44,7 +44,7 @@
                         <t t-set="action" t-valuef="/slides/all"/>
                         <t t-set="display_description" t-valuef="true"/>
                         <t t-set="display_detail" t-valuef="false"/>
-                        <t t-set="placeholder">Search courses test</t>
+                        <t t-set="placeholder">Search courses</t>
                         <t t-set="search" t-value="search_term"/>
                     </t>
                 </div>

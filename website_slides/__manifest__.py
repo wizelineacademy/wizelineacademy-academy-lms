@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': 'eLearning_custom',
+    'name': 'eLearning',
     'version': '2.6',
     'sequence': 125,
     'summary': 'Manage and publish an eLearning platform',
@@ -26,6 +26,8 @@ Featuring
         'website_profile',
     ],
     'data': [
+        'security/website_slides_security.xml',
+        'security/ir.model.access.csv',
         'views/res_config_settings_views.xml',
         'views/res_partner_views.xml',
         'views/rating_rating_views.xml',
@@ -47,10 +49,38 @@ Featuring
         'views/website_slides_templates_utils.xml',
         'views/website_pages_views.xml',
         'views/slide_channel_add.xml',
+        'wizard/slide_channel_invite_views.xml',
+        'data/gamification_data.xml',
+        'data/mail_activity_type_data.xml',
+        'data/mail_message_subtype_data.xml',
+        'data/mail_template_data.xml',
+        'data/mail_templates.xml',
+        'data/slide_data.xml',
+        'data/website_data.xml',
+    ],
+    'demo': [
+        'data/res_users_demo.xml',
+        'data/slide_channel_tag_demo.xml',
+        'data/slide_channel_demo.xml',
+        'data/slide_slide_demo.xml',
+        'data/slide_user_demo.xml',
     ],
     'installable': True,
     'application': True,
     'assets': {
+        'mail.assets_messaging': [
+            'website_slides/static/src/models/*.js',
+        ],
+        'web.assets_backend': [
+            'website_slides/static/src/slide_category_one2many_field.js',
+            'website_slides/static/src/slide_category_list_renderer.js',
+            'website_slides/static/src/scss/slide_views.scss',
+            'website_slides/static/src/js/slide_category_one2many.js',
+            'website_slides/static/src/js/components/**/*.js',
+            'website_slides/static/src/components/**/*.xml',
+            'website_slides/static/src/js/tours/slides_tour.js',
+            'website_slides/static/src/client_actions/website_preview/website_preview.js',
+        ],
         'web.assets_frontend': [
             'website_slides/static/src/scss/website_slides.scss',
             'website_slides/static/src/scss/website_slides_profile.scss',
@@ -87,6 +117,25 @@ Featuring
         ],
         'website.assets_editor': [
             'website_slides/static/src/js/systray_items/*.js',
+        ],
+        'web.assets_tests': [
+            'website_slides/static/tests/tours/*.js',
+        ],
+        'website_slides.slide_embed_assets': [
+            ('include', 'web._assets_helpers'),
+            'web/static/src/scss/pre_variables.scss',
+            'web/static/lib/bootstrap/scss/_variables.scss',
+            ('include', 'web._assets_bootstrap'),
+            'website_slides/static/src/scss/website_slides.scss',
+            ('include', 'web.pdf_js_lib'),
+            'website_slides/static/lib/pdfslidesviewer/PDFSlidesViewer.js',
+            'website_slides/static/src/js/slides_embed.js',
+        ],
+        'web.tests_assets': [
+            'website_slides/static/tests/helpers/*.js',
+        ],
+        'web.qunit_suite_tests': [
+            'website_slides/static/tests/qunit_suite_tests/**/*.js',
         ],
     },
     'license': 'LGPL-3',
