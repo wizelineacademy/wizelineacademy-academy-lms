@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': 'eLearning',
+    'name': 'eLearning_custom',
     'version': '2.6',
     'sequence': 125,
     'summary': 'Manage and publish an eLearning platform',
