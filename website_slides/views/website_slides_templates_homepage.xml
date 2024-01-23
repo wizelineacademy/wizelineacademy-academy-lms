@@ -357,6 +357,11 @@
                 </div>
             </div>
         </div>
+        <div>
+            <a t-if="can_access" t-attf-href="/slides/slide/#{slug(slide)}#{query_string}" class="btn btn-primary" role="button">
+                Watch Now
+            </a>
+        </div>
         <div class="card-footer bg-white text-600 px-3">
             <div class="d-flex justify-content-between align-items-center">
                 <small t-if="channel.total_time" class="fw-bold" t-esc="channel.total_time" t-options="{'widget': 'duration', 'unit': 'hour', 'round': 'minute'}"/>
