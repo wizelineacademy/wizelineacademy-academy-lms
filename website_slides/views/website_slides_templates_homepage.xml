@@ -358,7 +358,7 @@
             </div>
         </div>
         <div>
-            <a t-if="can_access" t-attf-href="/slides/slide/#{slug(slide)}#{query_string}" class="btn btn-primary" role="button">
+            <a t-attf-href="/slides/#{slug(channel)}" class="btn btn-primary" role="button">
                 Watch Now
             </a>
         </div>
