@@ -28,8 +28,5 @@
         'web._assets_primary_variables': [
             "theme_academy/static/src/scss/primary_variables.scss",
         ],
-        'web.assets_primary_variables': [
-            "theme_academy/static/src/scss/primary_variables.scss",
-        ],
     },
 }
