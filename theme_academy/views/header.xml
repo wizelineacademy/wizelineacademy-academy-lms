@@ -4,7 +4,7 @@
         <xpath expr="//header" position="replace">
             <header class="header-sticky o_top_fixed_element o_header_standard" style="z-index:2;">
                <nav class="header-navigation">
-                <div style="position: fixed; width: 100%; z-index:2" class="top_menu_container bg-epsilon navbar-bg">
+                <div style="width: 100%;" class="top_menu_container bg-epsilon navbar-bg">
                     <div style="background-color: #202529; width: 100%">
                         <ul style="display: flex; list-style: none; justify-content: space-between; max-width: 75rem; margin-left: auto; margin-right: auto; margin-bottom: 0; color: white">
                             <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center">
