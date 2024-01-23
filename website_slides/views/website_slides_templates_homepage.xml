@@ -68,7 +68,7 @@
                             </div>
                         </div>
                     </t>
-                    <div t-att-class="'col-lg-9 pe-lg-5 order-lg-1' if has_side_column else 'col-lg pr-lg'">
+                    <div t-att-class="col-lg pr-lg">
                         <div class="o_wslides_home_content_section mb-3"
                             t-if="not channels_popular">
                             <p class="h2">No Course created yet.</p>
