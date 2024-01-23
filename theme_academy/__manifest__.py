@@ -28,5 +28,8 @@
         'web._assets_primary_variables': [
             "theme_academy/static/src/scss/primary_variables.scss",
         ],
+        'web.assets_frontend': [
+            "theme_academy/static/src/scss/header.scss",
+        ],
     },
 }
