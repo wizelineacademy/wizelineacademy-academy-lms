@@ -775,6 +775,11 @@
             </div>
             <span t-if="channel.is_member and channel_progress[slide.id].get('completed')" class="badge rounded-pill text-bg-success align-self-start"><i class="fa fa-check me-1"/>Completed</span>
         </div>
+        <div>
+            <a t-if="can_access" t-attf-href="/slides/slide/#{slug(slide)}#{query_string}" class="btn btn-primary" role="button">
+                Watch Now
+            </a>
+        </div>
         <div class="card-footer bg-white text-600">
             <div class="d-flex align-items-center small">
                 <span class="fw-bold me-auto" t-field="slide.completion_time" t-options='{"widget": "float_time"}'/>
