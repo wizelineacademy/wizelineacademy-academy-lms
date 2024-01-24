@@ -3,7 +3,7 @@
     <template id="custom_footer" inherit_id="website.layout" name="Custom Footer">
         <xpath expr="//footer" position="replace">
             <footer>
-              <div> Footer </div>
+              <div> Footer Test </div>
             </footer>
         </xpath>
     </template>
