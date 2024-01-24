@@ -34,8 +34,10 @@
                     </div>
                     <div style="width: 100%; background-color: #fff">
                         <div style="display: flex; justify-content: space-between; padding: 0 1rem; margin-left:auto; margin-right:auto; max-width: 80rem;">
-                            <div style="color: black">
+                            <div class="subheader-list-item" style="color: black">
+                                <a href="https://academy.wizeline.com/" title="Academy">
                                     <img class="subheader-logo" src="/theme_academy/static/src/img/academy-logo.png"/>
+                                </a>
                             </div>
                             <nav>
                                 <ul style="display: flex; list-style: none; color: black; justify-content: space-around; margin-bottom:0">
