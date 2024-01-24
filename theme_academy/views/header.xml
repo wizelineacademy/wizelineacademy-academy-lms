@@ -49,7 +49,9 @@
                                         <a role="menuitem">Start Learning</a>
                                     </li>
                                     <li class="subheader-list-item">
-                                        <a role="menuitem">Join Our Mailing List</a>
+                                        <a href="/contactus" class="btn btn-primary rounded-circle o_default_snippet_text">
+                                            Join Our Mailing List
+                                        </a>
                                     </li>
                                 </ul>
                             </nav>
