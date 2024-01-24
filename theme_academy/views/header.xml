@@ -37,16 +37,16 @@
                             <div style="color: black">Academy logo</div>
                             <nav>
                                 <ul style="display: flex; list-style: none; color: black; justify-content: space-around; margin-bottom:0">
-                                    <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center; padding: 1rem 0.5rem;">
+                                    <li class="subheader-list-item">
                                         <a role="menuitem">About</a>
                                     </li>
-                                    <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center; padding: 1rem 0.5rem;">
+                                    <li class="subheader-list-item">
                                         <a role="menuitem">Explore</a>
                                     </li>
-                                    <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center; padding: 1rem 0.5rem;">
+                                    <li class="subheader-list-item">
                                         <a role="menuitem">Start Learning</a>
                                     </li>
-                                    <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center; padding: 1rem 0.5rem;">
+                                    <li class="subheader-list-item">
                                         <a role="menuitem">Join Our Mailing List</a>
                                     </li>
                                 </ul>
