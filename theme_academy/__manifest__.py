@@ -8,6 +8,7 @@
     'depends': ['website'],
     'data': [
         'views/header.xml',
+        'views/footer.xml',
     ],
     # 'images': [
     #     #
