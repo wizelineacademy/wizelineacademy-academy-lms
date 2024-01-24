@@ -2,3 +2,33 @@
     background-color: #202529;
     width: 100%;
 }
+
+.header-logo {
+    width: 150px;
+}
+
+.header-ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    max-width: 75rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    color: ''
+}
+
+.header-list-item {
+    display: flex;
+    min-height: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.subheader-list-item {
+    display: flex;
+    min-height: 4rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0.5rem;
+}

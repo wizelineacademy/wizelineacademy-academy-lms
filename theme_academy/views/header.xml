@@ -6,28 +6,28 @@
                <nav class="header-navigation">
                 <div style="width: 100%;" class="top_menu_container bg-epsilon navbar-bg">
                     <div class="top-header">
-                        <ul style="display: flex; list-style: none; justify-content: space-between; max-width: 75rem; margin-left: auto; margin-right: auto; margin-bottom: 0; color: white">
-                            <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center">
+                        <ul class="header-ul">
+                            <li class="header-list-item">
                                 <a role="menuitem">Work</a>
                             </li>
-                            <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center">
+                            <li class="header-list-item">
                                 <a role="menuitem">Insights</a>
                             </li>
-                            <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center">
+                            <li class="header-list-item">
                                 <a role="menuitem">About</a>
                             </li>
-                            <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center">
+                            <li class="header-list-item">
                                 <a href="https://www.wizeline.com/" title="Academy">
-                                    <img class="header-logo" src="/theme_academy/static/src/img/Wordmark_digital-white.png"/>
+                                    <img class="header-logo" src="/theme_academy/static/src/img/Wordmark_digital-white.png" class="header-logo"/>
                                 </a>
                             </li>
-                            <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center">
+                            <li class="header-list-item">
                                 <a role="menuitem">Careers</a>
                             </li>
-                            <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center">
+                            <li class="header-list-item">
                                 <a role="menuitem">Academy</a>
                             </li>
-                            <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center">
+                            <li class="header-list-item">
                                 <a role="menuitem">Contact</a>
                             </li>
                         </ul>
