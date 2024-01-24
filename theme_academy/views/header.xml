@@ -18,7 +18,7 @@
                             </li>
                             <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center">
                                 <a href="https://www.wizeline.com/" title="Academy">
-                                <img class="header-logo" src="/theme_bewise/static/src/img/Wordmark_digital-white.png"/>
+                                    <img class="header-logo" src="/theme_academy/static/src/img/Wordmark_digital-white.png"/>
                                 </a>
                             </li>
                             <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center">
