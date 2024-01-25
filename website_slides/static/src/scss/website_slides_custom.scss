@@ -12,6 +12,7 @@
     margin-right: auto;
     margin-left: auto;
     position: static;
+    width: 100%;
 }
 
 .hero-text {
@@ -49,6 +50,7 @@
     z-index: -1;
     height: 100%;
     position: absolute;
+    top: 0;
 }
 
 .hero-ilustration-img {
