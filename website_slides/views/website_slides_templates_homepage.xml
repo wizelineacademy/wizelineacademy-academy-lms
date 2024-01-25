@@ -8,15 +8,17 @@
         <div id="wrap" class="wrap o_wslides_wrap">
             <div class="oe_structure oe_empty">
             <section class="s_banner overflow-hidden" style="background-color: rgba(32, 37, 41); background-size: cover; background-position: 55% 65%" data-snippet="s_banner">
-                <div class="container d-flex">
-                    <div class="text-primary hero-title">
-                        <h1 class="display-3 mb-0 hero-title">Start your learning journey today.</h1>
-                        <h2 class="mb-4 text-white">Our on-demand online learning experiences are available to you anytime, anywhere.</h2>
+                <div style="margin-left: auto; margin-right: auto;">
+                    <div class="container d-flex">
+                        <div class="text-primary hero-title">
+                            <h1 class="display-3 mb-0 hero-title">Start your learning journey today.</h1>
+                            <h2 class="mb-4 text-white">Our on-demand online learning experiences are available to you anytime, anywhere.</h2>
+                        </div>
+                        <div class="hero-separator"/>
                     </div>
-                    <div class="hero-separator"/>
-                </div>
-                <div class="hero-ilustration">
-                    <div style="background-image: url(&quot;/theme_academy/static/src/img/hero-4-1440x0-c-default.jpg&quot;);"/>
+                    <div class="hero-ilustration">
+                        <div style="background-image: url(&quot;/theme_academy/static/src/img/hero-4-1440x0-c-default.jpg&quot;);"/>
+                    </div>
                 </div>
             </section>
             </div>
