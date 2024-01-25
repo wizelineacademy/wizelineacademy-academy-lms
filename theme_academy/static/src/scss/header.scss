@@ -29,12 +29,18 @@
 
 .subheader-list-item {
     display: flex;
-    min-height: 4rem;
+    height: 60px;
+    min-height: 3rem;
     justify-content: center;
     align-items: center;
     padding: 1rem 0.5rem;
+    font-size: 15px;
 }
 
 .subheader-logo {
     width: 117px;
+}
+
+.join-btn {
+    font-size: 15px;
 }
