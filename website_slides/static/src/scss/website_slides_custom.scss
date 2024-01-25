@@ -1,5 +1,13 @@
+.hero-section {
+    background-color: rgba(32, 37, 41);
+    background-size: cover;
+    background-position: 55% 65%;
+    display: flex;
+    z-index: 0;
+}
+
 .hero-content {
-    max-width: 1320;
+    max-width: 1320px;
     margin-right: auto;
     margin-left: auto;
 }
