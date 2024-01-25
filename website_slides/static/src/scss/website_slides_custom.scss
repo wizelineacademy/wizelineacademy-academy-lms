@@ -4,12 +4,14 @@
     background-position: 55% 65%;
     display: flex;
     z-index: 0;
+    display: flex;
 }
 
 .hero-content {
     max-width: 1320px;
     margin-right: auto;
     margin-left: auto;
+    position: static;
 }
 
 .hero-text {
@@ -22,6 +24,7 @@
     position: relative;
     z-index: 10;
     clip-path: polygon(0 0,90% 0,62% 100%,0 100%);
+    padding: 0;
 }
 .hero-title-body {
     width: 478px;
@@ -45,4 +48,11 @@
     right: 0;
     z-index: -1;
     height: 100%;
+    position: absolute;
+}
+
+.hero-ilustration-img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
