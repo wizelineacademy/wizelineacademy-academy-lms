@@ -51,7 +51,7 @@
                                         <a role="menuitem">Start Learning</a>
                                     </li>
                                     <li class="subheader-list-item">
-                                        <a href="/contactus" class="btn btn-primary o_default_snippet_text" style="color: white;">
+                                        <a href="/contactus" class="btn btn-primary join-btn" style="color: white;">
                                             Join Our Mailing List
                                         </a>
                                     </li>

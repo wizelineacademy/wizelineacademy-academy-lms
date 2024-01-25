@@ -10,15 +10,13 @@
             <section class="s_banner overflow-hidden" style="background-color:(0, 0, 0, 0); background-image: url(&quot;/website_slides/static/src/img/banner_default.svg&quot;); background-size: cover; background-position: 55% 65%" data-snippet="s_banner">
                 <div class="container align-items-center d-flex mb-5 mt-lg-5 pt-lg-4 pb-lg-1">
                     <div class="text-white">
-                        <h1 class="display-3 mb-0">Reach new heights</h1>
-                        <h2 class="mb-4">Start your online course today!</h2>
-                        <h2 class="mb-4">This is a test</h2>
-                        <div class="row mt-1 mb-3">
-                            <div class="col">
-                                <p>Skill up and have an impact! Your business career starts here.<br/>Time to start a course.</p>
-                            </div>
-                        </div>
+                        <h1 class="display-3 mb-0">Start your learning journey today.</h1>
+                        <h2 class="mb-4">Our on-demand online learning experiences are available to you anytime, anywhere.</h2>
                     </div>
+                    <div class="hero-separator"/>
+                </div>
+                <div class="hero-ilustration">
+                    <img src="/website_slides/static/src/img/hero-4-1440x0-c-default.jpg"/>
                 </div>
             </section>
             </div>
