@@ -42,7 +42,7 @@
                             <nav>
                                 <ul style="display: flex; list-style: none; color: black; justify-content: space-around; margin-bottom:0">
                                     <li class="subheader-list-item">
-                                        <a role="menuitem" href="https://www.academy.wizeline.com/">About</a>
+                                        <a role="menuitem" href="https://academy.wizeline.com/">About</a>
                                     </li>
                                     <li class="subheader-list-item">
                                         <a role="menuitem">Explore</a>
