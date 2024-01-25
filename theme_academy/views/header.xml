@@ -17,7 +17,7 @@
                                 <a role="menuitem">About</a>
                             </li>
                             <li class="header-list-item">
-                                <a href="https://www.wizeline.com/" title="Academy">
+                                <a href="https://www.wizeline.com/">
                                     <img class="header-logo" src="/theme_academy/static/src/img/Wordmark_digital-white.png"/>
                                 </a>
                             </li>
@@ -28,7 +28,7 @@
                                 <a role="menuitem">Academy</a>
                             </li>
                             <li class="header-list-item">
-                                <a role="menuitem">Contact</a>
+                                <a role="menuitem" href="https://www.wizeline.com/contact">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -42,7 +42,7 @@
                             <nav>
                                 <ul style="display: flex; list-style: none; color: black; justify-content: space-around; margin-bottom:0">
                                     <li class="subheader-list-item">
-                                        <a role="menuitem">About</a>
+                                        <a role="menuitem" href="https://www.academy.wizeline.com/">About</a>
                                     </li>
                                     <li class="subheader-list-item">
                                         <a role="menuitem">Explore</a>
@@ -51,7 +51,7 @@
                                         <a role="menuitem">Start Learning</a>
                                     </li>
                                     <li class="subheader-list-item">
-                                        <a href="/contactus" class="btn btn-primary rounded-circle o_default_snippet_text">
+                                        <a href="/contactus" class="btn btn-primary o_default_snippet_text" style="color: white;">
                                             Join Our Mailing List
                                         </a>
                                     </li>
