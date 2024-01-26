@@ -31,7 +31,6 @@
         ],
         'web.assets_frontend': [
             "theme_academy/static/src/scss/header.scss",
-            "theme_academy/static/src/scss/primary_variables.scss",
             "theme_academy/static/src/scss/footer.scss"
         ],
     },
