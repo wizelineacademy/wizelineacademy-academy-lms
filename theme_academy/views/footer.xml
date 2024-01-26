@@ -2,7 +2,7 @@
 <odoo>
     <template id="custom_footer" inherit_id="website.layout" name="Custom Footer">
         <xpath expr="//footer" position="replace">
-     <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
+     <div id="footer" class="oe_structure oe_structure_solo footer-bg" t-ignore="true" t-if="not no_footer">
             <section class="s_text_block pt48 pb16" data-snippet="s_text_block" data-name="Text">
                 <div class="container">
                     <div class="row">
