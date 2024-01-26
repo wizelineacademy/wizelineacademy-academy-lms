@@ -3,17 +3,17 @@
     <template id="custom_footer" inherit_id="website.layout" name="Custom Footer">
         <xpath expr="//footer" position="replace">
      <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
-            <section class="s_text_block pt48 pb16" data-snippet="s_text_block" data-name="Text">
-                <div class="footer-container">
+            <section class="s_text_block pt48 pb16 footer-container" data-snippet="s_text_block" data-name="Text">
+                <div class="container footer-container">
                     <div class="row">
-                        <div class="col-sm-1 pb16 footer-logo">
+                        <div class="col">
                            <li>
                                 <a href="https://www.wizeline.com/">
                                     <img class="footer-logo" src="/theme_academy/static/src/img/wodmark_digital_white.png"/>
                                 </a>
                            </li>
                         </div>
-                        <div class="col-sm-1 pb16">
+                        <div class="col">
                             <h5>CAREERS</h5>
                             <ul class="list-unstyled">
                                 <li class="list-item py-1"><a href="/careers/">Life at Wizeline</a></li>
@@ -24,7 +24,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-sm-2 pb16">
+                        <div class="col">
                             <h5>OFFERINGS</h5>
                             <ul class="list-unstyled">
                                 <li class="py-1"><a href="/offerings/human-centric-experiences/">Human-Centric Experiences</a></li>
@@ -34,7 +34,7 @@
                                 <li class="py-1"><a href="/offerings/future-now/">Future Now</a></li>
                             </ul>
                         </div>
-                        <div class="col-sm-2 pb16">
+                        <div class="col">
                             <h5>SERVICES</h5>
                             <ul class="list-unstyled">
                                 <li class="py-1"><a href="/offerings/human-centric-experiences/">Design</a></li>
@@ -47,7 +47,7 @@
                                 <li class="py-1"><a href="/offerings/future-now/">Quality Assurance</a></li>
                             </ul>
                         </div>
-                        <div class="col-sm-2 pb16">
+                        <div class="col">
                             <h5>INSIGHTS</h5>
                             <ul class="list-unstyled">
                                 <li class="py-1"><a href="/resource-category/case-studies/">Case Studies</a></li>
@@ -55,7 +55,7 @@
                                 <li class="py-1"><a href="/resource-category/research/">Guides &amp; Research</a></li>
                             </ul>
                         </div>
-                        <div class="col-sm-2 pb16">
+                        <div class="col">
                             <h5>ABOUT</h5>
                             <ul class="list-unstyled">
                                 <li class="py-1"><a href="/about-us/">About Us</a></li>
@@ -67,7 +67,7 @@
                                 <li class="py-1"><a href="/wizeline-ai-manifesto/">AI Manifesto</a></li>
                             </ul>
                         </div>
-                        <div class="col-sm-2 pb16">
+                        <div class="col">
                             <h5>FOLLOW US</h5>
                             <li class="py-1"><i class="fa fa-1x fa-fw fa-twitter-square me-2"/><a href="/website/social/twitter" target="_blank">Twitter</a></li>
                             <li class="py-1"><i class="fa fa-1x fa-fw fa-facebook-square me-2"/><a href="/website/social/facebook" target="_blank">Facebook</a></li>

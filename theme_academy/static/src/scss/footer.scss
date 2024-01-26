@@ -1,8 +1,11 @@
+@import "primary_variables";
 
 .footer-container{
-  background: #262e30;
+  background: $darkBlackBg;
 }
 
 .footer-logo {
-  width: 150px;
+  width: 100px;
+  margin-top: 20px;
+  margin-right: 10px;
 }
