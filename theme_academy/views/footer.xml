@@ -34,7 +34,7 @@
                                 <li class="py-1"><a href="/offerings/future-now/">Future Now</a></li>
                             </ul>
                         </div>
-                        <div class="col">
+                        <div class="col footer-col">
                             <h5>SERVICES</h5>
                             <ul class="list-unstyled">
                                 <li class="py-1"><a href="/offerings/human-centric-experiences/">Design</a></li>
@@ -55,7 +55,7 @@
                                 <li class="py-1"><a href="/resource-category/research/">Guides &amp; Research</a></li>
                             </ul>
                         </div>
-                        <div class="col">
+                        <div class="col footer-col">
                             <h5>ABOUT</h5>
                             <ul class="list-unstyled">
                                 <li class="py-1"><a href="/about-us/">About Us</a></li>
@@ -67,7 +67,7 @@
                                 <li class="py-1"><a href="/wizeline-ai-manifesto/">AI Manifesto</a></li>
                             </ul>
                         </div>
-                        <div class="col">
+                        <div class="col footer-col">
                             <h5>FOLLOW US</h5>
                             <li class="py-1"><i class="fa fa-1x fa-fw fa-twitter-square me-2"/><a href="/website/social/twitter" target="_blank">Twitter</a></li>
                             <li class="py-1"><i class="fa fa-1x fa-fw fa-facebook-square me-2"/><a href="/website/social/facebook" target="_blank">Facebook</a></li>
