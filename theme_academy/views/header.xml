@@ -6,48 +6,54 @@
                <nav class="header-navigation">
                 <div style="width: 100%;" class="top_menu_container bg-epsilon navbar-bg">
                     <div class="top-header">
-                        <ul style="display: flex; list-style: none; justify-content: space-between; max-width: 75rem; margin-left: auto; margin-right: auto; margin-bottom: 0; color: white">
-                            <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center">
+                        <ul class="header-ul">
+                            <li class="header-list-item">
                                 <a role="menuitem">Work</a>
                             </li>
-                            <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center">
+                            <li class="header-list-item">
                                 <a role="menuitem">Insights</a>
                             </li>
-                            <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center">
+                            <li class="header-list-item">
                                 <a role="menuitem">About</a>
                             </li>
-                            <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center">
-                                <a href="https://www.wizeline.com/" title="Academy">
-                                <img class="header-logo" src="/theme_bewise/static/src/img/Wordmark_digital-white.png"/>
+                            <li class="header-list-item">
+                                <a href="https://www.wizeline.com/">
+                                    <img class="header-logo" src="/theme_academy/static/src/img/Wordmark_digital-white.png"/>
                                 </a>
                             </li>
-                            <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center">
+                            <li class="header-list-item">
                                 <a role="menuitem">Careers</a>
                             </li>
-                            <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center">
+                            <li class="header-list-item">
                                 <a role="menuitem">Academy</a>
                             </li>
-                            <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center">
-                                <a role="menuitem">Contact</a>
+                            <li class="header-list-item">
+                                <a role="menuitem" href="https://www.wizeline.com/contact">Contact</a>
                             </li>
                         </ul>
                     </div>
                     <div style="width: 100%; background-color: #fff">
                         <div style="display: flex; justify-content: space-between; padding: 0 1rem; margin-left:auto; margin-right:auto; max-width: 80rem;">
-                            <div style="color: black">Academy logo</div>
+                            <div class="subheader-list-item" style="color: black">
+                                <a href="https://academy.wizeline.com/" title="Academy">
+                                    <img class="subheader-logo" src="/theme_academy/static/src/img/academy-logo.png"/>
+                                </a>
+                            </div>
                             <nav>
                                 <ul style="display: flex; list-style: none; color: black; justify-content: space-around; margin-bottom:0">
-                                    <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center; padding: 1rem 0.5rem;">
-                                        <a role="menuitem">About</a>
+                                    <li class="subheader-list-item">
+                                        <a role="menuitem" href="https://academy.wizeline.com/">About</a>
                                     </li>
-                                    <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center; padding: 1rem 0.5rem;">
+                                    <li class="subheader-list-item">
                                         <a role="menuitem">Explore</a>
                                     </li>
-                                    <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center; padding: 1rem 0.5rem;">
+                                    <li class="subheader-list-item">
                                         <a role="menuitem">Start Learning</a>
                                     </li>
-                                    <li style="display: flex; min-height: 4rem; justify-content: center; align-items: center; padding: 1rem 0.5rem;">
-                                        <a role="menuitem">Join Our Mailing List</a>
+                                    <li class="subheader-list-item">
+                                        <a href="/contactus" class="btn btn-primary join-btn" style="color: white;">
+                                            Join Our Mailing List
+                                        </a>
                                     </li>
                                 </ul>
                             </nav>
