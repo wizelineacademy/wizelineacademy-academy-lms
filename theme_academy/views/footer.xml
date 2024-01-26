@@ -13,7 +13,7 @@
                                 </a>
                            </li>
                         </div>
-                        <div class="col">
+                        <div class="col footer-col">
                             <h5>CAREERS</h5>
                             <ul class="list-unstyled">
                                 <li class="list-item py-1"><a href="/careers/">Life at Wizeline</a></li>
@@ -24,7 +24,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col">
+                        <div class="col footer-col">
                             <h5>OFFERINGS</h5>
                             <ul class="list-unstyled">
                                 <li class="py-1"><a href="/offerings/human-centric-experiences/">Human-Centric Experiences</a></li>
@@ -47,7 +47,7 @@
                                 <li class="py-1"><a href="/offerings/future-now/">Quality Assurance</a></li>
                             </ul>
                         </div>
-                        <div class="col">
+                        <div class="col footer-col">
                             <h5>INSIGHTS</h5>
                             <ul class="list-unstyled">
                                 <li class="py-1"><a href="/resource-category/case-studies/">Case Studies</a></li>
