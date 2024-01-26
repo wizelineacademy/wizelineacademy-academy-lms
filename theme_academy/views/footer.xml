@@ -4,12 +4,12 @@
         <xpath expr="//footer" position="replace">
      <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
             <section class="s_text_block pt48 pb16" data-snippet="s_text_block" data-name="Text">
-                <div class="footer-bg">
+                <div class="footer__container">
                     <div class="row">
-                        <div class="col-sm-1 pb16">
+                        <div class="col-sm-1 pb16 footer__logo">
                            <li>
                                 <a href="https://www.wizeline.com/">
-                                    <img class="footer-logo" src="/theme_academy/static/src/img/wodmark_digital_white.png"/>
+                                    <img class="footer__logo" src="/theme_academy/static/src/img/wodmark_digital_white.png"/>
                                 </a>
                            </li>
                         </div>
