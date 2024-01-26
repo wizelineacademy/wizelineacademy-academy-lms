@@ -1,5 +1,9 @@
 @import "primary_variables";
 
-.footer-bg {
+.footer {
   background: $darkBlackBg;
+}
+
+.footer__logo {
+  width: 150px;
 }
