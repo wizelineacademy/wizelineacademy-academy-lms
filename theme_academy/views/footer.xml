@@ -70,11 +70,11 @@
                         <div class="col footer-col">
                             <h5>FOLLOW US</h5>
                             <div class="d-flex flex-row">
-                                <li class="py-1"><a href="/website/social/twitter" target="_blank"><i class="fa fa-1x fa-fw fa-twitter-square me-2"/></a></li>
-                            <li class="py-1"><a href="/website/social/facebook" target="_blank"><i class="fa fa-1x fa-fw fa-facebook-square me-2"/></a></li>
-                            <li class="py-1"><a href="/website/social/instagram" target="_blank"><i class="fa fa-1x fa-fw fa-instagram me-2"/></a></li>
-                            <li class="py-1"><a href="/website/social/linkedin" target="_blank"><i class="fa fa-1x fa-fw fa-linkedin-square me-2"/></a></li>
-                            <li class="py-1"><a href="/website/social/instagram" target="_blank">><i class="fa fa-1x fa-fw fa-youtube me-2"/></a></li>
+                                <li class="py-1"><a href="https://twitter.com/thewizeline" target="_blank"><i class="fa fa-1x fa-fw fa-twitter-square me-2"/></a></li>
+                            <li class="py-1"><a href="https://www.facebook.com/WizelineGlobal" target="_blank"><i class="fa fa-1x fa-fw fa-facebook-square me-2"/></a></li>
+                            <li class="py-1"><a href="https://www.instagram.com/wizelineglobal/" target="_blank"><i class="fa fa-1x fa-fw fa-instagram me-2"/></a></li>
+                            <li class="py-1"><a href="https://www.linkedin.com/company/wizeline" target="_blank"><i class="fa fa-1x fa-fw fa-linkedin-square me-2"/></a></li>
+                            <li class="py-1"><a href="https://www.youtube.com/channel/UCPGzT4wecuWM0BH9mPiulXg" target="_blank"><i class="fa fa-1x fa-fw fa-youtube me-2"/></a></li>
                             </div>
                         </div>
                     </div>
