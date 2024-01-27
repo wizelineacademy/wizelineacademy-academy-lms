@@ -69,11 +69,13 @@
                         </div>
                         <div class="col footer-col">
                             <h5>FOLLOW US</h5>
-                            <li class="py-1"><i class="fa fa-1x fa-fw fa-twitter-square me-2"/><a href="/website/social/twitter" target="_blank">Twitter</a></li>
-                            <li class="py-1"><i class="fa fa-1x fa-fw fa-facebook-square me-2"/><a href="/website/social/facebook" target="_blank">Facebook</a></li>
-                            <li class="py-1"><i class="fa fa-1x fa-fw fa-instagram me-2"/><a href="/website/social/instagram" target="_blank">Instagram</a></li>
-                            <li class="py-1"><i class="fa fa-1x fa-fw fa-linkedin-square me-2"/><a href="/website/social/linkedin" target="_blank">Linkedin</a></li>
-                            <li class="py-1"><i class="fa fa-1x fa-fw fa-youtube me-2"/><a href="/website/social/instagram" target="_blank">Youtube</a></li>
+                            <div class="row">
+                                <li class="py-1"><a href="/website/social/twitter" target="_blank"><i class="fa fa-1x fa-fw fa-twitter-square me-2"/></a></li>
+                            <li class="py-1"><a href="/website/social/facebook" target="_blank"><i class="fa fa-1x fa-fw fa-facebook-square me-2"/></a></li>
+                            <li class="py-1"><a href="/website/social/instagram" target="_blank"><i class="fa fa-1x fa-fw fa-instagram me-2"/></a></li>
+                            <li class="py-1"><a href="/website/social/linkedin" target="_blank"><i class="fa fa-1x fa-fw fa-linkedin-square me-2"/></a></li>
+                            <li class="py-1"><a href="/website/social/instagram" target="_blank">><i class="fa fa-1x fa-fw fa-youtube me-2"/></a></li>
+                            </div>
                         </div>
                     </div>
                 </div>
