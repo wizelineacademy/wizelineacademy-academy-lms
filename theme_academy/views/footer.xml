@@ -14,7 +14,7 @@
                            </li>
                         </div>
                         <div class="col footer-col">
-                            <h5>CAREERS</h5>
+                            <h4>CAREERS</h4>
                             <ul class="list-unstyled">
                                 <li class="list-item py-1"><a href="/careers/">Life at Wizeline</a></li>
                                 <li class="list-item py-1"><a href="/careers/open-roles/">Open Roles</a></li>
@@ -25,7 +25,7 @@
                             </ul>
                         </div>
                         <div class="col footer-col">
-                            <h5>OFFERINGS</h5>
+                            <h4>OFFERINGS</h4>
                             <ul class="list-unstyled">
                                 <li class="py-1"><a href="/offerings/human-centric-experiences/">Human-Centric Experiences</a></li>
                                 <li class="py-1"><a href="/offerings/digital-core/">Digital Core</a></li>
@@ -35,7 +35,7 @@
                             </ul>
                         </div>
                         <div class="col footer-col">
-                            <h5>SERVICES</h5>
+                            <h4>SERVICES</h4>
                             <ul class="list-unstyled">
                                 <li class="py-1"><a href="/offerings/human-centric-experiences/">Design</a></li>
                                 <li class="py-1"><a href="/offerings/digital-core/">Development</a></li>
@@ -56,7 +56,7 @@
                             </ul>
                         </div>
                         <div class="col footer-col">
-                            <h5>ABOUT</h5>
+                            <h4>ABOUT</h4>
                             <ul class="list-unstyled">
                                 <li class="py-1"><a href="/about-us/">About Us</a></li>
                                 <li class="py-1"><a href="/leadership/">Leadership</a></li>
@@ -68,7 +68,7 @@
                             </ul>
                         </div>
                         <div class="col footer-col">
-                            <h5>FOLLOW US</h5>
+                            <h4>FOLLOW US</h4>
                             <div class="col">
                                 <div class="d-flex flex-row">
                                     <li class="py-1"><a href="https://twitter.com/thewizeline" target="_blank"><i class="fa fa-1x fa-fw fa-twitter-square me-2"/></a></li>
@@ -79,9 +79,7 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="col">
-
-                                </div>
+                                <h5> Rating </h5>
                             </div>
                         </div>
                     </div>
