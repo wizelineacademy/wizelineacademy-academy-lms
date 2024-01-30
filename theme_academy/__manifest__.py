@@ -8,6 +8,7 @@
     'depends': ['website'],
     'data': [
         'views/header.xml',
+        'views/footer.xml',
     ],
     # 'images': [
     #     #
@@ -30,6 +31,7 @@
         ],
         'web.assets_frontend': [
             "theme_academy/static/src/scss/header.scss",
+            "theme_academy/static/src/scss/footer.scss"
         ],
     },
 }
