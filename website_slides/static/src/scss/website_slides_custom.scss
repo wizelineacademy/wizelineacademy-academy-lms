@@ -27,6 +27,17 @@
     clip-path: polygon(0 0,90% 0,62% 100%,0 100%);
     padding: 0;
 }
+@include media-breakpoint-up(xl) {
+    .hero-text {
+        max-width: 700px;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .hero-text {
+        max-width: 500px;
+    }
+}
 .hero-title-body {
     width: 478px;
     display: flex;
@@ -57,4 +68,8 @@
     height: 100%;
     width: 100%;
     position: absolute;
+}
+
+@media (min-width: ) {
+    
 }
