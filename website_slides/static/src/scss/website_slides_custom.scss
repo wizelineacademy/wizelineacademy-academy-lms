@@ -27,13 +27,13 @@
     clip-path: polygon(0 0,90% 0,62% 100%,0 100%);
     padding: 0;
 }
-@include media-breakpoint-up(xl) {
+@include media-breakpoint-down(xl) {
     .hero-text {
         max-width: 700px;
     }
 }
 
-@include media-breakpoint-up(md) {
+@include media-breakpoint-down(md) {
     .hero-text {
         max-width: 500px;
     }
