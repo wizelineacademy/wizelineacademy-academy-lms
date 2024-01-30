@@ -1,0 +1,87 @@
+// Colors
+$o-color-palettes: map-merge($o-color-palettes,
+   (
+      'academy': (
+         'o-color-1':                    #43c2ff,
+         'o-color-2':                    #d2d2d3,
+         'o-color-3':                    #8edaff,
+         'o-color-4':                    #ffffff,
+         'o-color-5':                    #202529,
+      
+      ),
+   )
+);
+
+$o-theme-color-palettes: map-merge($o-theme-color-palettes,
+    (
+        'academy': (
+            'o-color-1':                    #43c2ff,
+            'o-color-2':                    #d2d2d3,
+            'o-color-3':                    #8edaff,
+            'o-color-4':                    #ffffff,
+            'o-color-5':                    #202529,
+            'body': 'o-color-3',
+            'menu': 3,
+            'footer': 1,
+            'copyright': 1,
+        ),
+    )
+);
+
+$o-website-values-palettes: (
+   (
+      // Templates
+      // Colors
+      // Fonts
+      // Buttons
+      // ...
+      'color-palettes-name': 'academy',
+
+        'header-font-size': (20 / 16) * 1rem,
+        'font-size-base': 0.75rem,
+
+        'font': 'Nunito Sans',
+        'headings-font': 'Nunito Sans',
+
+        'layout': 'full',
+        'header-template': 'default',
+        'menu-box-shadow': false,
+        'footer-template': 'headline',
+
+        'btn-font-size-lg': 1.65rem,
+        'btn-padding-y-lg': .5rem,
+        'btn-padding-x-lg': 2.5rem,
+        'btn-ripple': true,
+        'o-cc1-btn-primary': #43c2ff,
+        'o-cc1-btn-primary-text': #ffffff,
+        'o-cc1-btn-primary-border':     'o-color-1',
+        'o-cc1-btn-secondary':          'o-color-2',
+        'o-cc1-btn-secondary-border':   'o-color-2',
+        'o-cc1-btn-secondary-text': #ffffff,
+        'o-cc3-btn-primary': #43c2ff,
+        'o-cc3-btn-primary-text': #ffffff,
+        'o-cc3-btn-primary-border':     'o-color-1',
+        'o-cc1-bg':                     'o-color-1',
+        'o-cc1-text':                   'o-color-2',
+        'o-cc1-headings':               'o-color-1',
+        'o-cc1-h2':                     'o-color-2',
+        'o-cc1-h3':                     'o-color-2',
+        'o-cc1-h4':                     'o-color-2',
+        'o-cc1-h5':                     'o-color-2',
+        'o-cc1-h6':                     'o-color-2',
+        'o-cc1-link':                   'o-color-1',
+   ),
+);
+
+$o-theme-font-configs: (
+    'Nunito Sans': (
+        'family': ('Nunito Sans', sans-serif),
+        'url': 'Nunito+Sans:300,300i,400,400i,600,600i,700,700i',
+    ),
+    'Montserrat': (
+        'family': ('Montserrat', sans-serif),
+        'url': 'Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i',
+    ),
+);
+
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'academy');

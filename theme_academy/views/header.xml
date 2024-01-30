@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="custom_header" inherit_id="website.layout" name="Custom Header">
+        <xpath expr="//header" position="replace">
+            <header class="header-sticky o_top_fixed_element o_header_standard" style="z-index:2;">
+               <nav class="header-navigation">
+                <div style="width: 100%;" class="top_menu_container bg-epsilon navbar-bg">
+                    <div class="top-header">
+                        <ul class="header-ul">
+                            <li class="header-list-item">
+                                <a role="menuitem">Work</a>
+                            </li>
+                            <li class="header-list-item">
+                                <a role="menuitem">Insights</a>
+                            </li>
+                            <li class="header-list-item">
+                                <a role="menuitem">About</a>
+                            </li>
+                            <li class="header-list-item">
+                                <a href="https://www.wizeline.com/">
+                                    <img class="header-logo" src="/theme_academy/static/src/img/Wordmark_digital-white.png"/>
+                                </a>
+                            </li>
+                            <li class="header-list-item">
+                                <a role="menuitem">Careers</a>
+                            </li>
+                            <li class="header-list-item">
+                                <a role="menuitem">Academy</a>
+                            </li>
+                            <li class="header-list-item">
+                                <a role="menuitem" href="https://www.wizeline.com/contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div style="width: 100%; background-color: #fff">
+                        <div style="display: flex; justify-content: space-between; padding: 0 1rem; margin-left:auto; margin-right:auto; max-width: 80rem;">
+                            <div class="subheader-list-item" style="color: black">
+                                <a href="https://academy.wizeline.com/" title="Academy">
+                                    <img class="subheader-logo" src="/theme_academy/static/src/img/academy-logo.png"/>
+                                </a>
+                            </div>
+                            <nav>
+                                <ul style="display: flex; list-style: none; color: black; justify-content: space-around; margin-bottom:0">
+                                    <li class="subheader-list-item">
+                                        <a role="menuitem" href="https://academy.wizeline.com/">About</a>
+                                    </li>
+                                    <li class="subheader-list-item">
+                                        <a role="menuitem">Explore</a>
+                                    </li>
+                                    <li class="subheader-list-item">
+                                        <a role="menuitem">Start Learning</a>
+                                    </li>
+                                    <li class="subheader-list-item">
+                                        <a href="/contactus" class="btn btn-primary join-btn" style="color: white;">
+                                            Join Our Mailing List
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+               </nav>
+            </header>
+        </xpath>
+    </template>
+</odoo>

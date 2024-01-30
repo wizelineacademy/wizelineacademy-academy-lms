@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="custom_footer" inherit_id="website.layout" name="Custom Footer">
+        <xpath expr="//footer" position="replace">
+     <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
+            <section class="s_text_block pt48 pb16 footer-container" data-snippet="s_text_block" data-name="Text">
+                <div class="container footer-container">
+                    <div class="row">
+                        <div class="col footer-col">
+                           <li>
+                                <a href="https://www.wizeline.com/">
+                                    <img class="footer-logo" src="/theme_academy/static/src/img/wodmark_digital_white.png"/>
+                                </a>
+                           </li>
+                        </div>
+                        <div class="col footer-col">
+                            <h4>CAREERS</h4>
+                            <ul class="list-unstyled">
+                                <li class="list-item py-1"><a href="/careers/">Life at Wizeline</a></li>
+                                <li class="list-item py-1"><a href="/careers/open-roles/">Open Roles</a></li>
+                                <t t-set="configurator_footer_links" t-value="[]"/>
+                                <li t-foreach="configurator_footer_links" t-as="link" class="list-item py-1">
+                                    <a t-att-href="link['href']" t-esc="link['text']"/>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col footer-col">
+                            <h4>OFFERINGS</h4>
+                            <ul class="list-unstyled">
+                                <li class="py-1"><a href="/offerings/human-centric-experiences/">Human-Centric Experiences</a></li>
+                                <li class="py-1"><a href="/offerings/digital-core/">Digital Core</a></li>
+                                <li class="py-1"><a href="/offerings/intelligence-everywhere/">Intelligence Everywhere</a></li>
+                                <li class="py-1"><a href="/offerings/adaptive-organizations/">Adaptive Organizations</a></li>
+                                <li class="py-1"><a href="/offerings/future-now/">Future Now</a></li>
+                            </ul>
+                        </div>
+                        <div class="col footer-col">
+                            <h4>SERVICES</h4>
+                            <ul class="list-unstyled">
+                                <li class="py-1"><a href="/offerings/human-centric-experiences/">Design</a></li>
+                                <li class="py-1"><a href="/offerings/digital-core/">Development</a></li>
+                                <li class="py-1"><a href="/offerings/intelligence-everywhere/">Cloud &amp; DevOps</a></li>
+                                <li class="py-1"><a href="/offerings/adaptive-organizations/">Data &amp; AI</a></li>
+                                <li class="py-1"><a href="/offerings/future-now/">Product Evolution</a></li>
+                                <li class="py-1"><a href="/offerings/future-now/">Security</a></li>
+                                <li class="py-1"><a href="/offerings/future-now/">Technical Writing</a></li>
+                                <li class="py-1"><a href="/offerings/future-now/">Quality Assurance</a></li>
+                            </ul>
+                        </div>
+                        <div class="col footer-col">
+                            <h4>INSIGHTS</h4>
+                            <ul class="list-unstyled">
+                                <li class="py-1"><a href="/resource-category/case-studies/">Case Studies</a></li>
+                                <li class="py-1"><a href="/resource-category/blog/">Blog</a></li>
+                                <li class="py-1"><a href="/resource-category/research/">Guides &amp; Research</a></li>
+                            </ul>
+                        </div>
+                        <div class="col footer-col">
+                            <h4>ABOUT</h4>
+                            <ul class="list-unstyled">
+                                <li class="py-1"><a href="/about-us/">About Us</a></li>
+                                <li class="py-1"><a href="/leadership/">Leadership</a></li>
+                                <li class="py-1"><a href="/diversity-and-inclusion/">Diversity &amp; Inclusion</a></li>
+                                <li class="py-1"><a href="/locations/">Locations</a></li>
+                                <li class="py-1"><a href="/resource-category/press/">Newsroom</a></li>
+                                <li class="py-1"><a href="/brand/">Brand</a></li>
+                                <li class="py-1"><a href="/wizeline-ai-manifesto/">AI Manifesto</a></li>
+                            </ul>
+                        </div>
+                        <div class="col footer-col">
+                            <h4>FOLLOW US</h4>
+                            <div class="col">
+                                <div class="d-flex flex-row">
+                                    <li class="py-1"><a href="https://twitter.com/thewizeline" target="_blank"><i class="fa fa-1x fa-fw fa-twitter-square"/></a></li>
+                                    <li class="py-1"><a href="https://www.facebook.com/WizelineGlobal" target="_blank"><i class="fa fa-1x fa-fw fa-facebook-square"/></a></li>
+                                    <li class="py-1"><a href="https://www.instagram.com/wizelineglobal/" target="_blank"><i class="fa fa-1x fa-fw fa-instagram"/></a></li>
+                                    <li class="py-1"><a href="https://www.linkedin.com/company/wizeline" target="_blank"><i class="fa fa-1x fa-fw fa-linkedin-square"/></a></li>
+                                    <li class="py-1"><a href="https://www.youtube.com/channel/UCPGzT4wecuWM0BH9mPiulXg" target="_blank"><i class="fa fa-1x fa-fw fa-youtube"/></a></li>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <h5> Rating</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+         <section class="footer-copyright">
+           <div class="d-flex justify-content-between">
+               <div class="p-2 mx-8">
+                   <span>© Copyright Wizeline 2024 </span>
+               </div>
+               <div class="p-2 mx-8">
+                   <a href="/terms-and-conditions/">Terms of Use</a>
+                   <a href="/privacy-policy/">Privacy Policy</a>
+                   <a href="/security-and-compliance//">Security and Compliance</a>
+               </div>
+           </div>
+         </section>
+        </div>
+        </xpath>
+    </template>
+</odoo>
