@@ -775,7 +775,7 @@
             </div>
             <span t-if="channel.is_member and channel_progress[slide.id].get('completed')" class="badge rounded-pill text-bg-success align-self-start"><i class="fa fa-check me-1"/>Completed</span>
         </div>
-        <div>
+        <div class="d-flex justify-content-center mb-4">
             <a t-if="can_access" t-attf-href="/slides/slide/#{slug(slide)}#{query_string}" class="btn btn-primary" role="button">
                 Watch Now
             </a>
