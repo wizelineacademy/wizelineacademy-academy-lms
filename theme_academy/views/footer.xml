@@ -87,10 +87,10 @@
             </section>
          <section class="footer-copyright">
            <div class="d-flex justify-content-between">
-               <div class="p-2">
+               <div class="p-2 mx-8">
                    <span>© Copyright Wizeline 2024</span>
                </div>
-               <div class="p-2 mx-2">
+               <div class="p-2 mx-8">
                    <a href="/terms-and-conditions/">Terms of Use</a>
                    <a href="/privacy-policy/">Privacy Policy</a>
                    <a href="/security-and-compliance//">Security and Compliance</a>
