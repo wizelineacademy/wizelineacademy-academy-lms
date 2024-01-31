@@ -59,19 +59,29 @@
         font-size: 0.75rem;
     }
 }
+
+@include media-breakpoint-up(md) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+}
 .hero-title-body {
     width: 478px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.hero-title {
-    font-size: 2.5rem;
-}
+// .hero-title {
+//     font-size: 2.5rem;
+// }
 
-.hero-subtitle {
-    font-size: 1.1rem;
-}
+// .hero-subtitle {
+//     font-size: 1.1rem;
+// }
 
 .hero-separator {
     width: 320px;
