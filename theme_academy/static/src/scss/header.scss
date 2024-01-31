@@ -46,3 +46,12 @@
     height: 32px;
     width: 217px;
 }
+
+@include media-breakpoint-down(md) {
+    .header-list-item {
+        display: none;
+    }
+    .logo-header {
+        display: flex !important
+    }
+}

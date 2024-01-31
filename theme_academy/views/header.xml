@@ -16,7 +16,7 @@
                             <li class="header-list-item">
                                 <a role="menuitem">About</a>
                             </li>
-                            <li class="header-list-item">
+                            <li class="header-list-item logo-header">
                                 <a href="https://www.wizeline.com/">
                                     <img class="header-logo" src="/theme_academy/static/src/img/wordmark_digital_white.png"/>
                                 </a>
@@ -29,6 +29,11 @@
                             </li>
                             <li class="header-list-item">
                                 <a role="menuitem" href="https://www.wizeline.com/contact">Contact</a>
+                            </li>
+                            <li class="mobile-menu">
+                                <button type="button" data-bs-toggle="collapse" data-bs-target="#top_menu_collapse" class="navbar-toggler " data-oe-model="ir.ui.view" data-oe-id="976" data-oe-field="arch" data-oe-xpath="/t[1]/button[1]">
+                                    <span class="navbar-toggler-icon o_not_editable"></span>
+                                </button>
                             </li>
                         </ul>
                     </div>
