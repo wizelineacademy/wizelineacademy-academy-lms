@@ -61,29 +61,19 @@
                                         </a>
                                     </li>
                                     <li class="subheader-list-item">
-                                        <div id="top_menu_collapse" class="collapse navbar-collapse order-last order-lg-0">
-                                            <t t-call="website.navbar_nav">
-                                                <t t-set="_nav_class" t-valuef="flex-grow-1"/>
-                                                <!-- Menu -->
-                                                <t t-foreach="website.menu_id.child_id" t-as="submenu">
-                                                    <t t-call="website.submenu">
-                                                        <t t-set="item_class" t-valuef="nav-item"/>
-                                                        <t t-set="link_class" t-valuef="nav-link"/>
-                                                    </t>
-                                                </t>
-                                                <!-- Sign In -->
-                                                <t t-call="portal.placeholder_user_sign_in">
-                                                    <t t-set="_item_class" t-valuef="nav-item ms-lg-auto"/>
-                                                    <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
-                                                </t>
-                                                <!-- User Dropdown -->
-                                                <t t-call="portal.user_dropdown">
-                                                    <t t-set="_user_name" t-value="true"/>
-                                                    <t t-set="_item_class" t-valuef="nav-item dropdown ms-lg-auto"/>
-                                                    <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
-                                                </t>
+                                        <t t-call="website.navbar_nav">
+                                            <!-- Sign In -->
+                                            <t t-call="portal.placeholder_user_sign_in">
+                                                <t t-set="_item_class" t-valuef="nav-item ms-lg-auto"/>
+                                                <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
                                             </t>
-                                        </div>
+                                            <!-- User Dropdown -->
+                                            <t t-call="portal.user_dropdown">
+                                                <t t-set="_user_name" t-value="true"/>
+                                                <t t-set="_item_class" t-valuef="nav-item dropdown ms-lg-auto"/>
+                                                <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                            </t>
+                                        </t>
                                     </li>
                                 </ul>
                             </nav>
