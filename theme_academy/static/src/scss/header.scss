@@ -51,7 +51,13 @@
     .header-list-item {
         display: none;
     }
+    .subheader-list-item {
+        display: none;
+    }
     .logo-header {
+        display: flex !important
+    }
+    .mobile-subheader {
         display: flex !important
     }
 }

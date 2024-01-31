@@ -39,7 +39,7 @@
                     </div>
                     <div style="width: 100%; background-color: #fff">
                         <div style="display: flex; justify-content: space-between; padding: 0 1rem; margin-left:auto; margin-right:auto; max-width: 80rem;">
-                            <div class="subheader-list-item" style="color: black">
+                            <div class="subheader-list-item mobile-subheader">
                                 <a href="https://academy.wizeline.com/" title="Academy">
                                     <img class="subheader-logo" src="/theme_academy/static/src/img/academy-logo.png"/>
                                 </a>
@@ -55,7 +55,7 @@
                                     <li class="subheader-list-item">
                                         <a role="menuitem">Start Learning</a>
                                     </li>
-                                    <li class="subheader-list-item">
+                                    <li class="subheader-list-item mobile-subheader">
                                         <a href="/contactus" class="btn btn-primary join-btn" style="color: white;">
                                             Join Our Mailing List
                                         </a>
