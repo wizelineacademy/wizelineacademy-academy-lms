@@ -79,7 +79,10 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <h5>  </h5>
+                                <div class="d-flex" t-if="record.rating_count.raw_value">
+                                    <a name="action_view_ratings" type="object" class="me-auto"><field name="rating_count"/> Reviews</a>
+                                    <span><field name="rating_avg_stars"/> / 5</span>
+                                </div>
                             </div>
                         </div>
                     </div>
