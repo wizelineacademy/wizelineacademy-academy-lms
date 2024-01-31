@@ -30,24 +30,33 @@
 @include media-breakpoint-down(xl) {
     .hero-text {
         max-width: 700px;
+        clip-path: polygon(0 0,93% 0,65% 100%,0 100%);
     }
     .hero-title-body {
         width: unset;
-        margin-bottom: 12px;
-        margin-left: 5rem;
-        margin-top: 5rem;
+        margin-bottom: 6rem;
+        margin-left: 3rem;
+        margin-top: 3rem;
     }
 }
 
 @include media-breakpoint-down(md) {
     .hero-text {
         max-width: 500px;
+        height: unset;
     }
     .hero-title-body {
         width: unset;
-        margin-bottom: 10px;
-        margin-left: 5rem;
-        margin-top: 5rem;
+        margin-bottom: 6rem;
+        margin-left: 3rem;
+        margin-top: 3rem;
+    }
+    .hero-title {
+        font-size: 1.55rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.75rem;
     }
 }
 .hero-title-body {
@@ -57,7 +66,11 @@
     justify-content: center;
 }
 .hero-title {
-    font-size: 40px;
+    font-size: 2.5rem;
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
 }
 
 .hero-separator {
@@ -79,8 +92,4 @@
     height: 100%;
     width: 100%;
     position: absolute;
-}
-
-@media (min-width: ) {
-    
 }
