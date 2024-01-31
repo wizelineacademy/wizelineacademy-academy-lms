@@ -324,8 +324,8 @@
                 </div>
             </div>
         </div>
-        <div>
-            <a t-attf-href="/slides/#{slug(channel)}" class="btn btn-primary" role="button">
+        <div class="d-flex justify-content-center mb-4">
+            <a t-attf-href="/slides/#{slug(channel)}" class="btn btn-primary active" role="button">
                 Watch Now
             </a>
         </div>
