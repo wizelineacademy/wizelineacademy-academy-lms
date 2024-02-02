@@ -17,7 +17,7 @@
                                 <a role="menuitem">About</a>
                             </li>
                             <li class="header-list-item logo-header">
-                                <a href="https://www.wizeline.com/">
+                                <a class="header-link" href="https://www.wizeline.com/">
                                     <img class="header-logo" src="/theme_academy/static/src/img/wordmark_digital_white.png"/>
                                 </a>
                             </li>
@@ -25,10 +25,10 @@
                                 <a role="menuitem">Careers</a>
                             </li>
                             <li class="header-list-item">
-                                <a href="https://academy.wizeline.com/">Academy</a>
+                                <a class="header-link" href="https://academy.wizeline.com/">Academy</a>
                             </li>
                             <li class="header-list-item">
-                                <a role="menuitem" href="https://www.wizeline.com/contact">Contact</a>
+                                <a class="header-link" role="menuitem" href="https://www.wizeline.com/contact">Contact</a>
                             </li>
                             <li class="mobile-menu">
                                 <button type="button" data-bs-toggle="collapse" data-bs-target="#top_menu_collapse" class="navbar-toggler " data-oe-model="ir.ui.view" data-oe-id="976" data-oe-field="arch" data-oe-xpath="/t[1]/button[1]">
@@ -47,7 +47,7 @@
                             <nav>
                                 <ul style="display: flex; list-style: none; color: black; justify-content: space-around; margin-bottom:0">
                                     <li class="subheader-list-item">
-                                        <a role="menuitem" href="https://academy.wizeline.com/">About</a>
+                                        <a class="subheader-link" role="menuitem" href="https://academy.wizeline.com/">About</a>
                                     </li>
                                     <li class="subheader-list-item">
                                         <a role="menuitem">Explore</a>
@@ -65,13 +65,13 @@
                                             <!-- Sign In -->
                                             <t t-call="portal.placeholder_user_sign_in">
                                                 <t t-set="_item_class" t-valuef="nav-item ms-lg-auto"/>
-                                                <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                                <t t-set="_link_class" t-valuef="subheader-link fw-bold"/>
                                             </t>
                                             <!-- User Dropdown -->
                                             <t t-call="portal.user_dropdown">
                                                 <t t-set="_user_name" t-value="true"/>
                                                 <t t-set="_item_class" t-valuef="nav-item dropdown ms-lg-auto"/>
-                                                <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                                <t t-set="_link_class" t-valuef="subheader-link fw-bold"/>
                                             </t>
                                         </t>
                                     </li>

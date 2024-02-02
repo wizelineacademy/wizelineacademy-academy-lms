@@ -27,6 +27,10 @@
     color: rgba(255, 255, 255, 0.87);
 }
 
+.header-link {
+    color: rgba(255, 255, 255, 0.87);
+}
+
 .subheader-list-item {
     display: flex;
     height: 60px;
@@ -35,6 +39,10 @@
     align-items: center;
     padding: 1rem 0.5rem;
     font-size: 15px;
+}
+
+.subheader-link {
+    color: black;
 }
 
 .subheader-logo {
