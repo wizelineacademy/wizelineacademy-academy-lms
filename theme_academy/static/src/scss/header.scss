@@ -25,10 +25,13 @@
     align-items: center;
     font-size: 16px;
     color: rgba(255, 255, 255, 0.87);
-}
-
-.header-link {
-    color: rgba(255, 255, 255, 0.87);
+    a {
+        color: inherit;
+    }
+    a:hover {
+        opacity:0.8;
+        text-decoration: none;
+    }
 }
 
 .subheader-list-item {
@@ -39,10 +42,13 @@
     align-items: center;
     padding: 1rem 0.5rem;
     font-size: 15px;
-}
-
-.subheader-link {
-    color: black;
+    a {
+        color: inherit;
+    }
+    a:hover {
+        color: 'o-color-1';
+        text-decoration: none;
+    }
 }
 
 .subheader-logo {
