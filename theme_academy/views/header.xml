@@ -51,7 +51,7 @@
                                     </li>
                                     <li class="subheader-list-item">
                                         <a role="menuitem" data-bs-toggle="dropdown" t-attf-class="dropdown-toggle #{_link_class}">Explore</a>
-                                        <div t-attf-class="dropdown-menu js_usermenu #{_dropdown_menu_class}" role="menu">
+                                        <div t-attf-class="dropdown-menu js_usermenu border-0 mt-1 #{_dropdown_menu_class}" role="menu">
                                             <a href="https://academy.wizeline.com/ai-academy/" role="menuitem" class="dropdown-item ps-3">
                                                 AI Academy
                                             </a>
@@ -68,7 +68,7 @@
                                     </li>
                                     <li class="subheader-list-item">
                                         <a role="button" data-bs-toggle="dropdown" t-attf-class="dropdown-toggle #{_link_class}">Start Learning</a>
-                                        <div t-attf-class="dropdown-menu js_usermenu #{_dropdown_menu_class}" role="menu">
+                                        <div t-attf-class="dropdown-menu border-0 mt-1 js_usermenu #{_dropdown_menu_class}" role="menu">
                                             <a href="https://academy.wizeline.com/courses/" role="menuitem" class="dropdown-item ps-3">
                                                 Upcoming Experiences
                                             </a>
