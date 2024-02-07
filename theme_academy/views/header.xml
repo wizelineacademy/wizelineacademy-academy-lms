@@ -66,16 +66,16 @@
                                             </a>
                                         </div>
                                     </li>
-                                    <li class="subheader-list-item">
-                                        <a role="button">Start Learning</a>
-                                        <!-- <div t-attf-class="dropdown-menu border-0 mt-1 js_usermenu #{_dropdown_menu_class}" role="menu">
+                                    <li class="subheader-list-item dropdown">
+                                        <a role="button" data-bs-toggle="dropdown" class="dropdown-toggle">Start Learning</a>
+                                        <div class="dropdown-menu border-0 mt-1" role="menu">
                                             <a href="https://academy.wizeline.com/courses/" role="menuitem" class="dropdown-item ps-3">
                                                 Upcoming Experiences
                                             </a>
                                             <a t-attf-href="/slides" role="menuitem" id="menuitem" class="dropdown-item ps-3">
                                                 On-Demand Experiences
                                             </a>
-                                        </div> -->
+                                        </div>
                                     </li>
                                     <li class="subheader-list-item mobile-subheader">
                                         <a href="/contactus" class="btn btn-primary join-btn" style="color: white;">
