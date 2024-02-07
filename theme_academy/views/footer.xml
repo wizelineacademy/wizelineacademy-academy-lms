@@ -70,14 +70,12 @@
                         <div class="col footer-col">
                             <h4>FOLLOW US</h4>
                             <div class="col">
-                                <div class="d-flex flex-row">
-                                    <ul class="list-unstyled">
+                                <div class="d-flex flex-row social">
                                     <li class="py-1"><a href="https://twitter.com/thewizeline" target="_blank"><i class="fa fa-1x fa-fw fa-twitter-square"/></a></li>
                                     <li class="py-1"><a href="https://www.facebook.com/WizelineGlobal" target="_blank"><i class="fa fa-1x fa-fw fa-facebook-square"/></a></li>
                                     <li class="py-1"><a href="https://www.instagram.com/wizelineglobal/" target="_blank"><i class="fa fa-1x fa-fw fa-instagram"/></a></li>
                                     <li class="py-1"><a href="https://www.linkedin.com/company/wizeline" target="_blank"><i class="fa fa-1x fa-fw fa-linkedin-square"/></a></li>
                                     <li class="py-1"><a href="https://www.youtube.com/channel/UCPGzT4wecuWM0BH9mPiulXg" target="_blank"><i class="fa fa-1x fa-fw fa-youtube"/></a></li>
-                                    </ul>
                                 </div>
                             </div>
                             <div class="col">
@@ -93,8 +91,8 @@
                    <span>© Copyright Wizeline 2024 </span>
                </div>
                <div class="p-2 mx-8">
-                   <a href="/terms-and-conditions/">Terms of Use</a>
                    <a href="/privacy-policy/">Privacy Policy</a>
+                   <a href="/terms-and-conditions/">Terms &amp; Conditions</a>
                    <a href="/security-and-compliance//">Security and Compliance</a>
                </div>
            </div>
