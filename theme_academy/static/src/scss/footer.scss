@@ -9,9 +9,9 @@
 }
 
 .footer-logo {
-  width: 10rem;
+  width: 12rem;
   height: 3rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   margin-right: 0.625rem;
 }
 
@@ -23,6 +23,10 @@
   i {
     color: #fff;
     font-size: 1.4rem;
+  }
+
+  li {
+    margin-top: 1rem;
   }
 }
 
