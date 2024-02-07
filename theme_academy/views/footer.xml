@@ -86,8 +86,8 @@
                     </div>
                 </div>
             </section>
-         <section class="footer-copyright">
-           <div class="d-flex justify-content-between my-auto">
+         <section class="footer-copyright my-auto">
+           <div class="d-flex justify-content-between">
                <div class="p-2 mx-8 my-auto">
                    <span>© Copyright Wizeline 2024 </span>
                </div>
