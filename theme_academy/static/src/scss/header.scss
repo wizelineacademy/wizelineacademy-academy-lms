@@ -25,6 +25,13 @@
     align-items: center;
     font-size: 16px;
     color: rgba(255, 255, 255, 0.87);
+    a {
+        color: inherit;
+    }
+    a:hover {
+        opacity:0.8;
+        text-decoration: none;
+    }
 }
 
 .subheader-list-item {
@@ -35,6 +42,13 @@
     align-items: center;
     padding: 1rem 0.5rem;
     font-size: 15px;
+    a {
+        color: inherit;
+    }
+    a:hover {
+        color: #43c2ff;
+        text-decoration: none;
+    }
 }
 
 .subheader-logo {
@@ -45,4 +59,19 @@
     font-size: 15px;
     height: 32px;
     width: 217px;
+}
+
+@include media-breakpoint-down(md) {
+    .header-list-item {
+        display: none;
+    }
+    .subheader-list-item {
+        display: none;
+    }
+    .logo-header {
+        display: flex !important
+    }
+    .mobile-subheader {
+        display: flex !important
+    }
 }

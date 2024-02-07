@@ -11,8 +11,8 @@
                     <div style="margin-left: auto; margin-right: auto;" class="hero-content">
                         <div class="container d-flex hero-text">
                             <div class="text-primary hero-title-body">
-                                <h1 class="display-3 mb-0 hero-title">Start your learning journey today.</h1>
-                                <h2 class="mb-4 text-white">Our on-demand online learning experiences are available to you anytime, anywhere.</h2>
+                                <h1 class="mb-1 hero-title">Start your learning journey today.</h1>
+                                <h2 class="mb-4 text-white hero-subtitle">Our on-demand online learning experiences are available to you anytime, anywhere.</h2>
                             </div>
                             <div class="hero-separator"/>
                         </div>
@@ -324,8 +324,8 @@
                 </div>
             </div>
         </div>
-        <div>
-            <a t-attf-href="/slides/#{slug(channel)}" class="btn btn-primary" role="button">
+        <div class="d-flex justify-content-center mb-4">
+            <a t-attf-href="/slides/#{slug(channel)}" class="btn btn-primary active" role="button">
                 Watch Now
             </a>
         </div>
