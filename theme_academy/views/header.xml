@@ -50,8 +50,8 @@
                                         <a class="subheader-link" role="menuitem" href="https://academy.wizeline.com/">About</a>
                                     </li>
                                     <li class="subheader-list-item">
-                                        <a role="menuitem" data-bs-toggle="dropdown" t-attf-class="dropdown-toggle #{_link_class}">Explore</a>
-                                        <div t-attf-class="dropdown-menu js_usermenu border-0 mt-1" role="menu">
+                                        <a role="button" data-bs-toggle="dropdown" class="dropdown-toggle">Explore</a>
+                                        <div class="dropdown-menu border-0 mt-1" role="menu">
                                             <a href="https://academy.wizeline.com/ai-academy/" role="menuitem" class="dropdown-item ps-3">
                                                 AI Academy
                                             </a>
