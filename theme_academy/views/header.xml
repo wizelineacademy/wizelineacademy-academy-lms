@@ -39,7 +39,7 @@
                                                 Development
                                             </a>
                                             <a t-attf-href="https://www.wizeline.com/services/cloud-and-devops" role="menuitem" id="menuitem" class="dropdown-item ps-3">
-                                                Cloud &amp DevOps
+                                                Cloud and DevOps
                                             </a>
                                             <a t-attf-href="https://academy.wizeline.com/our-webinars/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
                                                 Our Webinars
