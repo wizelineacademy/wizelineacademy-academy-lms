@@ -10,51 +10,53 @@
                             <li class="header-list-item dropdown">
                                 <!-- <a role="menuitem">Work</a> -->
                                 <a role="button" data-bs-toggle="dropdown" class="dropdown-toggle">Work</a>
-                                <div class="dropdown-menu border-0 mt-1 w-100" role="menu">
-                                    <div>
-                                        <p>Offerings</p>
-                                        <a href="https://academy.wizeline.com/ai-academy/" role="menuitem" class="dropdown-item ps-3">
-                                        AI Academy
-                                        </a>
-                                        <a t-attf-href="https://academy.wizeline.com/women-in-tech/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
-                                            Woman in Tech
-                                        </a>
-                                        <a t-attf-href="https://academy.wizeline.com/bootcamps/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
-                                            Our Bootcamps
-                                        </a>
-                                        <a t-attf-href="https://academy.wizeline.com/our-webinars/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
-                                            Our Webinars
-                                        </a>
-                                    </div>
-                                    <div>
-                                        <p>Services</p>
-                                        <a href="https://academy.wizeline.com/ai-academy/" role="menuitem" class="dropdown-item ps-3">
-                                        AI Academy
-                                        </a>
-                                        <a t-attf-href="https://academy.wizeline.com/women-in-tech/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
-                                            Woman in Tech
-                                        </a>
-                                        <a t-attf-href="https://academy.wizeline.com/bootcamps/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
-                                            Our Bootcamps
-                                        </a>
-                                        <a t-attf-href="https://academy.wizeline.com/our-webinars/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
-                                            Our Webinars
-                                        </a>
-                                    </div>
-                                    <div>
-                                        <p>Industries</p>
-                                        <a href="https://academy.wizeline.com/ai-academy/" role="menuitem" class="dropdown-item ps-3">
-                                        AI Academy
-                                        </a>
-                                        <a t-attf-href="https://academy.wizeline.com/women-in-tech/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
-                                            Woman in Tech
-                                        </a>
-                                        <a t-attf-href="https://academy.wizeline.com/bootcamps/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
-                                            Our Bootcamps
-                                        </a>
-                                        <a t-attf-href="https://academy.wizeline.com/our-webinars/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
-                                            Our Webinars
-                                        </a>
+                                <div class="dropdown-menu border-0 mt-1 w-100 menu-modal-container" role="menu">
+                                    <div class="menu-modal-content-wrapper">
+                                        <div>
+                                            <p>Offerings</p>
+                                            <a href="https://academy.wizeline.com/ai-academy/" role="menuitem" class="dropdown-item ps-3">
+                                            AI Academy
+                                            </a>
+                                            <a t-attf-href="https://academy.wizeline.com/women-in-tech/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                                Woman in Tech
+                                            </a>
+                                            <a t-attf-href="https://academy.wizeline.com/bootcamps/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                                Our Bootcamps
+                                            </a>
+                                            <a t-attf-href="https://academy.wizeline.com/our-webinars/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                                Our Webinars
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <p>Services</p>
+                                            <a href="https://academy.wizeline.com/ai-academy/" role="menuitem" class="dropdown-item ps-3">
+                                            AI Academy
+                                            </a>
+                                            <a t-attf-href="https://academy.wizeline.com/women-in-tech/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                                Woman in Tech
+                                            </a>
+                                            <a t-attf-href="https://academy.wizeline.com/bootcamps/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                                Our Bootcamps
+                                            </a>
+                                            <a t-attf-href="https://academy.wizeline.com/our-webinars/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                                Our Webinars
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <p>Industries</p>
+                                            <a href="https://academy.wizeline.com/ai-academy/" role="menuitem" class="dropdown-item ps-3">
+                                            AI Academy
+                                            </a>
+                                            <a t-attf-href="https://academy.wizeline.com/women-in-tech/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                                Woman in Tech
+                                            </a>
+                                            <a t-attf-href="https://academy.wizeline.com/bootcamps/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                                Our Bootcamps
+                                            </a>
+                                            <a t-attf-href="https://academy.wizeline.com/our-webinars/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                                Our Webinars
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </li>
