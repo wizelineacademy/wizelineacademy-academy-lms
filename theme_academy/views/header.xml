@@ -8,9 +8,8 @@
                     <div class="top-header">
                         <ul class="header-ul">
                             <li class="header-list-item dropdown menu-btn">
-                                <!-- <a role="menuitem">Work</a> -->
                                 <a role="button" data-bs-toggle="dropdown" class="dropdown-toggle">Work</a>
-                                <div class="dropdown-menu border-0 mt-1 w-100 menu-modal-container" role="menu">
+                                <div class="dropdown-menu border-0 w-100 menu-modal-container" role="menu">
                                     <div class="menu-modal-content-wrapper">
                                         <div class="menu-column">
                                             <p class="menu-subtitle">Offerings</p>
@@ -41,41 +40,125 @@
                                             <a t-attf-href="https://www.wizeline.com/services/cloud-and-devops" role="menuitem" id="menuitem" class="dropdown-item ps-3">
                                                 Cloud &amp; DevOps
                                             </a>
-                                            <a t-attf-href="https://academy.wizeline.com/our-webinars/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
-                                                Our Webinars
+                                            <a t-attf-href="https://www.wizeline.com/services/data-and-ai" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                                Data &amp; AI
+                                            </a>
+                                            <a t-attf-href="https://www.wizeline.com/services/product-evolution" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                                Product Evolution
+                                            </a>
+                                            <a t-attf-href="https://www.wizeline.com/services/security" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                                Security
+                                            </a>
+                                            <a t-attf-href="https://www.wizeline.com/services/technical-writing/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                                Technical Writing
+                                            </a>
+                                            <a t-attf-href="https://www.wizeline.com/services/quality-assurance" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                                Quality Assurance
                                             </a>
                                         </div>
-                                        <div>
-                                            <p>Industries</p>
-                                            <a href="https://academy.wizeline.com/ai-academy/" role="menuitem" class="dropdown-item ps-3">
-                                            AI Academy
+                                        <div class="menu-column">
+                                            <p class="menu-subtitle">Industries</p>
+                                            <a href="https://www.wizeline.com/industries/media-and-entertainment" role="menuitem" class="dropdown-item ps-3">
+                                                Media &amp; Entertainment 
                                             </a>
-                                            <a t-attf-href="https://academy.wizeline.com/women-in-tech/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
-                                                Woman in Tech
+                                            <a t-attf-href="https://www.wizeline.com/industries/retail-and-consumer" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                                Retal &amp; Consumer
                                             </a>
-                                            <a t-attf-href="https://academy.wizeline.com/bootcamps/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
-                                                Our Bootcamps
+                                            <a t-attf-href="https://www.wizeline.com/industries/technology" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                                Technology
                                             </a>
-                                            <a t-attf-href="https://academy.wizeline.com/our-webinars/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
-                                                Our Webinars
+                                            <a t-attf-href="https://www.wizeline.com/industries/financial-services" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                                Financial Services
+                                            </a>
+                                            <a t-attf-href="https://www.wizeline.com/industries/emerging-industries" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                                Emerging
+                                            </a>
+                                            <a t-attf-href="https://www.wizeline.com/industries/healthcare-life-sciences/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                                Healthcare &amp; Life Sciences
+                                            </a>
+                                        </div>
+                                        <div class="menu-column">
+                                            <p class="menu-subtitle">Why Wizeline</p>
+                                            <a href="https://www.wizeline.com/resource-category/case-studies/" role="menuitem" class="dropdown-item ps-3">
+                                                Case Studies 
+                                            </a>
+                                            <a t-attf-href="https://www.wizeline.com/methodologies/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                                Approach
+                                            </a>
+                                            <a t-attf-href="https://www.wizeline.com/partners" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                                Partners
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                             </li>
-                            <li class="header-list-item">
-                                <a role="menuitem">Insights</a>
+                            <li class="header-list-item dropdown menu-btn">
+                                <a role="button" data-bs-toggle="dropdown" class="dropdown-toggle">Insights</a>
+                                <div class="dropdown-menu border-0 w-100 menu-modal-container" role="menu">
+                                    <div class="menu-modal-content-wrapper">
+                                        <div class="menu-column">
+                                            <p class="menu-subtitle">Insights</p>
+                                            <a href="https://blog.wizeline.com/" role="menuitem" class="dropdown-item ps-3">
+                                                Blog
+                                            </a>
+                                            <a t-attf-href="https://www.wizeline.com/resource-category/case-studies/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                                Case Studies
+                                            </a>
+                                            <a t-attf-href="https://www.wizeline.com/resource-category/research/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                                Guides &amp; Research
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
-                            <li class="header-list-item">
-                                <a role="menuitem">About</a>
+                            <li class="header-list-item dropdown menu-btn">
+                                <a role="button" data-bs-toggle="dropdown" class="dropdown-toggle">About</a>
+                                <div class="dropdown-menu border-0 w-100 menu-modal-container" role="menu">
+                                    <div class="menu-modal-content-wrapper">
+                                        <div class="menu-column">
+                                            <p class="menu-subtitle">Insights</p>
+                                            <a href="https://www.wizeline.com/leadership/" role="menuitem" class="dropdown-item ps-3">
+                                                Leadership
+                                            </a>
+                                            <a t-attf-href="https://www.wizeline.com/about-us/diversity-inclusion/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                                Diversity &amp; Inclusion
+                                            </a>
+                                            <a t-attf-href="https://www.wizeline.com/community/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                                Community
+                                            </a>
+                                            <a t-attf-href="https://www.wizeline.com/locations/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                                Locations
+                                            </a>
+                                            <a t-attf-href="https://www.wizeline.com/resource-category/press/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                                Newsroom
+                                            </a>
+                                            <a t-attf-href="https://www.wizeline.com/brand/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                                Brand
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
                             <li class="header-list-item logo-header">
                                 <a class="header-link" href="https://www.wizeline.com/">
                                     <img class="header-logo" src="/theme_academy/static/src/img/wordmark_digital_white.png"/>
                                 </a>
                             </li>
-                            <li class="header-list-item">
-                                <a role="menuitem">Careers</a>
+                            <li class="header-list-item dropdown menu-btn">
+                                <a role="button" data-bs-toggle="dropdown" class="dropdown-toggle">Careers</a>
+                                <div class="dropdown-menu border-0 w-100 menu-modal-container" role="menu">
+                                    <div class="menu-modal-content-wrapper">
+                                        <div class="menu-column">
+                                            <p class="menu-subtitle">Careers</p>
+                                            <a href="https://www.wizeline.com/careers" role="menuitem" class="dropdown-item ps-3">
+                                                Life at Wizeline
+                                            </a>
+                                            <a t-attf-href="hhttps://www.wizeline.com/careers/open-roles" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                                Open Roles
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
                             <li class="header-list-item">
                                 <a class="header-link" href="https://academy.wizeline.com/">Academy</a>
