@@ -61,6 +61,9 @@
     width: 217px;
 }
 
+.menu-btn {
+    position: unset !important;
+}
 .menu-modal-container {
     width: 100%;
     max-height: 70rem;
@@ -69,6 +72,24 @@
 .menu-modal-content-wrapper {
     width: 100%;
     display: flex;
+    justify-content: space-around;
+    border-radius: 0;
+    margin-top: 5.8rem;
+    margin-bottom: 4rem;
+    max-width: 120rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-column {
+    padding-bottom: 2rem;
+    padding-left: 2.3rem;
+    padding-right: 0.6rem;
+    padding-top: 1.7rem;
+}
+.menu-subtitle {
+    color: #f2575d;
+    font-size: 1rem;
 }
 
 @include media-breakpoint-down(md) {
