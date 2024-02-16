@@ -2,7 +2,7 @@
 <odoo>
     <template id="custom_header" inherit_id="website.layout" name="Custom Header">
         <xpath expr="//header" position="replace">
-            <header class="header-sticky o_top_fixed_element o_header_standard" style="z-index:2;">
+            <header class="header-sticky o_top_fixed_element o_header_standard" style="z-index:3;">
                <nav class="header-navigation">
                 <div style="width: 100%;" class="top_menu_container bg-epsilon navbar-bg">
                     <div class="top-header">
