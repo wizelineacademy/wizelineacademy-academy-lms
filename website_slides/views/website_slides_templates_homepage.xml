@@ -303,7 +303,7 @@
             <div t-if="channel.image_1920" t-field="channel.image_1920" t-options="{'widget': 'image', 'preview_image': 'image_512'}" class="o_wslides_background_image h-100 ">
                 <t t-if="channel.partner_has_new_content" t-call="website_slides.course_card_information"/>
             </div>
-            <div t-else="" class="o_wslides_background_image">
+            <div t-else="" class="o_wslides_background_image h-100">
                 <img t-att-src="channel.website_background_image_url" class=" img img-fluid"/>
             </div>
         </a>
