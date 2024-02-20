@@ -22,3 +22,13 @@
   flex-direction: row;
   gap: 5rem
 }
+
+.card-custom {
+  width: 100%;
+  @include media-breakpoint-up(md) {
+    width: 80%;
+  }
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+}
