@@ -96,3 +96,12 @@
     width: 100%;
     position: absolute;
 }
+
+.cardCustom {
+    @include media-breakpoint-up(md) {
+        width: 80%;
+    }
+    @include media-breakpoint-down(md) {
+        width: 100%;
+    }
+}
