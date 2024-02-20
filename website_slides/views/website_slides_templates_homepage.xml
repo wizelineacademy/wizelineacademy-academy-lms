@@ -320,7 +320,7 @@
                         </t>
                         <t t-else="">
                             <span> Group </span>
-                            <a t-att-href="slide_query_url(tag=slugify_tags(search_tags.ids, toggle_tag_id=tag.id), my=search_my, search=search_term, slide_category=search_slide_category)" t-attf-class="badge post_link o_wslides_channel_tag #{'o_tag_color_'+str(tag.color)}" t-att-rel="search_tags and 'nofollow'" t-esc="tag.sequence"/>
+                            <a t-att-href="slide_query_url(tag=slugify_tags(search_tags.ids, toggle_tag_id=tag.id), my=search_my, search=search_term, slide_category=search_slide_category)" t-attf-class="badge post_link o_wslides_channel_tag #{'o_tag_color_'+str(tag.color)}" t-att-rel="search_tags and 'nofollow'" t-esc="tag.group"/>
                         </t>
                     </t>
                 </div>
