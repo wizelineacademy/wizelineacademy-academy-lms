@@ -324,7 +324,6 @@
                                 </t>
                             </t>
                         </div>
-                        <div class="w-100"></div>
                         <div  class="col-md-6 col-sm-4">
                         <t t-foreach="channel_frontend_tags[2:4]" t-as="tag">
                                 <t t-if="search_tags">
