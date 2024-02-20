@@ -314,7 +314,7 @@
                 <div class="fw-light o_wslides_desc_truncate_3" t-field="channel.description_short"/>
                 <div t-if="channel_frontend_tags" class="mt-auto pt-1 o_wslides_desc_truncate_2_badges">
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-6">
                             <t t-foreach="channel_frontend_tags[:2]" t-as="tag">
                                 <t t-if="search_tags">
                                     <a t-att-href="slide_query_url(tag=slugify_tags(search_tags.ids, toggle_tag_id=tag.id), my=search_my, search=search_term, slide_category=search_slide_category)" t-attf-class="badge post_link #{'text-bg-primary' if tag in search_tags else 'o_wslides_channel_tag o_tag_color_0'}" t-att-rel="search_tags and 'nofollow'" t-esc="tag.name"/>
@@ -324,7 +324,7 @@
                                 </t>
                             </t>
                         </div>
-                        <div class="col-4">
+                        <div class="col-6">
                             <t t-foreach="channel_frontend_tags[2:4]" t-as="tag">
                                 <t t-if="search_tags">
                                     <a t-att-href="slide_query_url(tag=slugify_tags(search_tags.ids, toggle_tag_id=tag.id), my=search_my, search=search_term, slide_category=search_slide_category)" t-attf-class="badge post_link #{'text-bg-primary' if tag in search_tags else 'o_wslides_channel_tag o_tag_color_0'}" t-att-rel="search_tags and 'nofollow'" t-esc="tag.name"/>
