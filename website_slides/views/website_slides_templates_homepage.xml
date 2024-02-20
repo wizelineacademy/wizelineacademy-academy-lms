@@ -297,7 +297,7 @@
 </template>
 
 <template id='course_card' name="Course Card">
-    <div t-attf-class="card w-100 o_wslides_course_card mb-4 #{'o_wslides_course_unpublished' if not channel.is_published else ''}" t-cache="channel if is_public_user else None">
+    <div t-attf-class="card o_wslides_course_card mb-4 #{'o_wslides_course_unpublished' if not channel.is_published else ''}" t-cache="channel if is_public_user else None" style="width:80%">
         <t t-set="channel_frontend_tags" t-value="channel.tag_ids.filtered(lambda tag: tag.color)"/>
         <a t-attf-href="/slides/#{slug(channel)}" t-title="channel.name" style="height:120px">
             <div t-if="channel.image_1920" t-field="channel.image_1920" t-options="{'widget': 'image', 'preview_image': 'image_512'}" class="o_wslides_background_image h-100 ">
@@ -314,7 +314,7 @@
                 <div class="fw-light o_wslides_desc_truncate_3" t-field="channel.description_short"/>
                 <div t-if="channel_frontend_tags" class="mt-auto pt-1 o_wslides_desc_truncate_4_badges" style="max-width:800px">
                     <div class="row">
-                        <div  class="col-md-6 col-sm-4" style="margin-bottom: 15px">
+                        <div  class="col-md-3 col-sm-4" style="margin-bottom: 15px">
                         <t t-foreach="channel_frontend_tags[:2]" t-as="tag">
                                 <t t-if="search_tags">
                                     <a t-att-href="slide_query_url(tag=slugify_tags(search_tags.ids, toggle_tag_id=tag.id), my=search_my, search=search_term, slide_category=search_slide_category)" t-attf-class="tag post_link #{'text-bg-primary' if tag in search_tags else 'o_wslides_channel_tag o_tag_color_0'}" t-att-rel="search_tags and 'nofollow'" t-esc="tag.name" style="margin-bottom:10px"/>
@@ -324,7 +324,7 @@
                                 </t>
                             </t>
                         </div>
-                        <div  class="col-md-6 col-sm-4">
+                        <div  class="col-md-3 col-sm-4">
                         <t t-foreach="channel_frontend_tags[2:4]" t-as="tag">
                                 <t t-if="search_tags">
                                     <a t-att-href="slide_query_url(tag=slugify_tags(search_tags.ids, toggle_tag_id=tag.id), my=search_my, search=search_term, slide_category=search_slide_category)" t-attf-class="tag post_link #{'text-bg-primary' if tag in search_tags else 'o_wslides_channel_tag o_tag_color_0'}" t-att-rel="search_tags and 'nofollow'" t-esc="tag.name"  style="margin-bottom:10px"/>
