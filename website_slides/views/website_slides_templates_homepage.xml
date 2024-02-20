@@ -323,7 +323,8 @@
                             <a t-att-href="slide_query_url(tag=slugify_tags(search_tags.ids, toggle_tag_id=tag.id), my=search_my, search=search_term, slide_category=search_slide_category)" t-attf-class="badge post_link o_wslides_channel_tag #{'o_tag_color_'+str(tag.color)}" t-att-rel="search_tags and 'nofollow'" t-esc="tag.name"/>
                         </t>
                     </t>
-                     <t t-foreach="tag_groups" t-as="tag_group">
+                    <t t-set="search_tag_groups" t-value="search_tags.mapped('group_id')"/>
+                    <t t-foreach="tag_groups" t-as="tag_group">
                             <t t-set="group_frontend_tags" t-value="tag_group.tag_ids.filtered(lambda tag: tag.color)"/>
                             <a t-esc="tag_group.name" t-att-href="slide_query_url(tag=slugify_tags(search_tags.ids, toggle_tag_id=tag_group.id), my=search_my, search=search_term, slide_category=search_slide_category)" t-attf-class="badge post_link o_wslides_channel_tag #{'o_tag_color_'+str(tag_group.color)}" t-att-rel="search_tags and 'nofollow'"/>
                         </t>
