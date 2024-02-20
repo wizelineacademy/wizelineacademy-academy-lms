@@ -313,7 +313,7 @@
             <div class="card-text d-flex flex-column flex-grow-1 mt-1">
                 <div class="fw-light o_wslides_desc_truncate_3" t-field="channel.description_short"/>
                 <div t-if="channel_frontend_tags" class="mt-auto pt-1 o_wslides_desc_truncate_2_badges">
-                    <div class="row">
+                    <div class="col">
                         <div class="col-6">
                             <t t-foreach="channel_frontend_tags[:2]" t-as="tag">
                                 <t t-if="search_tags">
