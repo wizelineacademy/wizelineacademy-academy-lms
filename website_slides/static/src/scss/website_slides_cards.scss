@@ -2,3 +2,23 @@
   width: 90%;
   color: white !important;
 }
+
+.tag {
+  display: inline-block;
+  padding: 0.7em 0.5em;
+  font-size: 0.85em;
+  font-weight: 700;
+  line-height: 1;
+  color: #FFF;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+}
+
+
+.tagRow {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem
+}
