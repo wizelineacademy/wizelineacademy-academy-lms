@@ -313,21 +313,33 @@
             <div class="card-text d-flex flex-column flex-grow-1 mt-1">
                 <div class="fw-light o_wslides_desc_truncate_3" t-field="channel.description_short"/>
                 <div t-if="channel_frontend_tags" class="mt-auto pt-1 o_wslides_desc_truncate_4_badges" style="max-width:800px">
-                    <div class="row gx-5">
+                    <div class="row gx-10">
                         <div  class="col-md-3 col-sm-4" style="margin-bottom: 15px">
                         <t t-foreach="channel_frontend_tags[:1]" t-as="tag">
                                 <t t-if="search_tags">
+                                    <div class="tag-title">
+                                        <label>Category</label>
+                                    </div>
                                     <a t-att-href="slide_query_url(tag=slugify_tags(search_tags.ids, toggle_tag_id=tag.id), my=search_my, search=search_term, slide_category=search_slide_category)" t-attf-class="tag post_link #{'text-bg-primary' if tag in search_tags else 'o_wslides_channel_tag o_tag_color_0'}" t-att-rel="search_tags and 'nofollow'" t-esc="tag.name" style="margin-bottom:10px"/>
                                 </t>
                                 <t t-else="">
+                                    <div class="tag-title">
+                                        <label>Category</label>
+                                    </div>
                                     <a t-att-href="slide_query_url(tag=slugify_tags(search_tags.ids, toggle_tag_id=tag.id), my=search_my, search=search_term, slide_category=search_slide_category)" t-attf-class="tag post_link o_wslides_channel_tag #{'o_tag_color_'+str(tag.color)}" t-att-rel="search_tags and 'nofollow'" t-esc="tag.name" style="margin-bottom:10px"/>
                                 </t>
                             </t>
                             <t t-foreach="channel_frontend_tags[1:2]" t-as="tag">
                                 <t t-if="search_tags">
+                                    <div class="tag-title">
+                                        <label>Format</label>
+                                    </div>
                                     <a t-att-href="slide_query_url(tag=slugify_tags(search_tags.ids, toggle_tag_id=tag.id), my=search_my, search=search_term, slide_category=search_slide_category)" t-attf-class="tag post_link #{'text-bg-primary' if tag in search_tags else 'o_wslides_channel_tag o_tag_color_0'}" t-att-rel="search_tags and 'nofollow'" t-esc="tag.name" style="margin-bottom:10px"/>
                                 </t>
                                 <t t-else="">
+                                    <div class="tag-title">
+                                        <label>Format</label>
+                                    </div>
                                     <a t-att-href="slide_query_url(tag=slugify_tags(search_tags.ids, toggle_tag_id=tag.id), my=search_my, search=search_term, slide_category=search_slide_category)" t-attf-class="tag post_link o_wslides_channel_tag #{'o_tag_color_'+str(tag.color)}" t-att-rel="search_tags and 'nofollow'" t-esc="tag.name" style="margin-bottom:10px"/>
                                 </t>
                             </t>
@@ -335,17 +347,29 @@
                         <div  class="col-md-3 col-sm-4">
                         <t t-foreach="channel_frontend_tags[2:3]" t-as="tag">
                                 <t t-if="search_tags">
+                                    <div class="tag-title">
+                                        <label>Length</label>
+                                    </div>
                                     <a t-att-href="slide_query_url(tag=slugify_tags(search_tags.ids, toggle_tag_id=tag.id), my=search_my, search=search_term, slide_category=search_slide_category)" t-attf-class="tag post_link #{'text-bg-primary' if tag in search_tags else 'o_wslides_channel_tag o_tag_color_0'}" t-att-rel="search_tags and 'nofollow'" t-esc="tag.name"  style="margin-bottom:10px"/>
                                 </t>
                                 <t t-else="">
+                                    <div class="tag-title">
+                                        <label>Length</label>
+                                    </div>
                                     <a t-att-href="slide_query_url(tag=slugify_tags(search_tags.ids, toggle_tag_id=tag.id), my=search_my, search=search_term, slide_category=search_slide_category)" t-attf-class="tag post_link o_wslides_channel_tag #{'o_tag_color_'+str(tag.color)}" t-att-rel="search_tags and 'nofollow'" t-esc="tag.name"  style="margin-bottom:10px"/>
                                 </t>
                             </t>
                             <t t-foreach="channel_frontend_tags[3:4]" t-as="tag">
                                 <t t-if="search_tags">
+                                    <div class="tag-title">
+                                        <span>Language</span>
+                                    </div>
                                     <a t-att-href="slide_query_url(tag=slugify_tags(search_tags.ids, toggle_tag_id=tag.id), my=search_my, search=search_term, slide_category=search_slide_category)" t-attf-class="tag post_link #{'text-bg-primary' if tag in search_tags else 'o_wslides_channel_tag o_tag_color_0'}" t-att-rel="search_tags and 'nofollow'" t-esc="tag.name"  style="margin-bottom:10px"/>
                                 </t>
                                 <t t-else="">
+                                    <div class="tag-title">
+                                        <span>Language</span>
+                                    </div>
                                     <a t-att-href="slide_query_url(tag=slugify_tags(search_tags.ids, toggle_tag_id=tag.id), my=search_my, search=search_term, slide_category=search_slide_category)" t-attf-class="tag post_link o_wslides_channel_tag #{'o_tag_color_'+str(tag.color)}" t-att-rel="search_tags and 'nofollow'" t-esc="tag.name"  style="margin-bottom:10px"/>
                                 </t>
                             </t>
