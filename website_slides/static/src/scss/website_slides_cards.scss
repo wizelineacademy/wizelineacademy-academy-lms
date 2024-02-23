@@ -32,3 +32,13 @@
     width: 100%;
   }
 }
+
+.row.gx-10 {
+  --bs-gutter-x: 10rem;
+}
+
+.tag-title label {
+  color: #43c2ff;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
