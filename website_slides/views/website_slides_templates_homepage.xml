@@ -319,7 +319,7 @@
                                 <t t-if="search_tags">
                                     <div class="tag-title">
                                         <label>Category</label>
-                                        <a t-att-href="slide_query_url(tag=slugify_tags(search_tags.ids, toggle_tag_id=tag.id), my=search_my, search=search_term, slide_category=search_slide_category)" t-attf-class="tag post_link #{'text-bg-primary' if tag in search_tags else }" t-att-rel="search_tags and 'nofollow'" t-esc="tag.name" style="margin-bottom:10px"/>
+                                        <a t-att-href="slide_query_url(tag=slugify_tags(search_tags.ids, toggle_tag_id=tag.id), my=search_my, search=search_term, slide_category=search_slide_category)" t-attf-class="tag post_link #{'text-bg-primary'}" t-att-rel="search_tags and 'nofollow'" t-esc="tag.name" style="margin-bottom:10px"/>
                                     </div>
                                 </t>
                                 <t t-else="">
