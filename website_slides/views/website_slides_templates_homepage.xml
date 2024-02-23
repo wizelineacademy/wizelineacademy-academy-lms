@@ -319,6 +319,9 @@
                                 <t t-if="search_tags">
                                     <div class="tag-title">
                                         <label>Category</label>
+                                        // cambiar el estilo de este a para mostrarse solo subrayado
+                                        // mejorar el width de la card en diferentes sizes
+                                        //el mobile no se ve bien 
                                         <a t-att-href="slide_query_url(tag=slugify_tags(search_tags.ids, toggle_tag_id=tag.id), my=search_my, search=search_term, slide_category=search_slide_category)" t-attf-class="tag" t-att-rel="search_tags and 'nofollow'" t-esc="tag.name" style="margin-bottom:10px"/>
                                     </div>
                                 </t>
