@@ -37,8 +37,14 @@
   --bs-gutter-x: 10rem;
 }
 
-.tag-title label {
-  color: #43c2ff;
-  font-weight: 700;
-  font-size: 1.4rem;
+.tag-title {
+  label {
+    color: #43c2ff;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+  }
+
+  a {
+    color: #202529;
+  }
 }
