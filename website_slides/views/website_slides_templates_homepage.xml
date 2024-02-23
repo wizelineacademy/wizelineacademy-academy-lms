@@ -319,28 +319,28 @@
                                 <t t-if="search_tags">
                                     <div class="tag-title">
                                         <label>Category</label>
+                                        <a t-att-href="slide_query_url(tag=slugify_tags(search_tags.ids, toggle_tag_id=tag.id), my=search_my, search=search_term, slide_category=search_slide_category)" t-attf-class="tag post_link #{'text-bg-primary' if tag in search_tags else 'o_wslides_channel_tag o_tag_color_0'}" t-att-rel="search_tags and 'nofollow'" t-esc="tag.name" style="margin-bottom:10px"/>
                                     </div>
-                                    <a t-att-href="slide_query_url(tag=slugify_tags(search_tags.ids, toggle_tag_id=tag.id), my=search_my, search=search_term, slide_category=search_slide_category)" t-attf-class="tag post_link #{'text-bg-primary' if tag in search_tags else 'o_wslides_channel_tag o_tag_color_0'}" t-att-rel="search_tags and 'nofollow'" t-esc="tag.name" style="margin-bottom:10px"/>
                                 </t>
                                 <t t-else="">
                                     <div class="tag-title">
                                         <label>Category</label>
+                                        <a t-att-href="slide_query_url(tag=slugify_tags(search_tags.ids, toggle_tag_id=tag.id), my=search_my, search=search_term, slide_category=search_slide_category)" t-att-rel="search_tags and 'nofollow'" t-esc="tag.name" style="margin-bottom:10px"/>
                                     </div>
-                                    <a t-att-href="slide_query_url(tag=slugify_tags(search_tags.ids, toggle_tag_id=tag.id), my=search_my, search=search_term, slide_category=search_slide_category)" t-att-rel="search_tags and 'nofollow'" t-esc="tag.name" style="margin-bottom:10px"/>
                                 </t>
                             </t>
                             <t t-foreach="channel_frontend_tags[1:2]" t-as="tag">
                                 <t t-if="search_tags">
                                     <div class="tag-title">
                                         <label>Length</label>
+                                        <a t-att-href="slide_query_url(tag=slugify_tags(search_tags.ids, toggle_tag_id=tag.id), my=search_my, search=search_term, slide_category=search_slide_category)" t-attf-class="tag post_link #{'text-bg-primary' if tag in search_tags else 'o_wslides_channel_tag o_tag_color_0'}" t-att-rel="search_tags and 'nofollow'" t-esc="tag.name" style="margin-bottom:10px"/>
                                     </div>
-                                    <a t-att-href="slide_query_url(tag=slugify_tags(search_tags.ids, toggle_tag_id=tag.id), my=search_my, search=search_term, slide_category=search_slide_category)" t-attf-class="tag post_link #{'text-bg-primary' if tag in search_tags else 'o_wslides_channel_tag o_tag_color_0'}" t-att-rel="search_tags and 'nofollow'" t-esc="tag.name" style="margin-bottom:10px"/>
                                 </t>
                                 <t t-else="">
                                     <div class="tag-title">
                                         <label>Length</label>
+                                        <a t-att-href="slide_query_url(tag=slugify_tags(search_tags.ids, toggle_tag_id=tag.id), my=search_my, search=search_term, slide_category=search_slide_category)" t-att-rel="search_tags and 'nofollow'" t-esc="tag.name" style="margin-bottom:10px"/>
                                     </div>
-                                    <a t-att-href="slide_query_url(tag=slugify_tags(search_tags.ids, toggle_tag_id=tag.id), my=search_my, search=search_term, slide_category=search_slide_category)" t-att-rel="search_tags and 'nofollow'" t-esc="tag.name" style="margin-bottom:10px"/>
                                 </t>
                             </t>
                         </div>
@@ -349,28 +349,28 @@
                                 <t t-if="search_tags">
                                     <div class="tag-title">
                                         <label>Format</label>
+                                        <a t-att-href="slide_query_url(tag=slugify_tags(search_tags.ids, toggle_tag_id=tag.id), my=search_my, search=search_term, slide_category=search_slide_category)" t-attf-class="tag post_link #{'text-bg-primary' if tag in search_tags else 'o_wslides_channel_tag o_tag_color_0'}" t-att-rel="search_tags and 'nofollow'" t-esc="tag.name"  style="margin-bottom:10px"/>
                                     </div>
-                                    <a t-att-href="slide_query_url(tag=slugify_tags(search_tags.ids, toggle_tag_id=tag.id), my=search_my, search=search_term, slide_category=search_slide_category)" t-attf-class="tag post_link #{'text-bg-primary' if tag in search_tags else 'o_wslides_channel_tag o_tag_color_0'}" t-att-rel="search_tags and 'nofollow'" t-esc="tag.name"  style="margin-bottom:10px"/>
                                 </t>
                                 <t t-else="">
                                     <div class="tag-title">
                                         <label>Format</label>
+                                        <a t-att-href="slide_query_url(tag=slugify_tags(search_tags.ids, toggle_tag_id=tag.id), my=search_my, search=search_term, slide_category=search_slide_category)" t-att-rel="search_tags and 'nofollow'" t-esc="tag.name"  style="margin-bottom:10px"/>
                                     </div>
-                                    <a t-att-href="slide_query_url(tag=slugify_tags(search_tags.ids, toggle_tag_id=tag.id), my=search_my, search=search_term, slide_category=search_slide_category)" t-att-rel="search_tags and 'nofollow'" t-esc="tag.name"  style="margin-bottom:10px"/>
                                 </t>
                             </t>
                             <t t-foreach="channel_frontend_tags[3:4]" t-as="tag">
                                 <t t-if="search_tags">
                                     <div class="tag-title">
                                         <label>Language</label>
+                                        <a t-att-href="slide_query_url(tag=slugify_tags(search_tags.ids, toggle_tag_id=tag.id), my=search_my, search=search_term, slide_category=search_slide_category)" t-attf-class="tag post_link #{'text-bg-primary' if tag in search_tags else 'o_wslides_channel_tag o_tag_color_0'}" t-att-rel="search_tags and 'nofollow'" t-esc="tag.name"  style="margin-bottom:10px"/>
                                     </div>
-                                    <a t-att-href="slide_query_url(tag=slugify_tags(search_tags.ids, toggle_tag_id=tag.id), my=search_my, search=search_term, slide_category=search_slide_category)" t-attf-class="tag post_link #{'text-bg-primary' if tag in search_tags else 'o_wslides_channel_tag o_tag_color_0'}" t-att-rel="search_tags and 'nofollow'" t-esc="tag.name"  style="margin-bottom:10px"/>
                                 </t>
                                 <t t-else="">
                                     <div class="tag-title">
                                         <label>Language</label>
+                                        <a t-att-href="slide_query_url(tag=slugify_tags(search_tags.ids, toggle_tag_id=tag.id), my=search_my, search=search_term, slide_category=search_slide_category)" t-att-rel="search_tags and 'nofollow'" t-esc="tag.name"  style="margin-bottom:10px"/>
                                     </div>
-                                    <a t-att-href="slide_query_url(tag=slugify_tags(search_tags.ids, toggle_tag_id=tag.id), my=search_my, search=search_term, slide_category=search_slide_category)" t-att-rel="search_tags and 'nofollow'" t-esc="tag.name"  style="margin-bottom:10px"/>
                                 </t>
                             </t>
                         </div>
