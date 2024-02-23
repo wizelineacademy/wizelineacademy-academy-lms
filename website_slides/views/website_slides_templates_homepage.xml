@@ -314,7 +314,7 @@
                 <div class="fw-light o_wslides_desc_truncate_3" t-field="channel.description_short"/>
                 <div t-if="channel_frontend_tags" class="mt-auto pt-1 o_wslides_desc_truncate_4_badges" style="max-width:800px">
                     <div class="row" style="gap: 5rem">
-                        <div  class="col-md-3 col-sm-4" style="margin-bottom: 15px">
+                        <div  class="col-md-4 col-sm-4" style="margin-bottom: 15px">
                         <t t-foreach="channel_frontend_tags[:1]" t-as="tag">
                                 <t t-if="search_tags">
                                     <div class="tag-title">
@@ -344,7 +344,7 @@
                                 </t>
                             </t>
                         </div>
-                        <div  class="col-md-3 col-sm-4">
+                        <div  class="col-md-4 col-sm-4">
                         <t t-foreach="channel_frontend_tags[2:3]" t-as="tag">
                                 <t t-if="search_tags">
                                     <div class="tag-title">
