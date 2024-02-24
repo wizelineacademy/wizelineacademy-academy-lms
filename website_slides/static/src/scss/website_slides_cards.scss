@@ -46,3 +46,12 @@
     font-size: 14px
   }
 }
+
+.card-container {
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 85%;
+  }
+}
