@@ -34,6 +34,8 @@
 }
 
 .tag-title {
+  display: flex;
+  flex-direction: column;
   label {
     color: #43c2ff;
     font-weight: 700;
