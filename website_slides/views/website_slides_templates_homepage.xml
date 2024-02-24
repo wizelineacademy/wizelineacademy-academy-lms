@@ -297,8 +297,8 @@
 </template>
 
 <template id='course_card' name="Course Card">
-    <div t-attf-class="card o_wslides_course_card mb-4 #{'o_wslides_course_unpublished' if not channel.is_published else ''}" t-cache="channel if is_public_user else None">
-        <t t-set="channel_frontend_tags" t-value="channel.tag_ids.filtered(lambda tag: tag.color)"/>
+    <div style="width:85%"  t-attf-class="card o_wslides_course_card mb-4 #{'o_wslides_course_unpublished' if not channel.is_published else ''}" t-cache="channel if is_public_user else None">
+        <t t-set="channel_frontend_tags" t-value="channel.tag_ids.filtered(lambda tag: tag.color)" />
         <a t-attf-href="/slides/#{slug(channel)}" t-title="channel.name" style="height:120px">
             <div t-if="channel.image_1920" t-field="channel.image_1920" t-options="{'widget': 'image', 'preview_image': 'image_512'}" class="o_wslides_background_image h-100 ">
                 <t t-if="channel.partner_has_new_content" t-call="website_slides.course_card_information"/>
@@ -312,7 +312,7 @@
             <span t-if="not channel.is_published" class="badge text-bg-danger p-1">Unpublished</span>
             <div class="card-text d-flex flex-column flex-grow-1 mt-1">
                 <div class="fw-light o_wslides_desc_truncate_3" t-field="channel.description_short"/>
-                <div t-if="channel_frontend_tags" class="mt-auto pt-1 o_wslides_desc_truncate_4_badges">
+                <div t-if="channel_frontend_tags" class="mt-auto pt-1 o_wslides_desc_truncate_4_badges" style="max-width:800px">>
                     <div class="row" style="gap: 5rem">
                         <div  class="col-md-4 col-sm-4" style="margin-bottom: 15px">
                         <t t-foreach="channel_frontend_tags[:1]" t-as="tag">
