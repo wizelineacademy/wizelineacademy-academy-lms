@@ -312,7 +312,7 @@
             <span t-if="not channel.is_published" class="badge text-bg-danger p-1">Unpublished</span>
             <div class="card-text d-flex flex-column flex-grow-1 mt-1">
                 <div class="fw-light o_wslides_desc_truncate_3" t-field="channel.description_short"/>
-                <div t-if="channel_frontend_tags" class="mt-auto pt-1 o_wslides_desc_truncate_4_badges" style="max-width:800px">>
+                <div t-if="channel_frontend_tags" class="mt-auto pt-1 o_wslides_desc_truncate_4_badges" style="max-width:800px">
                     <div class="row" style="gap: 5rem">
                         <div  class="col-md-4 col-sm-4" style="margin-bottom: 15px">
                         <t t-foreach="channel_frontend_tags[:1]" t-as="tag">
