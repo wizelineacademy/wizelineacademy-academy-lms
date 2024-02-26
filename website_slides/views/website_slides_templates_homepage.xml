@@ -121,7 +121,7 @@
                             </div>
                             <div class="row mx-n2 mt8">
                                 <t t-foreach="channels_newest[:3]" t-as="channel">
-                                    <div class="col-md-4 col-sm-6 px-2 col-xs-12 d-flex">
+                                    <div class="col-md-4 col-sm-6 col-lg-4 px-2 col-xs-12 d-flex">
                                         <t t-call="website_slides.course_card"/>
                                     </div>
                                 </t>
@@ -297,7 +297,6 @@
 </template>
 
 <template id='course_card' name="Course Card">
-    <div class="col-12 col-sm-6 col-md-4 col-lg-4 px-2 d-flex">
     <div t-attf-class="card o_wslides_course_card mb-4 #{'o_wslides_course_unpublished' if not channel.is_published else ''}" t-cache="channel if is_public_user else None">
         <t t-set="channel_frontend_tags" t-value="channel.tag_ids.filtered(lambda tag: tag.color)" />
         <a t-attf-href="/slides/#{slug(channel)}" t-title="channel.name" style="height:120px">
@@ -402,8 +401,6 @@
             </div>
         </div>
     </div>
-    </div>
-
 </template>
 
 <template id="course_card_information" name='Course Information'>
