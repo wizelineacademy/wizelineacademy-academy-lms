@@ -40,10 +40,16 @@
     color: #43c2ff;
     font-weight: 700;
     margin-bottom: 0.2rem;
+    @include media-breakpoint-down(md) {
+      font-size: 12px;
+    }
   }
   a {
     color: #202529;
-    font-size: 14px
+    font-size: 14px;
+    @include media-breakpoint-down(md) {
+      font-size: 10px;
+    }
   }
 }
 
