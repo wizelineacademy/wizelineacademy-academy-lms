@@ -55,3 +55,12 @@
     width: 85%;
   }
 }
+
+.card-body {
+  @include media-breakpoint-down(md) {
+    gap: 0;
+  }
+  @include media-breakpoint-up(lg) {
+    gap: 5rem;
+  }
+}
