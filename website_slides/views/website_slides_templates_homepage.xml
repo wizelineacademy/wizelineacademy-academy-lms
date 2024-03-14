@@ -86,7 +86,7 @@
                                 </div>
                                 <div class="row mx-n2 mt8">
                                     <t t-foreach="channels_my[:3]" t-as="channel">
-                                        <div class="col-md-6 col-sm-12 px-2 col-xs-12 d-flex">
+                                        <div class="col-lg-4 col-md-4 col-sm-12 px-2 col-xs-12 d-flex">
                                             <t t-call="website_slides.course_card"/>
 
                                         </div>
