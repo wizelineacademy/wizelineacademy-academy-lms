@@ -13,79 +13,79 @@
                                     <div class="menu-modal-content-wrapper">
                                         <div class="menu-column">
                                             <p class="menu-subtitle">Offerings</p>
-                                            <a href="https://www.wizeline.com/offerings/human-centric-experiences/" role="menuitem" class="dropdown-item ps-3">
+                                            <a href="https://www.wizeline.com/offerings/human-centric-experiences/" role="menuitem" class="dropdown-item">
                                                 Human-Centric Experiences
                                             </a>
-                                            <a t-attf-href="https://www.wizeline.com/offerings/digital-core/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                            <a t-attf-href="https://www.wizeline.com/offerings/digital-core/" role="menuitem" id="menuitem" class="dropdown-item">
                                                 Digital Core
                                             </a>
-                                            <a t-attf-href="https://www.wizeline.com/offerings/intelligence-everywhere/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                            <a t-attf-href="https://www.wizeline.com/offerings/intelligence-everywhere/" role="menuitem" id="menuitem" class="dropdown-item">
                                                 Intelligence Everywhere
                                             </a>
-                                            <a t-attf-href="https://www.wizeline.com/offerings/adaptive-organizations/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                            <a t-attf-href="https://www.wizeline.com/offerings/adaptive-organizations/" role="menuitem" id="menuitem" class="dropdown-item">
                                                 Adaptive Organizations
                                             </a>
-                                            <a t-attf-href="https://www.wizeline.com/offerings/future-now/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                            <a t-attf-href="https://www.wizeline.com/offerings/future-now/" role="menuitem" id="menuitem" class="dropdown-item">
                                                 Future Now
                                             </a>
                                         </div>
                                         <div class="menu-column">
                                             <p class="menu-subtitle">Services</p>
-                                            <a href="https://www.wizeline.com/services/design/" role="menuitem" class="dropdown-item ps-3">
+                                            <a href="https://www.wizeline.com/services/design/" role="menuitem" class="dropdown-item">
                                                 Design
                                             </a>
-                                            <a t-attf-href="https://www.wizeline.com/services/development/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                            <a t-attf-href="https://www.wizeline.com/services/development/" role="menuitem" id="menuitem" class="dropdown-item">
                                                 Development
                                             </a>
-                                            <a t-attf-href="https://www.wizeline.com/services/cloud-and-devops" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                            <a t-attf-href="https://www.wizeline.com/services/cloud-and-devops" role="menuitem" id="menuitem" class="dropdown-item">
                                                 Cloud &amp; DevOps
                                             </a>
-                                            <a t-attf-href="https://www.wizeline.com/services/data-and-ai" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                            <a t-attf-href="https://www.wizeline.com/services/data-and-ai" role="menuitem" id="menuitem" class="dropdown-item">
                                                 Data &amp; AI
                                             </a>
-                                            <a t-attf-href="https://www.wizeline.com/services/product-evolution" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                            <a t-attf-href="https://www.wizeline.com/services/product-evolution" role="menuitem" id="menuitem" class="dropdown-item">
                                                 Product Evolution
                                             </a>
-                                            <a t-attf-href="https://www.wizeline.com/services/security" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                            <a t-attf-href="https://www.wizeline.com/services/security" role="menuitem" id="menuitem" class="dropdown-item">
                                                 Security
                                             </a>
-                                            <a t-attf-href="https://www.wizeline.com/services/technical-writing/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                            <a t-attf-href="https://www.wizeline.com/services/technical-writing/" role="menuitem" id="menuitem" class="dropdown-item">
                                                 Technical Writing
                                             </a>
-                                            <a t-attf-href="https://www.wizeline.com/services/quality-assurance" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                            <a t-attf-href="https://www.wizeline.com/services/quality-assurance" role="menuitem" id="menuitem" class="dropdown-item">
                                                 Quality Assurance
                                             </a>
                                         </div>
                                         <div class="menu-column">
                                             <p class="menu-subtitle">Industries</p>
-                                            <a href="https://www.wizeline.com/industries/media-and-entertainment" role="menuitem" class="dropdown-item ps-3">
+                                            <a href="https://www.wizeline.com/industries/media-and-entertainment" role="menuitem" class="dropdown-item">
                                                 Media &amp; Entertainment 
                                             </a>
-                                            <a t-attf-href="https://www.wizeline.com/industries/retail-and-consumer" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                            <a t-attf-href="https://www.wizeline.com/industries/retail-and-consumer" role="menuitem" id="menuitem" class="dropdown-item">
                                                 Retail &amp; Consumer
                                             </a>
-                                            <a t-attf-href="https://www.wizeline.com/industries/technology" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                            <a t-attf-href="https://www.wizeline.com/industries/technology" role="menuitem" id="menuitem" class="dropdown-item">
                                                 Technology
                                             </a>
-                                            <a t-attf-href="https://www.wizeline.com/industries/financial-services" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                            <a t-attf-href="https://www.wizeline.com/industries/financial-services" role="menuitem" id="menuitem" class="dropdown-item">
                                                 Financial Services
                                             </a>
-                                            <a t-attf-href="https://www.wizeline.com/industries/emerging-industries" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                            <a t-attf-href="https://www.wizeline.com/industries/emerging-industries" role="menuitem" id="menuitem" class="dropdown-item">
                                                 Emerging
                                             </a>
-                                            <a t-attf-href="https://www.wizeline.com/industries/healthcare-life-sciences/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                            <a t-attf-href="https://www.wizeline.com/industries/healthcare-life-sciences/" role="menuitem" id="menuitem" class="dropdown-item">
                                                 Healthcare &amp; Life Sciences
                                             </a>
                                         </div>
                                         <div class="menu-column">
                                             <p class="menu-subtitle">Why Wizeline</p>
-                                            <a href="https://www.wizeline.com/resource-category/case-studies/" role="menuitem" class="dropdown-item ps-3">
+                                            <a href="https://www.wizeline.com/resource-category/case-studies/" role="menuitem" class="dropdown-item">
                                                 Case Studies 
                                             </a>
-                                            <a t-attf-href="https://www.wizeline.com/methodologies/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                            <a t-attf-href="https://www.wizeline.com/methodologies/" role="menuitem" id="menuitem" class="dropdown-item">
                                                 Approach
                                             </a>
-                                            <a t-attf-href="https://www.wizeline.com/partners" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                            <a t-attf-href="https://www.wizeline.com/partners" role="menuitem" id="menuitem" class="dropdown-item">
                                                 Partners
                                             </a>
                                         </div>
@@ -98,13 +98,13 @@
                                     <div class="menu-modal-content-wrapper">
                                         <div class="menu-column">
                                             <p class="menu-subtitle">Insights</p>
-                                            <a href="https://blog.wizeline.com/" role="menuitem" class="dropdown-item ps-3">
+                                            <a href="https://blog.wizeline.com/" role="menuitem" class="dropdown-item">
                                                 Blog
                                             </a>
-                                            <a t-attf-href="https://www.wizeline.com/resource-category/case-studies/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                            <a t-attf-href="https://www.wizeline.com/resource-category/case-studies/" role="menuitem" id="menuitem" class="dropdown-item">
                                                 Case Studies
                                             </a>
-                                            <a t-attf-href="https://www.wizeline.com/resource-category/research/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                            <a t-attf-href="https://www.wizeline.com/resource-category/research/" role="menuitem" id="menuitem" class="dropdown-item">
                                                 Guides &amp; Research
                                             </a>
                                         </div>
@@ -117,22 +117,22 @@
                                     <div class="menu-modal-content-wrapper">
                                         <div class="menu-column">
                                             <p class="menu-subtitle">Insights</p>
-                                            <a href="https://www.wizeline.com/leadership/" role="menuitem" class="dropdown-item ps-3">
+                                            <a href="https://www.wizeline.com/leadership/" role="menuitem" class="dropdown-item">
                                                 Leadership
                                             </a>
-                                            <a t-attf-href="https://www.wizeline.com/about-us/diversity-inclusion/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                            <a t-attf-href="https://www.wizeline.com/about-us/diversity-inclusion/" role="menuitem" id="menuitem" class="dropdown-item">
                                                 Diversity &amp; Inclusion
                                             </a>
-                                            <a t-attf-href="https://www.wizeline.com/community/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                            <a t-attf-href="https://www.wizeline.com/community/" role="menuitem" id="menuitem" class="dropdown-item">
                                                 Community
                                             </a>
-                                            <a t-attf-href="https://www.wizeline.com/locations/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                            <a t-attf-href="https://www.wizeline.com/locations/" role="menuitem" id="menuitem" class="dropdown-item">
                                                 Locations
                                             </a>
-                                            <a t-attf-href="https://www.wizeline.com/resource-category/press/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                            <a t-attf-href="https://www.wizeline.com/resource-category/press/" role="menuitem" id="menuitem" class="dropdown-item">
                                                 Newsroom
                                             </a>
-                                            <a t-attf-href="https://www.wizeline.com/brand/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                            <a t-attf-href="https://www.wizeline.com/brand/" role="menuitem" id="menuitem" class="dropdown-item">
                                                 Brand
                                             </a>
                                         </div>
@@ -150,10 +150,10 @@
                                     <div class="menu-modal-content-wrapper">
                                         <div class="menu-column">
                                             <p class="menu-subtitle">Careers</p>
-                                            <a href="https://www.wizeline.com/careers" role="menuitem" class="dropdown-item ps-3">
+                                            <a href="https://www.wizeline.com/careers" role="menuitem" class="dropdown-item">
                                                 Life at Wizeline
                                             </a>
-                                            <a t-attf-href="hhttps://www.wizeline.com/careers/open-roles" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                            <a t-attf-href="hhttps://www.wizeline.com/careers/open-roles" role="menuitem" id="menuitem" class="dropdown-item">
                                                 Open Roles
                                             </a>
                                         </div>
@@ -188,16 +188,16 @@
                                     <li class="subheader-list-item dropdown">
                                         <a role="button" data-bs-toggle="dropdown" class="dropdown-toggle">Explore</a>
                                         <div class="dropdown-menu border-0 mt-1" role="menu">
-                                            <a href="https://academy.wizeline.com/ai-academy/" role="menuitem" class="dropdown-item ps-3">
+                                            <a href="https://academy.wizeline.com/ai-academy/" role="menuitem" class="dropdown-item">
                                                 AI Academy
                                             </a>
-                                            <a t-attf-href="https://academy.wizeline.com/women-in-tech/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                            <a t-attf-href="https://academy.wizeline.com/women-in-tech/" role="menuitem" id="menuitem" class="dropdown-item">
                                                 Woman in Tech
                                             </a>
-                                            <a t-attf-href="https://academy.wizeline.com/bootcamps/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                            <a t-attf-href="https://academy.wizeline.com/bootcamps/" role="menuitem" id="menuitem" class="dropdown-item">
                                                 Our Bootcamps
                                             </a>
-                                            <a t-attf-href="https://academy.wizeline.com/our-webinars/" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                            <a t-attf-href="https://academy.wizeline.com/our-webinars/" role="menuitem" id="menuitem" class="dropdown-item">
                                                 Our Webinars
                                             </a>
                                         </div>
@@ -205,10 +205,10 @@
                                     <li class="subheader-list-item dropdown">
                                         <a role="button" data-bs-toggle="dropdown" class="dropdown-toggle">Start Learning</a>
                                         <div class="dropdown-menu border-0 mt-1" role="menu">
-                                            <a href="https://academy.wizeline.com/courses/" role="menuitem" class="dropdown-item ps-3">
+                                            <a href="https://academy.wizeline.com/courses/" role="menuitem" class="dropdown-item">
                                                 Upcoming Experiences
                                             </a>
-                                            <a t-attf-href="/slides" role="menuitem" id="menuitem" class="dropdown-item ps-3">
+                                            <a t-attf-href="/slides" role="menuitem" id="menuitem" class="dropdown-item">
                                                 On-Demand Experiences
                                             </a>
                                         </div>
