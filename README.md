@@ -42,3 +42,18 @@ Your can also follow this [tutorial](https://www.youtube.com/watch?v=rZaHSTvljuA
 
 
 Every commit to the repository will be automatically applied in Odoo.sh. If you are in a development branch in Odoo.sh every commit will generate a new build for more information on Odoo.sh branches visit [here](https://www.odoo.com/documentation/16.0/administration/odoo_sh/getting_started/branches.html#odoosh-gettingstarted-branches-tabs-settings).  
+
+
+## About this branch
+This branch contains the development created regarding the task [Web Design - Add collapsible menu to Header](https://github.com/wizelineacademy/wizelineacademy-academy-lms/issues/35)
+
+The aspects covered on this branch are:
+  - Add collapsible menu for the options "work", "insights", "about" and "careers"
+  - Include the options for the menus with the corresponding links to the original website
+  - Some styles were added to match with the original design
+ 
+ Detected issues and behaviors that does not match with original design:
+  - If you open a collapsible menu from header and you scroll outside the menu, it automatically closes de menu.
+  - The close button for the collapsible menu was not included in the development
+  - The color red is not shown when a menu is open.
+
