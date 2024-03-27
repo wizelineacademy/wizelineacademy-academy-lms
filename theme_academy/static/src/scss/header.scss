@@ -69,7 +69,7 @@
     max-height: 70rem;
     box-shadow: 0 1px 9px 0 rgba(0,0,0,.24);
     margin-top: 1.2rem;
-    transform: translate3d(0px, 60px, 0px) !important;
+    transform: translate3d(0px, 65px, 0px) !important;
 }
 
 .menu-modal-content-wrapper {
@@ -89,6 +89,12 @@
     padding-left: 2.3rem;
     padding-right: 0.6rem;
     padding-top: 1.7rem;
+    .p {
+        font-size: 18px;
+    }
+    .a {
+        color: rgba(0, 0, 0, 0.6);
+    }
 }
 .menu-subtitle {
     color: #f2575d;
