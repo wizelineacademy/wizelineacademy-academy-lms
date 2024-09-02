@@ -73,6 +73,8 @@
         parent="website_slides_menu_configuration"
         sequence="2"
         action="slide_channel_tag_group_action"/>
+
+    //Content tags
     <menuitem name="Content Tags"
         id="website_slides_menu_config_content_tags"
         parent="website_slides_menu_configuration"
