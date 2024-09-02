@@ -1,0 +1,75 @@
+.watchNow-btn {
+  width: 90%;
+  color: white !important;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.7em 0.5em;
+  font-size: 0.85em;
+  font-weight: 700;
+  line-height: 1;
+  color: #FFF;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+}
+
+
+.tagRow {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem
+}
+
+.card-custom {
+  width: 100%;
+  @include media-breakpoint-up(md) {
+    width: 80%;
+  }
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+}
+
+.tag-title {
+
+
+  display: flex;
+  flex-direction: column;
+  label {
+    color: #43c2ff;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+    @include media-breakpoint-down(md) {
+      font-size: 12px;
+    }
+  }
+  a {
+    color: #202529;
+    font-size: 14px;
+    @include media-breakpoint-down(md) {
+      font-size: 10px;
+    }
+  }
+}
+
+.card-container {
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 85%;
+  }
+}
+
+
+.card-body {
+  @include media-breakpoint-down(md) {
+    gap: 0;
+  }
+  @include media-breakpoint-up(lg) {
+    gap: 5rem;
+  }
+}
