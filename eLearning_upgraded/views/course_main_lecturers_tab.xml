@@ -15,34 +15,23 @@
         <div t-att-class="'tab-pane fade %s' % ('show active' if active_tab == 'lecturers' else '')" id="lecturers" role="tabpanel" aria-labelledby="lecturers-tab">
             <div id="lecturers_section">
                 <div class="mb-2">
-                    <div class="row mx-n2">
+                    <div class="col mx-n2">
 
-                        <div class="col-12 col-sm-6 col-lg-3 px-2 d-flex">
-                            <div class="card mb-4">
-                                <div class="" style="height:150px;">
-                                    <img src="https://picsum.photos/150" alt="Test Image" class="img-fluid h-100 w-100" style="object-fit:cover;"/>
+                        <div class="card mb-4 w-100 p-4 px-md-2 py-md-3 shadow">
+                            <div class="row g-0">
+                                <div class="col-md-3">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <img src="https://thispersondoesnotexist.com" alt="Test Image" class="img-fluid mt-3 mb-3 rounded rounded-3 w-50 w-md-40" style="object-fit:cover;"/>
+                                    </div>
+                                    <h3 class="text-center mb-4 mb-md-2">Ms. Lara Croft</h3>
+                                    <p class="mb-5 mb-md-2 text-center" style="font-size:16px;">Professor of Archeology</p>
                                 </div>
-                                <div class="card-body d-flex flex-column px-3">
-                                    <h3 class="text-center">Ms. Lara Croft</h3>
-                                    <p class="text-md-center" style="font-style:italic;">Professor of Archeology</p>
-                                    <p>Ms. Lara Croft is a renowned archeologist and adventurer. She has been on numerous expeditions and has discovered many ancient artifacts.</p>
+                                <div class="col-md-8 d-flex align-items-center justify-content-start">
+                                    <p style="font-size:16px;">Ms. Lara Croft is a renowned archeologist and adventurer. She has been on numerous expeditions and has discovered many ancient artifacts.</p>
                                 </div>
                             </div>
                         </div>
-                        
-                        <div class="col-12 col-sm-6 col-lg-3 px-2 d-flex">
-                            <div class="card mb-4">
-                                <div class="" style="height:150px;">
-                                    <img src="https://picsum.photos/150" alt="Test Image" class="img-fluid h-100 w-100" style="object-fit:cover;"/>
-                                </div>
-                                <div class="card-body d-flex flex-column px-3">
-                                    <h3 class="text-center">Mr. John Smith</h3>
-                                    <p class="text-md-center" style="font-style:italic;">Senior Lecturer in Computer Science</p>
-                                    <p>John Smith focuses on AI and machine learning, bringing cutting-edge technology into the classroom.</p>
-                                </div>
-                            </div>
-                        </div>
-
+            
                     </div>
                 </div>
             </div>
