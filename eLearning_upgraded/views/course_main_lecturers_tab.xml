@@ -1,0 +1,58 @@
+<?xmd version="1.0" encoding="utf-8"?>
+<odoo><data>  
+
+<template id="course_main_lecturers_tab" name="Lecturers Tab" inherit_id="website_slides.course_main">
+    <xpath expr="//ul[@id='profile_extra_info_tablist']" position="inside">
+        <li class="nav-item" role="presentation">
+            <a t-att-class="'nav-link %s' % ('active' if active_tab == 'lecturers' else '')" id="lecturers-tab" data-bs-toggle="pill" href="#lecturers" role="tab" aria-controls="lecturers" t-att-aria-selected="'true' if active_tab == 'lecturers' else 'false'">
+                Lecturers
+            </a>
+        </li>
+    </xpath>
+
+    <xpath expr="//div[@id='courseMainTabContent']" position="inside">
+        <!-- Lecturers Section -->
+        <div t-att-class="'tab-pane fade %s' % ('show active' if active_tab == 'lecturers' else '')" id="lecturers" role="tabpanel" aria-labelledby="lecturers-tab">
+            <div id="lecturers_section">
+                <div class="mb-2">
+                    <div class="row mx-n2">
+
+                        <div class="col-12 col-sm-6 col-lg-3 px-2 d-flex">
+                            <div class="card mb-4">
+                                <div class="" style="height:150px;">
+                                    <img src="https://picsum.photos/150" alt="Test Image" class="img-fluid h-100 w-100" style="object-fit:cover;"/>
+                                </div>
+                                <div class="card-body d-flex flex-column px-3">
+                                    <h3 class="text-center">Ms. Lara Croft</h3>
+                                    <p class="text-md-center" style="font-style:italic;">Professor of Archeology</p>
+                                    <p>Ms. Lara Croft is a renowned archeologist and adventurer. She has been on numerous expeditions and has discovered many ancient artifacts.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12 col-sm-6 col-lg-3 px-2 d-flex">
+                            <div class="card mb-4">
+                                <div class="" style="height:150px;">
+                                    <img src="https://picsum.photos/150" alt="Test Image" class="img-fluid h-100 w-100" style="object-fit:cover;"/>
+                                </div>
+                                <div class="card-body d-flex flex-column px-3">
+                                    <h3 class="text-center">Mr. John Smith</h3>
+                                    <p class="text-md-center" style="font-style:italic;">Senior Lecturer in Computer Science</p>
+                                    <p>John Smith focuses on AI and machine learning, bringing cutting-edge technology into the classroom.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </xpath>
+</template>
+
+<!-- Individual Lecturer Card -->
+<template id="lecturer_card" name="Lecturer Card">
+
+</template>
+
+</data></odoo>
