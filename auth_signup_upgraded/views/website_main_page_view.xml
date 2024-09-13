@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Esta vista incluye la adición del botón de sign in - ponerlo al inicio-->
+<odoo>
+    <template id="auth_signup_upgraded_login_page_design" inherit_id="website.login_layout" name="NewLoginPage">
+        <xpath expr="//div[contains(@class, 'oe_website_login_container')]" position="replace">
+            <div class="add_background_color add_background_img">
+                <h1 class="white_subtitle center">Welcome again!</h1>
+            <div class="oe_website_login_container" t-out="0"/>
+        </div>
+        </xpath>
+    </template>
+</odoo>

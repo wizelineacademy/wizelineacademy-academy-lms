@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="extended_signup" inherit_id="auth_signup.fields" name="Sign up with added fields">
+        <xpath expr="///div[contains(@class, 'field-login')]" position="replace">
+            <div class="mb-3 field-login">
+                <label for="login" class="white_text">Email</label>
+                <input type="text" name="login" t-att-value="login" id="login" class="form-control form-control-sm" autofocus="autofocus"
+                    autocapitalize="off" required="required" t-att-readonly="'readonly' if only_passwords else None"/>
+            </div>
+        </xpath>
+        <xpath expr="///div[contains(@class, 'field-name')]" position="replace">
+
+            <div class="mb-3 field-name">
+                <label for="name" class="white_text">Your Name</label>
+                <input type="text" name="name" t-att-value="name" id="name" class="form-control form-control-sm"
+                    required="required" t-att-readonly="'readonly' if only_passwords else None"
+                    t-att-autofocus="'autofocus' if login and not only_passwords else None" />
+            </div>
+            <div class="mb-3 field-lastname">
+                <label for="last_name" class="white_text">Last name</label>
+                <input type="text" name="last_name" t-att-value="last_name" id="last_name" class="form-control form-control-sm" autofocus="autofocus"
+                    autocapitalize="off" required="required" t-att-readonly="'readonly' if only_passwords else None"/>
+            </div>
+            <div class="mb-3 field-country">
+                <label for="country_id" class="white_text">Country</label>
+                <select name="country_id" id="country_id" class="form-control">
+                    <option value="">Country...</option>
+                    <t t-foreach="countries or []" t-as="country">
+                        <option t-att-value="country.id" t-att-selected="'selected' if country.id == selected_country else ''">
+                            <t t-esc="country.name"/>
+                        </option>
+                    </t>
+                </select>
+            </div> 
+            <div class="mb-3 field-city">
+                <label for="city" class="white_text">City</label>
+                <input type="text" name="city" t-att-value="city" id="city" class="form-control form-control-sm" autofocus="autofocus"
+                    autocapitalize="off" required="required" t-att-readonly="'readonly' if only_passwords else None"/>
+            </div>
+            <div class="mb-3 field-phone">
+                <label for="phone" class="white_text">Phone number</label>
+                <input type="text" name="phone" t-att-value="phone" id="phone" class="form-control form-control-sm" autofocus="autofocus"
+                    autocapitalize="off" required="required" t-att-readonly="'readonly' if only_passwords else None"/>
+            </div>
+            <div class="mb-3 field-gender">
+                <label for="gender" class="white_text">Gender</label>
+                <input type="text" name="gender" t-att-value="gender" id="gender" class="form-control form-control-sm" autofocus="autofocus"
+                    autocapitalize="off" required="required" t-att-readonly="'readonly' if only_passwords else None"/>
+            </div>
+            <div class="mb-3 field-linkedIn">
+                <label for="linkedIn" class="white_text">LinkedIn</label>
+                <input type="text" name="linkedIn" t-att-value="linkedIn" id="linkedIn" class="form-control form-control-sm" autofocus="autofocus"
+                    autocapitalize="off" required="required" t-att-readonly="'readonly' if only_passwords else None"/>
+            </div>
+            <div class="mb-3 field-recruitment">
+                <label for="recruitment" class="white_text">Do you want to be contacted for recruitment processes?</label>
+                <select class="form-control" name="recruitment" id="recruitment">
+                    <option t-attf-value="yes">Yes</option>
+                    <option t-attf-value="no">No</option>
+              </select>
+            </div>
+            <div class="mb-3 field-agreement">
+                <label for="policy_agreement" class="white_text">
+                    <input type="checkbox" name="policy_agreement" class="custom-control-input " required="required"/>
+                    I agree to the privacy policy</label>
+            </div>
+        </xpath>
+    </template>
+</odoo>
