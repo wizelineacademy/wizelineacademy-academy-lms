@@ -54,3 +54,17 @@
   list-style-type: none;
   margin-bottom: 1rem;
 }
+
+.navbar-black {
+  background-color: black !important;
+}
+
+.navbar-black .navbar-nav .nav-link {
+  color: white !important;
+}
+
+// create code to make the search bar white in the background
+.white-search-bar {
+  background-color: white;
+  color: black;
+}
