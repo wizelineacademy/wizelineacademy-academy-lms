@@ -62,3 +62,38 @@
   font-size: 16px;
   padding: 40px 0 0 0;
 }
+
+@media (max-width: 1200px) {
+  .text-container {
+    max-width: 445px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .text-container {
+    max-width: 310px;
+  }
+
+  .black-div {
+    height: 300px;
+  }
+}
+
+@media (max-width: 770px) {
+  .text-container {
+    max-width: 340px;
+  }
+
+  .trapezoid {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+
+  .blue-academy-text {
+    font-size: 32px;
+  }
+
+  .black-div {
+    height: 300px;
+  }
+}
+
