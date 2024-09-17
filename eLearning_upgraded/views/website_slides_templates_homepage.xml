@@ -5,7 +5,7 @@
     <xpath expr="//div[@id='wrap']" position="replace">
         <div id="wrap" class="wrap o_wslides_wrap">
             <div class="oe_structure oe_empty">
-            <section class="s_banner overflow-hidden" style="background-color:(0, 0, 0, 0); background-image: url(&quot;/theme_academy/static/src/img/hero-4-1440x0-c-default.jpg&quot;); background-size: cover; background-position: 55% 65%" data-snippet="s_banner">
+            <section class="s_banner overflow-hidden s_banner_hero" data-snippet="s_banner">
                 <div class="trapezoid">
                     <div class="text-container">
                         <h1 class="display-3 mb-0 blue-academy-text">Start your learning journey today.</h1>

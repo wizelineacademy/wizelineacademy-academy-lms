@@ -1,3 +1,9 @@
+.s_banner_hero {
+  background-color:(0, 0, 0, 0); 
+  background-image: url("/theme_academy/static/src/img/hero-4-2200x0-c-default.jpg"); 
+  background-size: cover; 
+  background-position: 55% 65%;
+}
 .navbar-black {
   background-color: black !important;
 }
@@ -76,6 +82,10 @@
 
   .black-div {
     height: 300px;
+  }
+
+  .s_banner_hero {
+    background-image: url("/theme_academy/static/src/img/hero-4-1440x0-c-default.jpg"); 
   }
 }
 
