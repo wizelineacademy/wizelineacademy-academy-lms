@@ -49,8 +49,8 @@
                                     <li class="subheader-list-item">
                                         <a class="subheader-link" role="menuitem" href="https://academy.wizeline.com/">About</a>
                                     </li>
-                                    <li class="subheader-list-item dropdown">
-                                        <a role="button" data-bs-toggle="dropdown" class="dropdown-toggle">Explore</a>
+                                    <li class="subheader-list-item dropdown dropdown-hover">
+                                        <a role="button" class="dropdown-toggle">Explore</a>
                                         <div class="dropdown-menu border-0 mt-1" role="menu">
                                             <a href="https://academy.wizeline.com/ai-academy/" role="menuitem" class="dropdown-item ps-3">
                                                 AI Academy
@@ -66,8 +66,8 @@
                                             </a>
                                         </div>
                                     </li>
-                                    <li class="subheader-list-item dropdown">
-                                        <a role="button" data-bs-toggle="dropdown" class="dropdown-toggle">Start Learning</a>
+                                    <li class="subheader-list-item dropdown dropdown-hover">
+                                        <a role="button" class="dropdown-toggle">Start Learning</a>
                                         <div class="dropdown-menu border-0 mt-1" role="menu">
                                             <a href="https://academy.wizeline.com/courses/" role="menuitem" class="dropdown-item ps-3">
                                                 Upcoming Experiences
@@ -76,11 +76,6 @@
                                                 On-Demand Experiences
                                             </a>
                                         </div>
-                                    </li>
-                                    <li class="subheader-list-item mobile-subheader">
-                                        <a href="/contactus" class="btn btn-primary join-btn" style="color: white;">
-                                            Join Our Mailing List
-                                        </a>
                                     </li>
                                     <li class="subheader-list-item">
                                         <t t-call="website.navbar_nav">

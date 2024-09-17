@@ -51,6 +51,29 @@
     }
 }
 
+.dropdown-hover {
+  .dropdown-menu {
+    display: block;
+    inset: 0px auto auto 0px;
+    margin: 0px;
+    transform: translate3d(10px, 43.5px, 0px);min-width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    a {
+      font-weight: 700;
+    }
+  }
+  &:hover {
+    .dropdown-menu {
+      max-height: 1000px;
+    }
+  }
+  .dropdown-toggle::after {
+    content: none;
+  }
+}
+
 .subheader-logo {
     width: 117px;
 }
