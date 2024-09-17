@@ -1,17 +1,64 @@
 .navbar-black {
-    background-color: black !important;
+  background-color: black !important;
 }
 
 .navbar-black .navbar-nav .nav-link {
-    color: #D3D3D4 !important;
+  color: #D3D3D4 !important;
 }
 
 // create code to make the search bar white in the background
 .white-search-bar {
-    background-color: white;
-    color: black;
-  }
-  
-  .white-search-bar-but {
-    background-color: #03C4FF;
-  }
+  background-color: white;
+  color: black;
+}
+
+.white-search-bar-but {
+  background-color: #03C4FF;
+}
+
+// blue wizeline text
+.blue-academy-text {
+  color: #03C4FF;
+}
+
+// for h3 tags with white wizeline text font size 16px
+.white-academy-text h3 {
+  color: white;
+  font-size: 16px;
+}
+
+.trapezoid {
+  position: absolute;
+  left: 0; /* Align to the left */
+  top: 0; /* Align to the top */
+  width: 100%; /* Full width to cover the image */
+  height: 100%; /* Full height to cover the image */
+  background-color: #000000; /* Color of the trapezoid */
+  clip-path: polygon(0% 0%, 55% 0%, 45% 100%, 0% 100%);
+  padding: 40px;
+}
+
+.black-div {
+  height: 250px;
+}
+
+.text-container {
+  margin-left: 20px; /* Add margin to the left */
+  max-width: 600px; /* Set a maximum width for the text container */
+  padding: 10px; /* Optional: Add padding inside the text container */
+}
+
+.text-white {
+  color: white;
+}
+
+.blue-academy-text {
+  color: #03C4FF; /* Example color, adjust as needed */
+  font-size: 42px;
+}
+
+.white-academy-text {
+  color: white;
+  font-size: 16px;
+  padding: 40px 0 0 0;
+}
