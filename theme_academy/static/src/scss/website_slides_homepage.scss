@@ -37,7 +37,7 @@
 // blue wizeline text
 .blue-academy-text {
   color: #03C4FF;
-  font-size: 54px;
+  font-size: 80px;
   font-weight: 700;
 }
 
@@ -59,12 +59,16 @@
 }
 
 .black-div {
-  height: 250px;
+  height: 300px;
+}
+
+.container-black {
+  background-color: #202529;
 }
 
 .text-container {
   margin-left: 20px; /* Add margin to the left */
-  max-width: 650px; /* Set a maximum width for the text container */
+  max-width: 730px; /* Set a maximum width for the text container */
   padding: 10px; /* Optional: Add padding inside the text container */
 }
 
