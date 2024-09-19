@@ -1,9 +1,21 @@
-.s_banner_hero {
+.overlay-container {
   background-color:(0, 0, 0, 0); 
-  background-image: url("/theme_academy/static/src/img/hero-4-2200x0-c-default.jpg"); 
+  background-image: url("/theme_academy/static/src/img/homepage_background.jpg"); 
   background-size: cover; 
   background-position: 55% 65%;
 }
+
+.overlay-container::before {
+  content: ""; /* Required for pseudo-elements */
+  position: absolute; /* Positioning it absolutely within the container */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(32, 52, 73, 0.6);; /* Blue color with 50% opacity */
+  z-index: 0; /* Places the overlay above the background image */
+}
+
 .navbar-black {
   background-color: #202529 !important;
 }
@@ -25,6 +37,8 @@
 // blue wizeline text
 .blue-academy-text {
   color: #03C4FF;
+  font-size: 54px;
+  font-weight: 700;
 }
 
 // for h3 tags with white wizeline text font size 16px
@@ -58,15 +72,15 @@
   color: white;
 }
 
-.blue-academy-text {
-  color: #03C4FF; /* Example color, adjust as needed */
-  font-size: 42px;
-}
-
 .white-academy-text {
   color: white;
   font-size: 16px;
   padding: 40px 0 0 0;
+}
+
+// academy rouund card
+.academy-round-card {
+  border-radius: 25px;
 }
 
 @media (max-width: 1400px) {
