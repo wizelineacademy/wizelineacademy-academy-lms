@@ -1,0 +1,13 @@
+<odoo><data>
+<record id="partner_is_lecturer_view" model="ir.ui.view">
+    <field name="name">res.partner.view.lecturers</field>
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="base.view_partner_form"/>
+
+    <field name="arch" type="xml">
+        <xpath expr="//field[@name='category_id']" position="after">
+            <field name="is_lecturer"/>
+        </xpath>
+    </field>
+</record>
+</data></odoo>
