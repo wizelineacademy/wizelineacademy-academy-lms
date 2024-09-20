@@ -1,3 +1,7 @@
+/* Content */
+
+/* Top section */
+
 .overlay-container {
   background-color:(0, 0, 0, 0); 
   background-image: url(/theme_academy/static/src/img/homepage_background.jpg); 
@@ -24,38 +28,16 @@
   color: #ffffff !important;
 }
 
-// create code to make the search bar white in the background
-.white-search-bar {
-  background-color: white;
-  color: black;
-}
-
-.white-search-bar-but {
-  background-color: #03C4FF;
-}
-
-// blue wizeline text
 .blue-academy-text {
   color: #03C4FF;
   font-size: 80px;
   font-weight: 700;
 }
 
-// for h3 tags with white wizeline text font size 16px
+
 .white-academy-text h3 {
   color: white;
   font-size: 16px;
-}
-
-.trapezoid {
-  position: absolute;
-  left: 0; /* Align to the left */
-  top: 0; /* Align to the top */
-  width: 100%; /* Full width to cover the image */
-  height: 100%; /* Full height to cover the image */
-  background-color: #202529; /* Color of the trapezoid */
-  clip-path: polygon(0% 0%, 55% 0%, 45% 100%, 0% 100%);
-  padding: 40px;
 }
 
 .black-div {
@@ -82,24 +64,42 @@
   padding: 40px 0 0 0;
 }
 
-// academy rouund card
+/* Search Bar */
+
+.white-search-bar {
+  background-color: white;
+  color: black;
+}
+
+.white-search-bar-but {
+  background-color: #03C4FF;
+}
+
+/* Courses section */
+
 .academy-round-card {
   border-radius: 25px;
 }
 
 @media (max-width: 1400px) {
+  /* Content */
+  /* Top section */
   .text-container {
     max-width: 540px;
   }
 }
 
 @media (max-width: 1200px) {
+  /* Content */
+  /* Top section */
   .text-container {
     max-width: 445px;
   }
 }
 
 @media (max-width: 1000px) {
+  /* Content */
+  /* Top section */
   .text-container {
     max-width: 310px;
   }
@@ -107,19 +107,13 @@
   .black-div {
     height: 300px;
   }
-
-  .s_banner_hero {
-    background-image: url("/theme_academy/static/src/img/hero-4-1440x0-c-default.jpg"); 
-  }
 }
 
 @media (max-width: 770px) {
+  /* Content */
+  /* Top section */
   .text-container {
     max-width: 340px;
-  }
-
-  .trapezoid {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   }
 
   .blue-academy-text {
