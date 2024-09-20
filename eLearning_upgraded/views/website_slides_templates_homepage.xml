@@ -6,16 +6,16 @@
         <div id="wrap" class="wrap o_wslides_wrap">
             <div class="oe_structure oe_empty">
             <section class="s_banner overflow-hidden overlay-container" data-snippet="s_banner">
-                <div class="container align-items-center d-flex mb-5 mt-lg-5 pt-lg-4 pb-lg-1 black-div">
-                    <div class="text-container">
-                        <h1 class="display-3 mb-0 blue-academy-text">Start your learning journey today.</h1>
-                        <h3 class="mb-4 white-academy-text">Our on-demand online learning experiences are available to you anytime, anywhere</h3>
+                <div class="container align-items-center d-flex mb-5 mt-lg-5 pt-lg-4 pb-lg-1 courses-banner">
+                    <div class="courses-banner__titles-container">
+                        <h1 class="display-3 mb-0 courses-banner__title">Start your learning journey today.</h1>
+                        <h3 class="mb-4 courses-banner__subtitle">Our on-demand online learning experiences are available to you anytime, anywhere</h3>
                     </div>
                 </div>
             </section>
             </div>
             <div class="container-black">
-                <nav class="container navbar navbar-expand-lg navbar-black shadow-sm">
+                <nav class="container navbar navbar-expand-lg courses-search-navbar shadow-sm">
                     <t t-call="website.website_search_box_input">
                         <t t-set="_form_classes" t-valuef="o_wslides_nav_navbar_right order-lg-3"/>
                         <t t-set="search_type" t-valuef="slides"/>
@@ -31,7 +31,7 @@
                     </button>
                     <div class="collapse navbar-collapse order-2" id="navbarSlidesHomepage">
                         <div class="navbar-nav pt-3 pt-lg-0">
-                            <a class="nav-link nav-link me-md-2 o_wslides_home_all_slides" href="/slides/all"><i class="fa fa-graduation-cap me-1"/>All courses</a>
+                            <a class="courses-search-navbar__link me-md-2 o_wslides_home_all_slides" href="/slides/all"><i class="fa fa-graduation-cap me-1"/>All courses</a>
                         </div>
                     </div>
                 </nav>
@@ -165,15 +165,15 @@
 <!-- Customized search box template -->
 <template id="website_search_box_input_custom" inherit_id="website.website_search_box_input">
     <xpath expr="//input[@name='search']" position="attributes">
-        <attribute name="t-attf-class" add="search-query form-control oe_search_box border-0 white-search-bar"/>
+        <attribute name="t-attf-class" add="search-query form-control oe_search_box border-0 courses-search-navbar__search-bar"/>
     </xpath>
     <xpath expr="//button[@type='submit']" position="attributes">
-        <attribute name="t-attf-class" add="btn oe_search_button white-search-bar-but"/>
+        <attribute name="t-attf-class" add="btn oe_search_button courses-search-navbar__search-button"/>
     </xpath>
 </template>
 <!-- Customized course card template -->
 <template id='course_card_custom' name="Course Card Custom">
-    <div t-attf-class="card academy-round-card w-100 o_wslides_course_card mb-4 #{'o_wslides_course_unpublished' if not channel.is_published else ''}" t-cache="channel if is_public_user and not search_tags else None">
+    <div t-attf-class="card course-card--new w-100 o_wslides_course_card mb-4 #{'o_wslides_course_unpublished' if not channel.is_published else ''}" t-cache="channel if is_public_user and not search_tags else None">
         <t t-set="channel_frontend_tags" t-value="channel.tag_ids.filtered(lambda tag: tag.color)"/>
         <a t-attf-href="/slides/#{slug(channel)}" t-title="channel.name" style="height:120px">
             <div t-field="channel.image_1920" t-options="{'widget': 'image', 'preview_image': 'image_512'}" class="o_wslides_background_image h-100">

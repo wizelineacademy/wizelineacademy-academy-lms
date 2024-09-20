@@ -1,9 +1,9 @@
 /* Content */
 
-/* Top section */
+/* Banner */
 
 .overlay-container {
-  background-color:(0, 0, 0, 0); 
+  background-color: (0, 0, 0, 0); // transparent
   background-image: url(/theme_academy/static/src/img/homepage_background.jpg); 
   background-size: cover; 
   background-position: 55% 65%;
@@ -16,49 +16,27 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(32, 52, 73, 0.6);; /* Blue color with 50% opacity */
+  background-color: rgba(32, 52, 73, 0.6);; /* Blue color with 60% opacity */
   z-index: 0; /* Places the overlay above the background image */
 }
 
-.navbar-black {
-  background-color: #202529 !important;
-}
-
-.navbar-black .navbar-nav .nav-link {
-  color: #ffffff !important;
-}
-
-.blue-academy-text {
+.courses-banner__title {
   color: #03C4FF;
   font-size: 80px;
   font-weight: 700;
 }
 
-
-.white-academy-text h3 {
-  color: white;
-  font-size: 16px;
-}
-
-.black-div {
+.courses-banner {
   height: 300px;
 }
 
-.container-black {
-  background-color: #202529;
-}
-
-.text-container {
+.courses-banner__titles-container {
   margin-left: 20px; /* Add margin to the left */
   max-width: 730px; /* Set a maximum width for the text container */
   padding: 10px; /* Optional: Add padding inside the text container */
 }
 
-.text-white {
-  color: white;
-}
-
-.white-academy-text {
+.courses-banner__subtitle {
   color: white;
   font-size: 16px;
   padding: 40px 0 0 0;
@@ -66,61 +44,69 @@
 
 /* Search Bar */
 
-.white-search-bar {
+.courses-search-navbar__search-bar {
   background-color: white;
   color: black;
 }
 
-.white-search-bar-but {
+.courses-search-navbar__search-button {
   background-color: #03C4FF;
+}
+
+.courses-search-navbar {
+  background-color: #202529 !important;
+}
+
+.courses-search-navbar__link {
+  color: #ffffff !important;
 }
 
 /* Courses section */
 
-.academy-round-card {
+.course-card--new {
   border-radius: 25px;
 }
 
 @media (max-width: 1400px) {
   /* Content */
   /* Top section */
-  .text-container {
+  .courses-banner__titles-container {
     max-width: 540px;
   }
 }
 
 @media (max-width: 1200px) {
   /* Content */
-  /* Top section */
-  .text-container {
+  /* Banner */
+  .courses-banner__titles-container {
     max-width: 445px;
   }
 }
 
 @media (max-width: 1000px) {
   /* Content */
-  /* Top section */
-  .text-container {
+  /* Banner */
+  .courses-banner__titles-container {
     max-width: 310px;
   }
 
-  .black-div {
+  .courses-banner {
     height: 300px;
   }
 }
 
 @media (max-width: 770px) {
   /* Content */
-  /* Top section */
-  .text-container {
+  /* Banner */
+  .courses-banner__titles-container {
     max-width: 340px;
   }
 
-  .blue-academy-text {
+  .courses-banner__title {
     font-size: 32px;
   }
 
-  .black-div {
+  .courses-banner {
     height: 300px;
   }
 }
