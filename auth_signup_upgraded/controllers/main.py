@@ -43,13 +43,13 @@ class RedirectedSignup(AuthSignupHome):
     def get_auth_signup_qcontext(self):
         qcontext = super(RedirectedSignup, self).get_auth_signup_qcontext()
         """ Shared helper returning the rendering context for signup and reset password """
-        other_fields = {k: v for (k, v) in request.params.items() if k in ['last_name', 'city', 'phone', 'gender', 'linkedIn', 'recruitment', 'country_id', 'policy_agreement']}
+        other_fields = {k: v for (k, v) in request.params.items() if k in ['last_name', 'city', 'phone', 'gender', 'linkedIn', 'recruitment', 'country_id', 'policy_agreement', 'lecturer']}
         qcontext.update(other_fields)
         return qcontext
     
     def _prepare_signup_values(self, qcontext):
         values = super(RedirectedSignup, self)._prepare_signup_values(qcontext)
-        values.update({ key: qcontext.get(key) for key in ('last_name', 'city', 'phone', 'gender', 'linkedIn', 'recruitment', 'country_id', 'policy_agreement') })
+        values.update({ key: qcontext.get(key) for key in ('last_name', 'city', 'phone', 'gender', 'linkedIn', 'recruitment', 'country_id', 'policy_agreement', 'lecturer') })
         return values
     
     # this method allows for the countries dropdown to work

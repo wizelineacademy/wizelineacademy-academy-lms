@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
+    <!--Esta vista incluye las modificaciones de diseño del login-->
     <template id="extended_login" inherit_id="web.login" name="Login with added design">
         <xpath expr="///div[contains(@class, 'field-login')]" position="replace">
             <div class="mb-3 field-login">
@@ -14,7 +15,9 @@
             </div>
         </xpath>
         <xpath expr="//button[contains(@class, 'btn-primary')]" position="replace">
-                <button type="submit" class="btn btn-primary big_button">Log in</button>
+            
+                <button type="submit" class="btn btn-primary big_button_login_signup">Log in</button>
+                
         </xpath>
     </template>
 </odoo>

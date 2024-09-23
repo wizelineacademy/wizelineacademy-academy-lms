@@ -11,6 +11,7 @@ class ResPartnerExtended(models.Model):
     linkedIn = fields.Char(string="Linkedin Profile URL")
     recruitment = fields.Selection([('yes','Yes'),('no','No')],string="")
     policy_agreement = fields.Boolean(string="Privacy Policy Agreement", default=False)
+    lecturer = fields.Boolean(string="Lecturer", default=False)
     
     @api.constrains('email')
     def _validate_email(self):
@@ -18,6 +19,13 @@ class ResPartnerExtended(models.Model):
         for rec in self:
             if rec.email and re.match(regex,rec.email) == None:
                 raise UserError("Please enter a correct email address")
+    
+    @api.constrains('linkedIn')
+    def _validate_linkedIn(self):
+        regex_l = r"https?:\/\/(www\.)?linkedin\.com\/in\/[a-zA-Z0-9-]+\/?$"
+        for rec in self:
+            if rec.linkedIn and re.match(regex_l,rec.linkedIn) == None:
+                raise UserError("Please enter a correct linkedin profile link")
     
     @api.constrains('phone')
     def _validate_phone(self):
