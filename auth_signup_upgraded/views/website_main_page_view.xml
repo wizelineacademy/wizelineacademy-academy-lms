@@ -3,7 +3,7 @@
 <!--Esta vista incluye la adición del botón de sign in - ponerlo al inicio-->
 <odoo>
     <template id="auth_signup_upgraded_login_page_design" inherit_id="website.login_layout" name="NewLoginPage">
-        <xpath expr="//div[contains(@class, 'oe_website_login_container')]" position="replace">
+        <xpath expr="//div[hasclass('oe_website_login_container')]" position="replace">
             <div class="add_background_logo_signup">
                 <t t-if="request.httprequest.path == '/web/login' and request.env.user.id == request.website.user_id.id">
                     <h1 class="white_subtitle center_subtitle_welcome">Welcome again!</h1>

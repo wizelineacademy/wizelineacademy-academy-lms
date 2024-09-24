@@ -5,7 +5,7 @@
 
     <template id="extended_signup" inherit_id="auth_signup.fields" name="Sign up with added fields">
 
-        <xpath expr="///div[contains(@class, 'field-login')]" position="replace">
+        <xpath expr="///div[hasclass('field-login')]" position="replace">
             
             <div class="column-content mb-3 field-login">
                 <label for="login" class="white_text">Email</label>
@@ -13,7 +13,7 @@
                     autocapitalize="off" required="required" t-att-readonly="'readonly' if only_passwords else None"/>
             </div>
         </xpath>
-        <xpath expr="///div[contains(@class, 'field-name')]" position="replace">
+        <xpath expr="///div[hasclass('field-name')]" position="replace">
             <div class="column-content mb-3 field-name">
                 <label for="name" class="white_text">Your Name</label>
                 <input type="text" name="name" t-att-value="name" id="name" class="form-control form-control-sm"
@@ -48,7 +48,7 @@
                     autocapitalize="off" required="required" t-att-readonly="'readonly' if only_passwords else None"/>
             </div>
         </xpath>
-        <xpath expr="///div[contains(@class, 'field-phone')]" position="after">
+        <xpath expr="///div[hasclass('field-phone')]" position="after">
             
             <div class="column-content mb-3 field-gender">
                 <label for="gender" class="white_text">Gender</label>
@@ -79,14 +79,14 @@
             </div>
         </xpath>
         
-        <xpath expr="///div[contains(@class, 'field-password')]" position="replace">
+        <xpath expr="///div[hasclass('field-password')]" position="replace">
             <div class="column-content mb-3 field-password pt-2">
                 <label for="password" class="white_text">Password</label>
                 <input type="password" name="password" id="password" class="form-control form-control-sm"
                     required="required" t-att-autofocus="'autofocus' if only_passwords else None"/>
             </div>
         </xpath>
-        <xpath expr="///div[contains(@class, 'field-confirm_password')]" position="replace">
+        <xpath expr="///div[hasclass('field-confirm_password')]" position="replace">
             <div class="column-content mb-3 field-confirm_password">
                 <label for="confirm_password" class="white_text">Confirm Password</label>
                 <input type="password" name="confirm_password" id="confirm_password" class="form-control form-control-sm" required="required"/>
@@ -96,7 +96,7 @@
 
 
     <template id="extended_signup_button" inherit_id="auth_signup.signup" name="New sign up button">
-        <xpath expr="//form[@class='oe_signup_form']" position="replace">
+        <xpath expr="//form[hasclass('oe_signup_form')]" position="replace">
 
             <form class="" role="form" method="post" t-if="not message">
                 <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
