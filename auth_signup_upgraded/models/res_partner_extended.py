@@ -11,7 +11,7 @@ class ResPartnerExtended(models.Model):
     linkedIn = fields.Char(string="Linkedin Profile URL")
     recruitment = fields.Selection([('yes','Yes'),('no','No')],string="")
     policy_agreement = fields.Boolean(string="Privacy Policy Agreement", default=False)
-    lecturer = fields.Boolean(string="Lecturer", default=False)
+    is_lecturer = fields.Boolean(string="Lecturer", default=False)
     
     @api.constrains('email')
     def _validate_email(self):

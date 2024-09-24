@@ -60,9 +60,9 @@
                 <input type="text" name="linkedIn" t-att-value="linkedIn" id="linkedIn" class="form-control form-control-sm" autofocus="autofocus"
                     autocapitalize="off" required="required" t-att-readonly="'readonly' if only_passwords else None"/>
             </div>
-            <div class="column-content mb-3 field-lecturer">
-                <label for="lecturer" class="white_text">
-                    <input type="checkbox" name="lecturer" class="custom-control-input "/>
+            <div class="column-content mb-3 field-is_lecturer">
+                <label for="is_lecturer" class="white_text">
+                    <input type="checkbox" name="is_lecturer" class="custom-control-input "/>
                     I am a lecturer</label>
             </div>
             <div class="column-content mb-3 field-recruitment">
