@@ -1,0 +1,152 @@
+/* Content */
+
+/* Banner */
+.overlay-container_all {
+    background-image: url(/theme_academy/static/src/img/logomark_blue.png); 
+    background-size: auto 200%; 
+    background-position: center right; /* Place the image on the right side */
+    background-repeat: no-repeat; 
+    height: 300px; 
+    background-color: #203449;
+    
+}
+
+
+.overlay-container_all::before {
+    content: ""; /* Required for pseudo-elements */
+    position: absolute; /* Positioning it absolutely within the container */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0; /* Places the overlay above the background image */
+}
+
+.courses-banner__title {
+    color: #ffffff;
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.courses-banner {
+    height: 300px;
+}
+
+//Level Button
+.dropdown-toggle-all {
+    background-color: #202529; /* Color del botón */
+    color: white;
+    border: none;
+    box-shadow: none;
+    transition: color 0.3s ease;
+    font-size: 16px;
+    line-height: 1;
+    padding: 8px 16px;
+    font-weight: bold; 
+}
+
+.dropdown-toggle-all:focus,
+.dropdown-toggle-all:hover,
+.dropdown-toggle-all:active {
+    color: #03C4FF;
+    background-color: #202529; 
+    box-shadow: none;
+}
+
+.dropdown-menu {
+    background-color: #ffffff; /* Color de fondo del menú */
+}
+
+.dropdown-item:hover {
+    color: #03C4FF;
+    background-color: transparent;
+}
+
+.dropdown-item {
+    font-size: 14px;
+}
+
+
+//Courses
+
+.row.mx-n2.mt8 {
+    justify-content: center; /* Centra los elementos dentro de la fila */
+}
+
+.col-md-4.col-sm-6.px-2.col-xs-12.d-flex {
+    max-width: 350px;
+}
+
+
+
+.courses-banner__titles-container {
+    margin-left: 20px; /* Add margin to the left */
+    max-width: 730px; /* Set a maximum width for the text container */
+    padding: 10px; /* Optional: Add padding inside the text container */
+}
+
+
+  /* Search Bar */
+
+.courses-search-navbar__search-bar {
+    background-color: white;
+    color: black;
+}
+
+
+.courses-search-navbar {
+    background-color: #202529 !important;
+}
+
+.courses-search-navbar__link {
+    color: #ffffff !important;
+}
+
+/* Courses section */
+
+.course-card--new {
+    border-radius: 25px;
+}
+
+@media (max-width: 1400px) {
+    /* Content */
+    /* Top section */
+    .courses-banner__titles-container {
+    max-width: 540px;
+    }
+}
+
+@media (max-width: 1200px) {
+    /* Content */
+    /* Banner */
+    .courses-banner__titles-container {
+    max-width: 445px;
+    }
+}
+
+@media (max-width: 1000px) {
+    /* Content */
+    /* Banner */
+    .courses-banner__titles-container {
+    max-width: 310px;
+    }
+
+    .courses-banner {
+    height: 300px;
+    }
+}
+@media (max-width: 770px) {
+    /* Content */
+    /* Banner */
+    .courses-banner__titles-container {
+    max-width: 340px;
+    }
+
+    .courses-banner__title {
+    font-size: 32px;
+    }
+
+    .courses-banner {
+    height: 300px;
+    }
+}
