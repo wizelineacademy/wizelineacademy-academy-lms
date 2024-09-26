@@ -16,7 +16,8 @@
         'views/course_skills_view.xml',
         'views/menu_import_view.xml',
         'views/student_skills_view.xml',
-        'data/skills_data.xml'
+        'data/skills_data.xml',
+        'views/about_course_view.xml',
     ],
     'license': 'LGPL-3',
 }
