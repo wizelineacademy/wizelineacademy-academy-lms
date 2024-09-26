@@ -1,7 +1,7 @@
 <?xmd version="1.0" encoding="utf-8"?>
 <odoo><data>
     <template id="course_main_about" name="About Course" inherit_id="website_slides.course_main">
-        <xpath expr="//div[@id='courseMainTabContent']/div[@id='home']/*[1]" position="before">
+        <xpath expr="//div[@id='courseMainTabContent']/div[@id='home']/*[1]" position="after">
             <div t-if="not is_html_empty(channel.who_should_take)" class="mb-4">
                 <h3 style="font-weight:bold;">Who Should Take This Course?</h3>
                 <div class="oe_no_empty" t-field="channel.who_should_take" t-options="{'widget': 'html'}"/>
