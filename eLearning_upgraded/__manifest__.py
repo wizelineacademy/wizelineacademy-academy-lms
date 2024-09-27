@@ -18,7 +18,6 @@
         'views/student_skills_view.xml',
         'views/course_main_lecturers_tab.xml',
         'data/skills_data.xml',
-        'views/slide_channel_lecturers.xml',
     ],
     'license': 'LGPL-3',
 }

@@ -3,7 +3,7 @@
         <!-- Lecturers Tab -->
         <template id="course_main_lecturers_tab" name="Lecturers Tab" inherit_id="website_slides.course_main">
             <xpath expr="//ul[@id='profile_extra_info_tablist']" position="inside">
-                <li class="nav-item" role="presentation">
+                <li class="nav-item" role="presentation" t-if="channel.lecturers">
                     <a t-att-class="'nav-link %s' % ('active' if active_tab == 'lecturers' else '')" id="lecturers-tab" data-bs-toggle="pill" href="#lecturers" role="tab" aria-controls="lecturers" t-att-aria-selected="'true' if active_tab == 'lecturers' else 'false'">
                         Lecturers
                     </a>
@@ -38,10 +38,32 @@
                         <p class="mb-5 mb-md-2 text-center" style="font-size:16px;"><t t-esc="lecturer.function"/></p>
                     </div>
                     <div class="col-md-8 d-flex align-items-center justify-content-start">
-                        <p style="font-size:16px;"><t t-esc="lecturer.comment"/></p>
+                        <div style="font-size:14px;" class="oe_no_empty" t-field="lecturer.comment" t-options="{'widget': 'html'}"/>
                     </div>
                 </div>
             </div>
         </template>
+
+        <!-- Edit lecturers on slide channel view -->
+        <record id="assign_lecturers" model="ir.ui.view">
+            <field name="name">slide.channel.view.form.assign.lecturers</field>
+            <field name="model">slide.channel</field>
+            <field name="inherit_id" ref="website_slides.view_slide_channel_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='options']" position="after">
+                    <page name="assign_lecturers" string="Lecturers">
+                            <group>
+                                <field name="lecturers" domain="[('is_lecturer', '=', True)]">
+                                    <tree>
+                                        <field name="name"/>
+                                        <field name="email"/>
+                                        <field name="function"/>
+                                    </tree>
+                                </field>
+                            </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
     </data>
 </odoo>
