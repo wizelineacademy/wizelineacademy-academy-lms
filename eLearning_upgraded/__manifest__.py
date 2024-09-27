@@ -9,7 +9,7 @@
     """,
     'company': 'systemBlue',
     'website' : 'https://github.com/oszac/Sistemas-de-Software/wiki',
-    'depends' : ['website_slides', 'auth_oauth'],
+    'depends' : ['website_slides', 'auth_oauth', 'auth_signup_upgraded'],
     'data' : [
         'security/ir.model.access.csv',
         'wizard/import_course_view.xml',
@@ -17,7 +17,8 @@
         'views/menu_import_view.xml',
         'views/student_skills_view.xml',
         'views/course_main_lecturers_tab.xml',
-        'data/skills_data.xml'
+        'data/skills_data.xml',
+        'views/slide_channel_lecturers.xml',
     ],
     'license': 'LGPL-3',
 }
