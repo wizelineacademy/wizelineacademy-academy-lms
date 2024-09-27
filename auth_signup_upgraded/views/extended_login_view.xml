@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!--Esta vista incluye las modificaciones de diseño del login-->
+    <template id="extended_login" inherit_id="web.login" name="Login with added design">
+        <xpath expr="///div[hasclass('field-login')]" position="replace">
+            <div class="mb-3 field-login">
+                <label for="login" class="form-label white_text">Email</label>
+                <input type="text" placeholder="Email" name="login" t-att-value="login" id="login" t-attf-class="form-control #{'form-control-sm' if form_small else ''}" required="required" autocomplete="username" autofocus="autofocus" autocapitalize="off"/>
+            </div>
+        </xpath>
+        <xpath expr="//div[label[@for='password']]" position="replace">
+            <div class="mb-3">
+                <label for="password" class="form-label white_text">Password</label>
+                <input type="password" placeholder="Password" name="password" id="password" t-attf-class="form-control #{'form-control-sm' if form_small else ''}" required="required" autocomplete="current-password" t-att-autofocus="'autofocus' if login else None" maxlength="4096"/>
+            </div>
+        </xpath>
+        <xpath expr="//button[hasclass('btn-primary')]" position="replace">
+            
+                <button type="submit" class="btn btn-primary big_button_login_signup">Log in</button>
+                
+        </xpath>
+    </template>
+</odoo>

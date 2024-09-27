@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Esta vista incluye la modificación del botón de sign in - darle formato si es necesario-->
+<odoo>
+    <template id="new_user_sign_in" inherit_id="portal.user_sign_in">
+        <xpath expr="//li[.//a]" position="replace">
+                <t t-if="request.httprequest.path == '/' and request.env.user.id == request.website.user_id.id">
+                <a t-attf-href="/web/login" class="btn btn-primary big_button_login_signup">
+                    LOG IN
+                </a>
+                </t>
+            
+        </xpath>
+    </template>
+</odoo>
