@@ -1,0 +1,217 @@
+<?xml version="1.0" ?>
+<odoo><data>
+
+<template id="my_slides_homepage" inherit_id="website_slides.courses_home">
+    <xpath expr="//div[@id='wrap']" position="replace">
+        <div id="wrap" class="wrap o_wslides_wrap">
+            <div class="oe_structure oe_empty">
+            <section class="s_banner overflow-hidden overlay-container" data-snippet="s_banner">
+                <div class="container align-items-center d-flex mb-5 mt-lg-5 pt-lg-4 pb-lg-1 courses-banner">
+                    <div class="courses-banner__titles-container">
+                        <h1 class="display-3 mb-0 courses-banner__title">Start your learning journey today.</h1>
+                        <h3 class="mb-4 courses-banner__subtitle">Our on-demand online learning experiences are available to you anytime, anywhere</h3>
+                    </div>
+                </div>
+            </section>
+            </div>
+            <div class="container-black">
+                <nav class="container navbar navbar-expand-lg courses-search-navbar shadow-sm">
+                    <t t-call="website.website_search_box_input">
+                        <t t-set="_form_classes" t-valuef="o_wslides_nav_navbar_right order-lg-3"/>
+                        <t t-set="search_type" t-valuef="slides"/>
+                        <t t-set="action" t-valuef="/slides/all"/>
+                        <t t-set="display_description" t-valuef="true"/>
+                        <t t-set="display_detail" t-valuef="false"/>
+                        <t t-set="placeholder">Search courses</t>
+                    </t>
+                    <button class="navbar-toggler px-2 order-1" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarSlidesHomepage"
+                        aria-controls="navbarSlidesHomepage" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"/>
+                    </button>
+                    <div class="collapse navbar-collapse order-2" id="navbarSlidesHomepage">
+                        <div class="navbar-nav pt-3 pt-lg-0">
+                            <a class="courses-search-navbar__link me-md-2 o_wslides_home_all_slides" href="/slides/all"><i class="fa fa-graduation-cap me-1"/>All courses</a>
+                        </div>
+                    </div>
+                </nav>
+                <div class="o_wprofile_email_validation_container">
+                    <t t-call="website_profile.email_validation_banner">
+                        <t t-set="redirect_url" t-value="'/slides'"/>
+                        <t t-set="send_alert_classes" t-value="'alert alert-danger alert-dismissable mt-4 mb-0'"/>
+                        <t t-set="done_alert_classes" t-value="'alert alert-success alert-dismissable mt-4 mb-0'"/>
+                        <t t-set="additional_validation_email_message"> and join this Community</t>
+                        <t t-set="additional_validated_email_message"> You may now participate in our eLearning.</t>
+                    </t>
+                </div>
+            </div>
+
+            <div class="container o_wslides_home_main mt80">
+                <div class="row">
+                    <t t-set="has_side_column" t-value="is_view_active('website_slides.toggle_leaderboard')"/>
+                    <t t-if="is_public_user">
+                        <div t-if="has_side_column" class="col-lg-3 order-3 order-lg-2">
+                            <div class="row">
+                                <div class="col-12 col-md-5 col-lg-12">
+                                    <div class="ps-md-5 ps-lg-0">
+                                        <t t-call="website_slides.slides_home_users_small"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                    <div t-else="" class="col-lg-3 order-lg-2">
+                        <t t-set="has_side_column" t-value="True"/>
+                        <div class="o_wslides_home_aside_loggedin card p-3 p-lg-0 mb-4">
+                            <div class="o_wslides_home_aside_title">
+                                <div class="d-flex align-items-center">
+                                    <t t-call="website_slides.slides_misc_user_image">
+                                        <t t-set="img_class" t-value="'rounded-circle me-1'"/>
+                                        <t t-set="img_style" t-value="'width: 22px; height: 22px;'"/>
+                                    </t>
+                                    <h5 t-esc="user.name" class="d-flex flex-grow-1 mb-0"/>
+                                    <a class="d-none d-lg-block" t-att-href="'/profile/user/%s' % user.id">View</a>
+                                    <a class="d-lg-none btn btn-sm bg-white border" href="#" data-bs-toggle="collapse" data-bs-target="#o_wslides_home_aside_content">More info</a>
+                                </div>
+                                <hr class="d-none d-lg-block mt-2 mb-2 mb-1"/>
+                            </div>
+                            <div id="o_wslides_home_aside_content" class="collapse d-lg-block">
+                                <div class="row g-0 mb-5 mt-3 mt-lg-0">
+                                    <div class="col-12 col-sm-6 col-lg-12">
+                                        <t t-call="website_slides.slides_home_user_profile_small"/>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-12 ps-md-5 ps-lg-0 mt-lg-4">
+                                        <t t-call="website_slides.slides_home_user_achievements_small"/>
+                                    </div>
+                                    <div class="col-12 col-md-7 col-lg-12 ps-md-5 ps-lg-0 mt-lg-4 mb-3">
+                                        <t t-call="website_slides.slides_home_achievements_small"/>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-12 ps-md-5 ps-lg-0 mt-lg-4">
+                                        <t t-call="website_slides.slides_home_users_small"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div t-att-class="'col-lg-9 pe-lg-5 order-lg-1' if has_side_column else 'col-lg pr-lg'">
+                        <div t-if="invite_error_msg" role="alert" class="o_not_editable alert alert-danger text-center" t-esc="invite_error_msg"/>
+                        <div class="o_wslides_home_content_section mb-3"
+                            t-if="not channels_popular">
+                            <p class="h2">No Course created yet.</p>
+                            <p groups="website_slides.group_website_slides_officer">Click on "New" in the top-right corner to write your first course.</p>
+                        </div>
+                        <t t-if="channels_my">
+                            <t t-set="void_count" t-value="3 - len(channels_my[:3])"/>
+                            <div class="o_wslides_home_content_section mb-3">
+                                <div class="row o_wslides_home_content_section_title align-items-center">
+                                    <div class="col">
+                                        <a href="/slides/all?my=1" class="float-end">View all</a>
+                                        <h5 class="m-0">My courses</h5>
+                                        <hr class="mt-2 mb-2"/>
+                                    </div>
+                                </div>
+                                <div class="row mx-n2 mt8">
+                                    <t t-foreach="channels_my[:3]" t-as="channel">
+                                        <div class="col-md-4 col-sm-6 px-2 col-xs-12 d-flex">
+                                            <t t-call="eLearning_upgraded.course_card_custom"/>
+                                        </div>
+                                    </t>
+                                </div>
+                            </div>
+                        </t>
+                        <div class="o_wslides_home_content_section mb-3"
+                            t-if="channels_popular">
+                            <div class="row o_wslides_home_content_section_title align-items-center">
+                                <div class="col">
+                                    <a href="slides/all" class="float-end">View all</a>
+                                    <h5 class="m-0">Most popular courses</h5>
+                                    <hr class="mt-2 mb-2"/>
+                                </div>
+                            </div>
+                            <div class="row mx-n2 mt8">
+                                <t t-foreach="channels_popular[:3]" t-as="channel">
+                                    <div class="col-md-4 col-sm-6 px-2 col-xs-12 d-flex">
+                                        <t t-call="eLearning_upgraded.course_card_custom"/>
+                                    </div>
+                                </t>
+                            </div>
+                        </div>
+                        <div class="o_wslides_home_content_section mb-3"
+                            t-if="channels_newest">
+                            <div class="row o_wslides_home_content_section_title align-items-center">
+                                <div class="col">
+                                    <a href="slides/all" class="float-end">View all</a>
+                                    <h5 class="m-0">Newest courses</h5>
+                                    <hr class="mt-2 mb-2"/>
+                                </div>
+                            </div>
+                            <div class="row mx-n2 mt8">
+                                <t t-foreach="channels_newest[:3]" t-as="channel">
+                                    <div class="col-md-4 col-sm-6 px-2 col-xs-12 d-flex">
+                                        <t t-call="eLearning_upgraded.course_card_custom"/>
+                                    </div>
+                                </t>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <t t-call="website_slides.courses_footer"></t>
+            <!-- Include the website_search_box_input_red template -->
+        </div>
+    </xpath>    
+    
+</template>
+<!-- Customized search box template -->
+<template id="website_search_box_input_custom" inherit_id="website.website_search_box_input">
+    <xpath expr="//input[@name='search']" position="attributes">
+        <attribute name="t-attf-class" add="search-query form-control oe_search_box border-0 courses-search-navbar__search-bar"/>
+    </xpath>
+    <xpath expr="//button[@type='submit']" position="attributes">
+        <attribute name="t-attf-class" add="btn oe_search_button courses-search-navbar__search-button"/>
+    </xpath>
+</template>
+<!-- Customized course card template -->
+<template id='course_card_custom' name="Course Card Custom">
+    <div t-attf-class="card course-card--new w-100 o_wslides_course_card mb-4 #{'o_wslides_course_unpublished' if not channel.is_published else ''}" t-cache="channel if is_public_user and not search_tags else None">
+        <t t-set="channel_frontend_tags" t-value="channel.tag_ids.filtered(lambda tag: tag.color)"/>
+        <a t-attf-href="/slides/#{slug(channel)}" t-title="channel.name" style="height:120px">
+            <div t-field="channel.image_1920" t-options="{'widget': 'image', 'preview_image': 'image_512'}" class="o_wslides_background_image h-100">
+                <t t-if="channel.partner_has_new_content" t-call="website_slides.course_card_information"/>
+            </div>
+        </a>
+        <div class="card-body p-3">
+            <a class="card-title h5 mb-2 o_wslides_desc_truncate_2" t-attf-href="/slides/#{slug(channel)}" t-field="channel.name"/>
+            <span t-if="not channel.is_published" class="badge text-bg-danger p-1">Unpublished</span>
+            <div class="card-text d-flex flex-column flex-grow-1 mt-1">
+                <div class="fw-light o_wslides_desc_truncate_3" t-field="channel.description_short"/>
+                <div t-if="channel_frontend_tags" class="mt-auto pt-1 o_wslides_desc_truncate_2_badges">
+                    <t t-foreach="channel_frontend_tags" t-as="tag">
+                        <t t-if="search_tags">
+                            <a t-att-href="slide_query_url(tag=slugify_tags(search_tags.ids, toggle_tag_id=tag.id), my=search_my, search=search_term, slide_category=search_slide_category)" t-attf-class="badge post_link #{'text-bg-primary' if tag in search_tags else 'o_wslides_channel_tag o_tag_color_0'}" t-att-rel="search_tags and 'nofollow'" t-esc="tag.name"/>
+                        </t>
+                        <t t-else="">
+                            <a t-att-href="slide_query_url(tag=slugify_tags(search_tags.ids, toggle_tag_id=tag.id), my=search_my, search=search_term, slide_category=search_slide_category)" t-attf-class="badge post_link o_wslides_channel_tag #{'o_tag_color_'+str(tag.color)}" t-att-rel="search_tags and 'nofollow'" t-esc="tag.name"/>
+                        </t>
+                    </t>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer bg-white text-600 px-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <small t-if="channel.total_time" class="fw-bold" t-esc="channel.total_time" t-options="{'widget': 'duration', 'unit': 'hour', 'round': 'minute'}"/>
+                <div class="d-flex flex-grow-1 justify-content-end">
+                    <t t-if="channel.is_member and channel.completed">
+                        <span class="badge rounded-pill text-bg-success pull-right py-1 px-2"><i class="fa fa-check"/> Completed</span>
+                    </t>
+                    <div t-elif="channel.is_member and channel.channel_type != 'documentation'" class="progress w-50" style="height: 6px">
+                        <div class="progress-bar" role="progressbar" t-att-aria-valuenow="channel.completion" aria-valuemin="0" aria-valuemax="100" t-attf-style="width:#{channel.completion}%;" aria-label="Progress bar"/>
+                    </div>
+                    <small t-else=""><b t-esc="channel.total_slides"/> steps</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+</data></odoo>
