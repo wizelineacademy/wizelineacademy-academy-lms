@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="courses_main_custom" name="Custom main course" inherit_id="website_slides.course_main">
+        <xpath expr="//div[@id='wrap']" position="replace">
+
+            <div class="oe_structure oe_empty">
+                <t t-set="_record" t-value="channel"/>
+                <t t-set="use_size" t-value="True"/>
+                <t t-set="use_text_align" t-value="True"/>
+                <div t-attf-class="o_wslides_course_header position-relative pb-md-0 #{'pb-3' if channel.channel_type == 'training' else 'o_wslides_course_doc_header pb-5'}">
+                    <t t-call="website_slides.course_nav"/>
+                    <div class="custom_wslides_course_header">
+                        <div class="container">
+                            <div class="row align-items-end align-items-md-stretch">
+
+                                <div class="col-12 col-md-4 col-lg-3 position-relative">
+                                    <div class=" d-none d-md-flex align-items-end justify-content-around h-100">
+                                        <div t-field="channel.image_1920" t-options="{'widget': 'image', 'class' : 'o_wslides_course_pict d-inline-block mb-2 mt-3 my-md-0', 'preview_image': 'image_1024'}" class="h-100"/>
+                                        <div class="overlay-icon">
+                                            <button role="button" class="btn btn-link" title="Share Channel" aria-label="Share Channel" data-bs-toggle="modal" t-att-data-bs-target="'#slideShareModal_%s' % channel.id">
+                                                <img src="/theme_academy/static/src/img/ios_share.png" alt="Icon" class="icon"/>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-12 col-md-8 col-lg-9 d-flex flex-column header-text">
+                                    <div class="d-flex flex-column">
+                                        <h1 t-field="channel.name" class="custom_course_name"/>
+                                        <div class="mb-0 mb-xl-3 custom_course_description" t-field="channel.description"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <t t-call="website_slides.slide_share_modal">
+                <t t-set="record" t-value="channel"/>
+                <t t-set="slide_share_modal_title">Share This Course</t>
+                <t t-set="website_share_url" t-value="channel.website_url"/>
+            </t>
+
+            <div class="o_wslides_course_main custom_wslides_course_main">
+                <div class="container mb-5">
+                    <div class="row">
+                        <div class="col-12 col-md-4 col-lg-3 mt-3 mt-md-0 custom_sidebar">
+                            <t t-call="eLearning_upgraded.custom_course_sidebar" />
+                        </div>
+                        <div class="col-12 col-md-8 col-lg-9 position-relative">
+                            <ul class="nav nav-tabs o_wslides_nav_tabs flex-nowrap" role="tablist" id="profile_extra_info_tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a t-att-class="'nav-link %s' % ('active' if active_tab == 'home' else '')" id="home-tab" data-bs-toggle="pill" href="#home" role="tab" aria-controls="home" t-att-aria-selected="'true' if active_tab == 'home' else 'false'">
+ Course
+                                    </a>
+                                </li>
+                                <li class="nav-item o_wslides_course_header_nav_review" role="presentation">
+                                    <a t-att-class="'nav-link %s' % ('active' if active_tab == 'review' else '')" id="review-tab" data-bs-toggle="pill" href="#review" role="tab" aria-controls="review" t-att-aria-selected="'true' if active_tab == 'review' else 'false'">
+                                        Reviews
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content py-4 o_wslides_tabs_content mb-4" id="courseMainTabContent">
+                                <div t-att-class="'tab-pane fade %s' % ('show active' if active_tab == 'home' else '')" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+                                    <div t-if="access_error == 'course_content'" class="alert alert-danger alert-dismissable mb-1" role="alert">
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"/>
+                                        You need to join this course to access "<t t-out="access_error_content_name"/>
+".
+                                    </div>
+
+                                    <div t-if="invite_preview" class="o_wslides_identification_banner alert alert-success mb-4 p-2 px-3" role="alert">
+                                        You have been invited to this course.
+                                        <a class="o_underline" t-attf-href="/slides/#{channel.id}/identify?#{keep_query('invite_partner_id', 'invite_hash')}">
+                                            <t t-if="is_partner_without_user">Sign up</t>
+                                            <t t-else="">Log in</t>
+                                        </a> to browse preview content and enroll.
+                                    </div>
+
+                                </div>
+                                <div t-att-class="'tab-pane fade %s' % ('show active' if active_tab == 'review' else '')" id="review" role="tabpanel" aria-labelledby="review-tab">
+                                    <div class="custom_review_component">
+                                        <t t-call="portal.message_thread">
+                                            <t t-set="object" t-value="channel"/>
+                                            <t t-set="display_rating" t-value="True"/>
+                                            <t t-set="disable_composer" t-value="True"/>
+                                        </t>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </xpath>
+    </template>
+
+</odoo>
