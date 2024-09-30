@@ -14,8 +14,8 @@
                 </div>
             </section>
             </div>
-            <div class="container-black">
-                <nav class="container navbar navbar-expand-lg courses-search-navbar shadow-sm">
+            <div class="courses-search-navbar">
+                <nav class="container navbar navbar-expand-lg shadow-sm">
                     <t t-call="website.website_search_box_input">
                         <t t-set="_form_classes" t-valuef="o_wslides_nav_navbar_right order-lg-3"/>
                         <t t-set="search_type" t-valuef="slides"/>
