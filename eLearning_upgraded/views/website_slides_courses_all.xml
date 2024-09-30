@@ -36,7 +36,9 @@
                                 </a>
                                 <!-- Button Level -->
                                 <div class="dropdown">
-                                    <a class="btn btn-secondary dropdown-toggle-all courses-search-navbar__link" href="#" role="button" id="dropdownLevel" data-bs-toggle="dropdown" aria-expanded="false">Your Level</a>
+                                    <a class="btn btn-secondary dropdown-toggle-all courses-search-navbar__link" href="#" role="button" id="dropdownLevel" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Your Level <i class="fa fa-chevron-down"></i>
+                                    </a>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownLevel">
                                         <li><a class="dropdown-item" href="#">Basic</a></li>
                                         <li><a class="dropdown-item" href="#">Intermediate</a></li>
@@ -61,7 +63,7 @@
                                 <div class="row mx-n2 mt8">
                                     <t t-foreach="channels" t-as="channel">
                                         <div class="col-md-4 col-sm-6 px-2 col-xs-12 d-flex"> 
-                                            <t t-call="eLearning_upgraded.course_card_custom"/>
+                                            <t t-call="website_slides.course_card"/>
                                         </div>
                                     </t>
                                 </div>
@@ -70,7 +72,7 @@
                     </div>
 
                     <!-- Footer -->
-                    <t t-call="website_slides.courses_footer"></t>
+                    <!--<t t-call="website_slides.courses_footer"></t>-->
                 </div>
             </xpath>    
         </template>

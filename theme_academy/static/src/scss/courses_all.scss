@@ -102,6 +102,17 @@
     color: #ffffff !important;
 }
 
+.courses-search-navbar input[type="search"] {
+    background-color: #ffffff !important; /* Fondo blanco */
+    color: #000000; /* Texto negro para mejor visibilidad */
+    border: 1px solid #cccccc; /* Puedes ajustar el borde si es necesario */
+}
+
+#dropdownLevel i {
+    margin-left: 8px; /* Ajusta el espacio entre el texto y la flecha */
+}
+
+
 /* Courses section */
 
 .course-card--new {
