@@ -16,6 +16,7 @@
         'views/course_skills_view.xml',
         'views/menu_import_view.xml',
         'views/student_skills_view.xml',
+        'views/course_audience_view.xml',
         'views/course_main_lecturers_tab.xml',
         'views/website_slides_templates_homepage.xml',
         'data/skills_data.xml'
