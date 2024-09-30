@@ -15,7 +15,8 @@
         'views/extended_signup_view.xml',
         'security/ir.model.access.csv',
         'views/website_main_page_view.xml',
-        'views/extended_login_view.xml'
+        'views/extended_login_view.xml',
+        'views/partner_is_lecturer_view.xml',
     ],
     'installable': True,
     'application': False,
