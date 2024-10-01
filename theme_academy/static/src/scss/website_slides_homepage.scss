@@ -4,7 +4,7 @@
 
 .overlay-container {
   background-color: (0, 0, 0, 0); // transparent
-  background-image: url(/theme_academy/static/src/img/homepage_background.jpg); 
+  background-image: url(/theme_academy/static/src/img/homepage_background_6016w.jpg); 
   background-size: cover; 
   background-position: 55% 65%;
 }
@@ -69,9 +69,13 @@
 
 @media (max-width: 1400px) {
   /* Content */
-  /* Top section */
+  /* Banner */
   .courses-banner__titles-container {
     max-width: 540px;
+  }
+
+  .overlay-container {
+    background-image: url(/theme_academy/static/src/img/homepage_background_3008w.jpg); 
   }
 }
 
@@ -108,6 +112,10 @@
 
   .courses-banner {
     height: 300px;
+  }
+
+  .overlay-container {
+    background-image: url(/theme_academy/static/src/img/homepage_background_1504w.jpg); 
   }
 }
 
