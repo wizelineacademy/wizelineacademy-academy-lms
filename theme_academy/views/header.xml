@@ -107,4 +107,12 @@
             </header>
         </xpath>
     </template>
+    <!-- The "o_logout" element in portal.user_dropdown will be replaced entirely by the new content provided within the xpath element.-->
+    <template id="logout_academy" name="Portal User Logout Academy" inherit_id="portal.user_dropdown">
+        <xpath expr="//a[@id='o_logout']" position="replace">
+            <a t-attf-href="/web/session/logout?redirect=/web/login" role="menuitem" id="o_logout" class="dropdown-item ps-3">
+                <i class="fa fa-fw fa-sign-out me-1 small text-primary"/> Logout
+            </a>
+        </xpath>
+    </template>
 </odoo>
