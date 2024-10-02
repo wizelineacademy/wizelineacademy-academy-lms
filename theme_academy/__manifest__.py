@@ -34,6 +34,7 @@
             "theme_academy/static/src/scss/footer.scss",
             "theme_academy/static/src/scss/website_slides_homepage.scss",
             "theme_academy/static/src/scss/website_slides_courses.scss",
+            "theme_academy/static/src/scss/courses_all.scss"
         ],
     },
 }

@@ -21,6 +21,7 @@
         'views/website_slides_templates_homepage.xml',
         'views/website_slides_course_main_template.xml',
         'views/website_slides_course_widgets_template.xml',
+        'views/website_slides_courses_all.xml',
         'data/skills_data.xml'
     ],
     'license': 'LGPL-3',
