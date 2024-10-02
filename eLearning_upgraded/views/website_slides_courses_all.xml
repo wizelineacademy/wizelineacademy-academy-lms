@@ -25,17 +25,19 @@
                                 <t t-set="display_detail" t-valuef="false"/>
                                 <t t-set="placeholder">Search courses</t>
                             </t>
-                            <button class="navbar-toggler px-2 order-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSlidesHomepage" aria-controls="navbarSlidesHomepage" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"/>
+                            <button class="navbar-toggler px-2 order-1 d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSlidesHomepage" aria-controls="navbarSlidesHomepage" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                                
                             </button>
 
                             <!-- Button to return to the previous page-->
                             <div class="collapse navbar-collapse order-2" id="navbarSlidesHomepage">
                                 <a href="javascript:history.back()" class="btn btn-secondary dropdown-toggle-all courses-search-navbar__link">
                                     <i class="fa fa-arrow-left"></i>
+                                    <span class="ms-2 navbar-toggler-text">Go back to courses Main page</span> 
                                 </a>
                                 <!-- Button Level -->
-                                <div class="dropdown">
+                                <!-- <div class="dropdown">
                                     <a class="btn btn-secondary dropdown-toggle-all courses-search-navbar__link" href="#" role="button" id="dropdownLevel" data-bs-toggle="dropdown" aria-expanded="false">
                                         Your Level <i class="fa fa-chevron-down"></i>
                                     </a>
@@ -44,7 +46,7 @@
                                         <li><a class="dropdown-item" href="#">Intermediate</a></li>
                                         <li><a class="dropdown-item" href="#">Advanced</a></li>
                                     </ul>
-                                </div>
+                                </div> -->
                             </div>
                         </nav>                        
                     </div>
