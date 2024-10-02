@@ -2,7 +2,6 @@
 $black: #000;
 $blue-900: var(--Blue-900, #03C4FF);
 $font-nunito: "Nunito Sans";
-$font-montserrat: "Montserrat";
 $font-size-large: 60px;
 $font-size-medium: 20px;
 $font-weight-bold: 600;
@@ -45,7 +44,7 @@ $blue-200: var(--Blue-200, #101E2D);
 .custom_wslides_course_header {
     background: url(../img/cover_background.png) lightgray no-repeat !important;
     background-color: #203449 !important;
-    height: 348px;
+    height: 250px;
 
     @media (min-width: 768px) {
         background-position: right center !important;
@@ -87,7 +86,6 @@ $blue-200: var(--Blue-200, #101E2D);
 }
 
 .custom_course_name {
-    font-family: $font-montserrat;
     font-size: 80px;
     font-weight: 700;
 }
