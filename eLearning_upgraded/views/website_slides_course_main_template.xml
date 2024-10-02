@@ -81,10 +81,12 @@
                                     </div>
 
                                 </div>
-                                <div t-att-class="'tab-pane fade %s' % ('show active' if active_tab == 'review' else '')" id="review" role="tabpanel" aria-labelledby="review-tab">
+                                <div t-if="channel.allow_comment" t-att-class="'tab-pane fade %s' % ('show active' if active_tab == 'review' else '')" id="review" role="tabpanel" aria-labelledby="review-tab">
                                     <div class="custom_review_component">
                                         <t t-call="portal.message_thread">
                                             <t t-set="object" t-value="channel"/>
+                                            <t t-set="hash" t-value="message_post_hash"/>
+                                            <t t-set="pid" t-value="message_post_pid"/>
                                             <t t-set="display_rating" t-value="True"/>
                                             <t t-set="disable_composer" t-value="True"/>
                                         </t>
