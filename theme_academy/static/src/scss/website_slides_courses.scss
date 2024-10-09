@@ -1,0 +1,369 @@
+// Define variables for colors and font settings
+$black: #000;
+$blue-900: var(--Blue-900, #03C4FF);
+$font-nunito: "Nunito Sans";
+$font-montserrat: "Montserrat";
+$font-size-large: 60px;
+$font-size-medium: 20px;
+$font-weight-bold: 600;
+$line-height-large: 67px;
+$line-height-medium: 30px;
+$font-awesome: "FontAwesome";
+$font-weight: 400;
+$white-bg: var(--White_BG, #FDFDFD);
+$blue-200: var(--Blue-200, #101E2D);
+
+.o_wslides_body>#wrapwrap>main {
+    background: $white-bg;
+}
+
+.course_nav_header_custom {
+    display: flex;
+    height: 38px;
+    align-items: center;
+    border: 1px solid $black;
+    background: $blue-200;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    .breadcrumb {
+        color: white;
+        font-family: $font-nunito;
+        font-size: $font-size-medium;
+        font-weight: $font-weight;
+
+        a {
+            color: inherit;
+
+            &:hover {
+                color: $blue-900 !important;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.custom_wslides_course_header {
+    background: url(../img/cover_background.png) lightgray no-repeat !important;
+    background-color: #203449 !important;
+    height: 348px;
+
+    @media (min-width: 768px) {
+        background-position: right center !important;
+    }
+
+    .container {
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px),
+    (max-width: 768px) {
+        align-items: flex-end !important;
+
+        .header-text {
+            align-self: flex-start;
+
+            .custom_course_name {
+                font-size: calc(1.3875rem + 1.65vw);
+                font-weight: 500;
+            }
+
+            .custom_course_description {
+                font-size: var(--body-font-size);
+                font-weight: var(--body-font-weight);
+            }
+        }
+    }
+}
+
+.o_wslides_course_header:before {
+    content: none;
+}
+
+.custom_course_name,
+.custom_course_description {
+    color: white !important;
+}
+
+.custom_course_name {
+    font-family: $font-montserrat;
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.custom_course_description {
+    font-family: $font-nunito;
+    font-size: $font-size-medium;
+    font-weight: $font-weight-bold;
+}
+
+.custom_course_sidebar {
+    border-radius: 0 0 10px 10px;
+    background: white;
+    box-shadow: 0 4px 4px -1px rgba(12, 12, 13, 0.05);
+    width: 299px;
+    padding: 38px;
+
+    .info_course_title,
+    .info_course_description {
+        align-self: stretch;
+        font-family: $font-nunito;
+    }
+
+    .info_course_title {
+        color: $blue-900;
+        font-size: $font-size-medium;
+        font-weight: $font-weight-bold;
+        margin-bottom: 8px;
+    }
+
+    .info_course_description {
+        color: var(--Black-200, #212126);
+        font-size: 16px;
+        font-weight: $font-weight;
+        margin-bottom: 16px;
+    }
+
+    .enroll-btn {
+        border-radius: 16px;
+        color: white;
+        font-family: $font-nunito;
+        font-size: $font-size-medium;
+        font-weight: $font-weight-bold;
+        display: flex;
+        width: 195px;
+        height: 37px;
+        padding: 6px 60px;
+        align-items: center;
+        justify-content: center;
+        background: $blue-900;
+
+        i {
+            font-size: 14px;
+            margin-left: 4px;
+        }
+
+        &:hover {
+            background: #7BD4FF;
+        }
+    }
+}
+
+.custom_wslides_course_main {
+    background: $white-bg;
+
+    .nav-link {
+        color: white;
+        font-family: $font-nunito;
+        font-size: $font-size-medium;
+        font-weight: $font-weight-bold;
+
+        &:hover {
+            background-color: #203449 !important;
+            color: $blue-900 !important;
+        }
+
+        &.active {
+            background: $white-bg !important;
+            color: var(--Blue-300, #203449) !important;
+            border-color: transparent !important;
+        }
+    }
+
+    .custom_sidebar {
+        overflow: hidden;
+    }
+}
+
+.custom_course_rating {
+    margin: 32px 0 16px;
+    color: rgb(5, 197, 255);
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    height: 18px;
+
+    i {
+        font-size: 18px;
+    }
+
+    .text-muted {
+        font-size: 24px;
+        font-family: $font-nunito;
+        font-weight: $font-weight-bold;
+        color: rgb(5, 197, 255) !important;
+    }
+}
+
+.share_experience {
+    width: 292px;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .common_text {
+        padding: 10px 0;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+
+        .title,
+        .description {
+            color: black;
+            font-family: $font-nunito;
+            word-wrap: break-word;
+        }
+
+        .title {
+            font-size: $font-size-medium;
+            font-weight: $font-weight-bold;
+        }
+
+        .description {
+            width: 270px;
+            font-size: 16px;
+            font-weight: $font-weight;
+        }
+    }
+
+    .add_review {
+        padding-top: 10px;
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+
+        .review_text {
+            color: $blue-900;
+            font-size: $font-size-medium;
+            font-family: $font-nunito;
+            font-weight: $font-weight;
+            word-wrap: break-word;
+
+            &:hover {
+                color: #7BD4FF;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .o_wslides_course_main .o_wslides_nav_tabs {
+        margin-top: -2.8rem;
+    }
+
+    .o_wslides_course_pict {
+        border: none;
+    }
+}
+
+.custom_o_wslides_course_pict {
+    display: flex;
+    width: 299px;
+    height: 259px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.overlay-icon {
+    position: absolute;
+    top: 45px;
+    right: 20px;
+    transform: translate(0%, -100%);
+}
+
+.custom_review_component {
+    p {
+        color: $black;
+        font-family: $font-nunito;
+        font-size: $font-size-medium;
+        font-weight: $font-weight-bold;
+        line-height: $line-height-medium;
+    }
+
+    .o_website_rating_avg {
+        >h1 {
+            color: $black;
+            font-family: $font-nunito;
+            font-size: $font-size-large;
+            font-weight: $font-weight-bold;
+            line-height: $line-height-large;
+        }
+    }
+
+    .o_website_rating_static {
+        i {
+            stroke-width: 1px;
+            stroke: $blue-900;
+            color: $blue-900;
+        }
+    }
+
+    .o_message_counter {
+        color: $black;
+        font-family: $font-nunito;
+        font-size: $font-size-medium;
+        font-weight: $font-weight-bold;
+        line-height: $line-height-medium;
+    }
+
+    .o_website_rating_table {
+        .o_website_rating_table_star_num {
+            position: relative;
+            font-size: 0; // Hide text
+            text-align: center;
+
+            // Mixin for common styles in ::before
+            @mixin star-before($number) {
+                color: $blue-900;
+                font-family: $font-nunito;
+                font-size: $font-size-medium;
+                font-weight: $font-weight;
+                line-height: normal;
+                content: "#{$number} "; // Use interpolation for content
+                visibility: visible;
+            }
+
+            // Mixin for common styles in ::after
+            @mixin star-after {
+                font-family: $font-awesome !important;
+                color: $blue-900;
+                content: " \f005";
+                font-size: $font-size-medium;
+                font-weight: $font-weight;
+            }
+
+            // Loop through star ratings
+            @for $i from 1 through 5 {
+                &[data-star="#{$i}"] {
+                    &::before {
+                        @include star-before($i);
+                    }
+
+                    &::after {
+                        @include star-after;
+                    }
+                }
+            }
+        }
+
+        .o_website_rating_table_progress {
+            .progress {
+                border-radius: 10px;
+                background: var(--Grey-500, #D3D3D4);
+
+                .o_rating_progressbar {
+                    background-color: $blue-900;
+                }
+            }
+        }
+
+        .o_website_rating_table_percent {
+            display: none;
+        }
+    }
+
+}
