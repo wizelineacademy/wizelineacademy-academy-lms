@@ -1,5 +1,3 @@
-
-
 .overlay-container_all {
     background-image: url(/theme_academy/static/src/img/header_course_all.jpg);
     background-size: cover;
@@ -18,10 +16,10 @@
     right: 0;
     bottom: 0;
     z-index: 1;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(32, 52, 73, 0.5);
 }
 
-.courses-banner__title {
+.courses-banner__title-all {
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
     font-size: 70pt;
@@ -29,111 +27,109 @@
     color: #ffffff;
     position: relative;
     z-index: 2;
+    font-weight: bold; //change 
 }
 
+
+//button styles "Go back to Main page" 
 .dropdown-toggle-all {
-    background-color: #202529;
+    background-color: #101E2D;
     color: white;
     border: none;
     box-shadow: none;
-    transition: color 0.3s ease;
     font-size: 16px;
     line-height: 1;
     padding: 8px 16px;
     font-weight: bold;
+    margin-left: 120px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.dropdown-toggle-all:focus,
-.dropdown-toggle-all:hover,
-.dropdown-toggle-all:active {
-    color: #03C4FF;
-    background-color: #101E2D; 
+.dropdown-toggle-all:hover{
+    background-color: #101E2D;
+    color: #03c4ff;
+}
+
+.button-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400; 
+    font-size: 12pt; 
+    line-height: 14pt; 
+    padding-left: 5px; 
+}
+
+
+.button_return:hover{
+    background-color: #101E2D;
+    color: #03c4ff;    
+}
+
+
+
+//Search bar
+.courses-search-navbar-all__link {
+    background-color: #101E2D;
+    margin-right: 695px; //Screen right 
+}
+
+//Style the search bar
+.courses-search-navbar-all {
+    input {
+    background-color: #ffffff !important; 
+    color: #101E2D;
+    border: 1px solid #d3d3c4;
+    padding: 8px;
+    //border-radius: 8px 0 0 8px;
+    width: 200px !important;
     box-shadow: none;
-}
+    }
 
-.dropdown-menu {
-    background-color: #ffffff;
-}
-
-.dropdown-item:hover {
-    color: #03C4FF;
-    background-color: transparent;
-}
-
-.dropdown-item {
-    font-size: 14px;
-}
-
-.row.mx-n2.mt8 {
+    //button lupa
+    button {
+    background-color: #03c4ff !important;
+    color: #ffffff;
+    border-radius: 0 8px 8px 0;
+    border: none;
+    width: 50px;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    }
+
+    input::placeholder {
+    color: #4e5154;
+    }
 }
 
-.col-md-4.col-sm-6.px-2.col-xs-12.d-flex {
-    max-width: 350px;
+
+//This make to center courses
+.courses-list{
+    justify-content: center;
+    margin-bottom: 200px;
+    gap: 50px;
 }
 
-.courses-banner__titles-container {
+//this put the width in the courses
+.course-card-container {
+    max-width: 380px;
+    margin-bottom: 70px;
+}
+
+//container to header
+.courses-banner__titles-container-all {
     margin-left: 20px;
     max-width: 730px;
     padding: 10px;
 }
 
-.courses-search-navbar__search-bar {
-    background-color: white;
-    color: #101E2D;
-}
 
-.courses-search-navbar {
+//container to search-bar and button "Go back"
+.courses-search-navbar-all {
     background-color: #101E2D !important;
     width: 100%;
     max-width: 100%;
 }
 
-.courses-search-navbar__link {
-    background-color: #101E2D;
-}
-
-.courses-search-navbar input[type="search"] {
-    background-color: #ffffff !important;
-    color: #101E2D; 
-    border: 1px solid #cccccc;
-    
-}
-
-.navbar-toggler-text {
-    font-family: 'Nunito Sans', sans-serif; 
-    font-weight: 400; 
-    font-size: 10pt; 
-    line-height: 14pt; 
-    color: white;
-    transition: none !important;
-}
-
-.navbar-toggler-text {
-    background-color: transparent;
-    transition: none;
-}
-
-.navbar-toggler-text:hover {
-    background-color: transparent; 
-    transition: none;
-}
-
-
-
-#dropdownLevel i {
-    margin-left: 8px; 
-}
-
-.montserrat-level {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.course-card--new {
-    border-radius: 25px;
-}
 
 @media (max-width: 1400px) {
     .courses-banner__titles-container {
@@ -148,17 +144,35 @@
 }
 
 @media (max-width: 1000px) {
-    .courses-banner__titles-container {
+    .courses-banner__titles-container-all {
         max-width: 310px;
     }
 }
 
 @media (max-width: 770px) {
-    .courses-banner__titles-container {
+    .courses-banner__titles-container-all {
         max-width: 340px;
     }
 
-    .courses-banner__title {
+    .courses-banner__title-all {
         font-size: 32px;
     }
 }
+
+// Style for button level (This is commented)
+/* .dropdown-item:hover {
+    color: #fcf9f9;
+    background-color: transparent;
+} */
+
+/* .dropdown-item {
+    font-size: 14px;
+} */
+
+/* #dropdownLevel i {
+    margin-left: 8px; 
+} */
+
+/* .dropdown-menu {
+    background-color: #ffffff;
+} */
