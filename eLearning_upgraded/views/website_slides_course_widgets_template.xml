@@ -34,32 +34,50 @@
 
     <template id="custom_rating_widget" name="Custom rating widget" inherit_id="portal_rating.rating_widget_stars_static">
         <xpath expr="//*[hasclass('o_website_rating_static')]" position="attributes">
-            <attribute name="t-attf-class" add="custom_course_rating" separator=" "/>
+            <attribute name="class" add="custom_course_rating" separator=" "/>
         </xpath>
     </template>
 
+    <template id="custom_enroll_widget" name="Custom enroll widget" inherit_id="website_slides.course_join" priority="22">
+        <xpath expr="//a[@t-else='' and hasclass('o_wslides_js_course_join_link')]" position="replace">
+            <a t-else="" role="button" class="btn enroll-btn o_wslides_js_course_join_link" title="Start Course" aria-label="Start Course" href="#" t-att-data-channel-id="channel.id" t-att-data-channel-enroll="channel.enroll" t-att-data-invite-hash="invite_hash" t-att-data-invite-partner-id="invite_partner_id" t-att-data-invite-preview="invite_preview" t-att-data-is-member-or-invited="channel.is_member or channel.is_member_invited" t-att-data-is-partner-without-user="is_partner_without_user">
+                <span class="cta-title">
+                    <t t-if="channel.channel_type == 'documentation'">Start this Course</t>
+                    <t t-else="">Enroll <i class="oi oi-chevron-right" />
+                    </t>
+                </span>
+            </a>
+        </xpath>
+    </template>
 
     <template id="custom_course_sidebar" name="Custom course sidebar template">
         <div class="custom_course_sidebar">
-            <div class="info_course_title">Category</div>
-            <div class="info_course_description">Lorem ipsum odor amet, consectetuer adipiscing elit.</div>
-            <div class="info_course_title">Format</div>
-            <div class="info_course_description">Lorem ipsum odor amet, consectetuer adipiscing elit.</div>
-            <div class="info_course_title">Length</div>
-            <div class="info_course_description">
-                <span t-if="channel.total_time" t-esc="channel.total_time" t-options="{'widget': 'duration', 'unit': 'hour', 'round': 'minute'}"/>
+            <div class="info_course_title">Type</div>
+            <div class="info_course_description text-capitalize">
+                <span t-if="channel.channel_type" t-esc="channel.channel_type" />
             </div>
-            <div class="info_course_title">Language</div>
-            <div class="info_course_description">Lorem ipsum</div>
-            <div class="mt-3 d-grid o_not_editable">
-                <button role="button" class="btn enroll-btn" title="Enroll course" aria-label="Enroll course" t-att-data-bs-target="'#slideEnrollModal_%s' % channel.id">
-                     Enroll<i class="oi oi-chevron-right" />
-                </button>
+            <div t-if="channel.skill_names">
+                <div class="info_course_title">Skills</div>
+                <div class="info_course_description text-capitalize" t-esc="channel.skill_names">
+                </div>
+            </div>
+            <div t-if="channel.total_time">
+                <div class="info_course_title">Length</div>
+                <div class="info_course_description text-capitalize">
+                    <span t-esc="channel.total_time" t-options="{'widget': 'duration', 'unit': 'hour', 'round': 'minute'}"/>
+                </div>
+            </div>
+            <div t-if="channel.language_name">
+                <div class="info_course_title">Language</div>
+                <div class="info_course_description text-capitalize" t-esc="channel.language_name"/>
+            </div>
+            <div class="mt-3 d-grid">
+                <t t-call="website_slides.course_join"/>
             </div>
         </div>
 
 
-        <div class="px-2 mb-5">
+        <div class="px-2 mb-5" id="display_review_div">
             <div class="row">
                 <t t-call="portal_rating.rating_widget_stars_static" />
             </div>

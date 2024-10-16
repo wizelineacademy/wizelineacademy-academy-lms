@@ -22,7 +22,13 @@
         'views/website_slides_course_main_template.xml',
         'views/website_slides_course_widgets_template.xml',
         'views/website_slides_courses_all.xml',
+        'views/course_language_view.xml',
         'data/skills_data.xml'
     ],
+    'assets': {
+        'web.assets_frontend': [
+            "eLearning_upgraded/static/src/js/website_slides_tab_actions.js",
+        ],
+    },
     'license': 'LGPL-3',
 }

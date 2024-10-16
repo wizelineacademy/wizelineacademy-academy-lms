@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="courses_main_custom" name="Custom main course" inherit_id="website_slides.course_main">
+    <template id="courses_main_custom" name="Custom main course" inherit_id="website_slides.course_main" priority="17">
         <xpath expr="//div[@id='wrap']" position="replace">
 
             <div class="oe_structure oe_empty">
@@ -11,11 +11,10 @@
                     <t t-call="website_slides.course_nav"/>
                     <div class="custom_wslides_course_header">
                         <div class="container">
-                            <div class="row align-items-end align-items-md-stretch">
-
+                            <div class="row">
                                 <div class="col-12 col-md-4 col-lg-3 position-relative">
-                                    <div class=" d-none d-md-flex align-items-end justify-content-around h-100">
-                                        <div t-field="channel.image_1920" t-options="{'widget': 'image', 'class' : 'o_wslides_course_pict d-inline-block mb-2 mt-3 my-md-0', 'preview_image': 'image_1024'}" class="h-100"/>
+                                    <div class="d-none d-md-flex align-items-end justify-content-around h-100">
+                                        <div t-field="channel.image_1920" t-options="{'widget': 'image', 'class': 'o_wslides_course_pict d-inline-block mb-2 mt-3 my-md-0 custom-image', 'preview_image': 'image_1024'}" class="h-100"/>
                                         <div class="overlay-icon">
                                             <button role="button" class="btn btn-link" title="Share Channel" aria-label="Share Channel" data-bs-toggle="modal" t-att-data-bs-target="'#slideShareModal_%s' % channel.id">
                                                 <img src="/theme_academy/static/src/img/ios_share.png" alt="Icon" class="icon"/>
@@ -80,6 +79,8 @@
                                         </a> to browse preview content and enroll.
                                     </div>
 
+                                    <t t-if="channel.channel_type == 'training'" t-call="website_slides.course_slides_list"/>
+                                    <t t-else="" t-call="website_slides.course_slides_cards"/>
                                 </div>
                                 <div t-if="channel.allow_comment" t-att-class="'tab-pane fade %s' % ('show active' if active_tab == 'review' else '')" id="review" role="tabpanel" aria-labelledby="review-tab">
                                     <div class="custom_review_component">
