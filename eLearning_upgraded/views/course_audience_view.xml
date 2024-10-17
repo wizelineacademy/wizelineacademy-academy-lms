@@ -1,0 +1,39 @@
+<?xmd version="1.0" encoding="utf-8"?>
+<odoo><data>
+    <template id="course_main_audience" name="Course Audience" inherit_id="website_slides.course_main">
+        <xpath expr="//ul[@id='profile_extra_info_tablist']" position="inside">
+            <li class="nav-item" role="presentation" t-if="not is_html_empty(channel.who_should_take)">
+                <a t-att-class="'nav-link %s' % ('active' if active_tab == 'audience' else '')" id="audience-tab" data-bs-toggle="pill" href="#audience" role="tab" aria-controls="audience" t-att-aria-selected="'true' if active_tab == 'audience' else 'false'">
+                    Audience
+                </a>
+            </li>
+        </xpath>
+
+        <xpath expr="//div[@id='courseMainTabContent']" position="inside">
+            <!-- Who Should Take This Course Section -->
+            <div t-att-class="'tab-pane fade %s' % ('show active' if active_tab == 'audience' else '')" id="audience" role="tabpanel" aria-labelledby="audience-tab">
+                <div id="audience_section">
+                    <div class="mb-2">
+                        <div class="col mx-n2">
+                            <h2 style="font-weight:bold;">Who Should Take This Course?</h2>
+                            <div class="oe_no_empty" t-field="channel.who_should_take" t-options="{'widget': 'html'}"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+    <record id="who_should_take_course_edit" model="ir.ui.view">
+        <field name="name">slide.channel.view.form.who.should.take.course.edit</field>
+        <field name="model">slide.channel</field>
+        <field name="inherit_id" ref="website_slides.view_slide_channel_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='description']" position="after">
+                <page name="who_should_take_course" string="Audience">
+                    <field name="who_should_take" widget="html" nolabel="1" />
+                </page>
+            </xpath>
+        </field>
+    </record>
+</data></odoo>

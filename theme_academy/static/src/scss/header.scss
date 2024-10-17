@@ -75,3 +75,77 @@
         display: flex !important
     }
 }
+
+.center_subtitle_welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+  }
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.big_button_login_signup {
+    background-color: #03c4ff !important;
+    color: white !important;
+    font-size: 20px !important;
+    max-width: 300px;
+}
+
+
+.add_background_logo_signup {
+    background-image: url('../img/Academy_login.svg'), linear-gradient(#203449, #203449);
+    background-size: auto 100%, 100% 100%;
+    background-repeat: no-repeat;
+    background-position: left top, right;
+    background-blend-mode: normal;
+    max-width: 50vw, 100vw;
+    overflow: hidden;
+    margin-left: -20px;
+    padding-left: 20px;
+}
+
+.white_subtitle {
+    color: white;
+    font-size: 40px;
+}
+.white_text {
+    color: white !important;
+}
+
+.column-display {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 60vh;
+}
+
+.column-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0 10%;
+}
+
+
+@media (max-width: 800px) {
+    .column-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+  }
+  @media (max-width: 800px) {
+    .column-display {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        overflow-y: visible;
+    }
+  }

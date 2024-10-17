@@ -77,18 +77,19 @@
                                             </a>
                                         </div>
                                     </li>
-                                    <li class="subheader-list-item mobile-subheader">
+                                    <!-- <li class="subheader-list-item mobile-subheader">
                                         <a href="/contactus" class="btn btn-primary join-btn" style="color: white;">
                                             Join Our Mailing List
                                         </a>
-                                    </li>
+                                    </li> -->
                                     <li class="subheader-list-item">
                                         <t t-call="website.navbar_nav">
-                                            <!-- Sign In -->
-                                            <t t-call="portal.placeholder_user_sign_in">
+                                            <!-- Sign In-->
+                                            <t t-call="auth_signup_upgraded.new_user_sign_in">
                                                 <t t-set="_item_class" t-valuef="nav-item ms-lg-auto"/>
                                                 <t t-set="_link_class" t-valuef="subheader-link fw-bold"/>
                                             </t>
+                                             
                                             <!-- User Dropdown -->
                                             <t t-call="portal.user_dropdown">
                                                 <t t-set="_user_name" t-value="true"/>
@@ -104,6 +105,14 @@
                 </div>
                </nav>
             </header>
+        </xpath>
+    </template>
+    <!-- The "o_logout" element in portal.user_dropdown will be replaced entirely by the new content provided within the xpath element.-->
+    <template id="logout_academy" name="Portal User Logout Academy" inherit_id="portal.user_dropdown">
+        <xpath expr="//a[@id='o_logout']" position="replace">
+            <a t-attf-href="/web/session/logout?redirect=/web/login" role="menuitem" id="o_logout" class="dropdown-item ps-3">
+                <i class="fa fa-fw fa-sign-out me-1 small text-primary"/> Logout
+            </a>
         </xpath>
     </template>
 </odoo>

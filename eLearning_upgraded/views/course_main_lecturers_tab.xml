@@ -1,0 +1,69 @@
+<odoo>
+    <data>
+        <!-- Lecturers Tab -->
+        <template id="course_main_lecturers_tab" name="Lecturers Tab" inherit_id="website_slides.course_main">
+            <xpath expr="//ul[@id='profile_extra_info_tablist']" position="inside">
+                <li class="nav-item" role="presentation" t-if="channel.lecturers">
+                    <a t-att-class="'nav-link %s' % ('active' if active_tab == 'lecturers' else '')" id="lecturers-tab" data-bs-toggle="pill" href="#lecturers" role="tab" aria-controls="lecturers" t-att-aria-selected="'true' if active_tab == 'lecturers' else 'false'">
+                        Lecturers
+                    </a>
+                </li>
+            </xpath>
+
+            <xpath expr="//div[@id='courseMainTabContent']" position="inside">
+                <!-- Lecturers Section -->
+                <div t-att-class="'tab-pane fade %s' % ('show active' if active_tab == 'lecturers' else '')" id="lecturers" role="tabpanel" aria-labelledby="lecturers-tab">
+                    <div id="lecturers_section">
+                        <div class="mb-2">
+                            <div class="col mx-n2">
+                                <t t-foreach="channel.lecturers" t-as="lecturer">
+                                    <t t-call="eLearning_upgraded.lecturer_card"/>
+                                </t>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </template>
+
+        <!-- Individual Lecturer Card Template -->
+        <template id="lecturer_card" name="Lecturer Card">
+            <div class="card mb-4 w-100 p-4 px-md-2 py-md-3 shadow">
+                <div class="row g-0">
+                    <div class="col-md-3">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img t-att-src="'/web/image/res.partner/' + str(lecturer.id) + '/image_1920'" alt="Lecturer Image" class="img-fluid mt-3 mb-3 rounded rounded-3 w-50 w-md-40" style="object-fit:cover;"/>
+                        </div>
+                        <h3 class="text-center mb-4 mb-md-2"><t t-esc="lecturer.name"/></h3>
+                        <p class="mb-5 mb-md-2 text-center" style="font-size:16px;"><t t-esc="lecturer.function"/></p>
+                    </div>
+                    <div class="col-md-8 d-flex align-items-center justify-content-start">
+                        <div style="font-size:14px;" class="oe_no_empty" t-field="lecturer.comment" t-options="{'widget': 'html'}"/>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+        <!-- Edit lecturers on slide channel view -->
+        <record id="assign_lecturers" model="ir.ui.view">
+            <field name="name">slide.channel.view.form.assign.lecturers</field>
+            <field name="model">slide.channel</field>
+            <field name="inherit_id" ref="website_slides.view_slide_channel_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='options']" position="after">
+                    <page name="assign_lecturers" string="Lecturers">
+                            <group>
+                                <field name="lecturers" domain="[('is_lecturer', '=', True)]">
+                                    <tree>
+                                        <field name="name"/>
+                                        <field name="email"/>
+                                        <field name="function"/>
+                                    </tree>
+                                </field>
+                            </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
