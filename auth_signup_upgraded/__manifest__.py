@@ -9,7 +9,7 @@
     """,
     'company': 'no one',
     'website' : 'https://github.com/oszac/Sistemas-de-Software/wiki',
-    'depends' : ['website','auth_signup','portal', 'base', 'mail', 'web'],
+    'depends' : ['website','auth_signup','portal', 'base', 'mail', 'web', 'auth_oauth'],
     'data' : [
         'views/big_button_sign_in_view.xml',
         'views/extended_signup_view.xml',

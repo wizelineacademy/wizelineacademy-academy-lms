@@ -2,6 +2,14 @@
 <odoo>
 
     <!--Esta vista incluye la adición de los campos faltantes del registro de usuarios-->
+    <template id="have_account_extended" inherit_id="auth_signup.login" name="Sign up - Reset Password - with format">
+        <xpath expr="//div[hasclass('justify-content-between') and hasclass('mt-2') and hasclass('small')]" position="replace">
+            <div class="justify-content-between mt-2 d-flex small">
+                <a t-if="signup_enabled" t-attf-href="/web/signup?{{ keep_query() }}" class="white_text">Don't have an account?</a>
+                <a t-if="reset_password_enabled" t-attf-href="/web/reset_password?{{ keep_query() }}" class="white_text">Reset Password</a>
+            </div>
+        </xpath>
+    </template> 
 
     <template id="extended_signup" inherit_id="auth_signup.fields" name="Sign up with added fields">
 
@@ -123,7 +131,7 @@
                   <input type="hidden" name="token" t-att-value="token"/>
                   <div class="oe_signup_form text-center oe_login_buttons d-grid pt-3">
                       <button type="submit" class="btn btn-primary big_button_login_signup"> Sign up</button>
-                      <a t-attf-href="/web/login?{{ keep_query() }}" class="btn btn-link btn-sm" role="button">Already have an account?</a>
+                      <a t-attf-href="/web/login?{{ keep_query() }}" class="btn btn-link btn-sm white_text" role="button">Already have an account?</a>
                       <div class="o_login_auth"/>
                   </div>
               </form>
