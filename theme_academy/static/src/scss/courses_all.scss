@@ -1,0 +1,164 @@
+
+
+.overlay-container_all {
+    background-image: url(/theme_academy/static/src/img/header_course_all.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+    position: relative;
+}
+
+.overlay-container_all::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.courses-banner__title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 70pt;
+    line-height: 77pt;
+    color: #ffffff;
+    position: relative;
+    z-index: 2;
+}
+
+.dropdown-toggle-all {
+    background-color: #202529;
+    color: white;
+    border: none;
+    box-shadow: none;
+    transition: color 0.3s ease;
+    font-size: 16px;
+    line-height: 1;
+    padding: 8px 16px;
+    font-weight: bold;
+}
+
+.dropdown-toggle-all:focus,
+.dropdown-toggle-all:hover,
+.dropdown-toggle-all:active {
+    color: #03C4FF;
+    background-color: #101E2D; 
+    box-shadow: none;
+}
+
+.dropdown-menu {
+    background-color: #ffffff;
+}
+
+.dropdown-item:hover {
+    color: #03C4FF;
+    background-color: transparent;
+}
+
+.dropdown-item {
+    font-size: 14px;
+}
+
+.row.mx-n2.mt8 {
+    justify-content: center;
+}
+
+.col-md-4.col-sm-6.px-2.col-xs-12.d-flex {
+    max-width: 350px;
+}
+
+.courses-banner__titles-container {
+    margin-left: 20px;
+    max-width: 730px;
+    padding: 10px;
+}
+
+.courses-search-navbar__search-bar {
+    background-color: white;
+    color: #101E2D;
+}
+
+.courses-search-navbar {
+    background-color: #101E2D !important;
+    width: 100%;
+    max-width: 100%;
+}
+
+.courses-search-navbar__link {
+    background-color: #101E2D;
+}
+
+.courses-search-navbar input[type="search"] {
+    background-color: #ffffff !important;
+    color: #101E2D; 
+    border: 1px solid #cccccc;
+    
+}
+
+.navbar-toggler-text {
+    font-family: 'Nunito Sans', sans-serif; 
+    font-weight: 400; 
+    font-size: 10pt; 
+    line-height: 14pt; 
+    color: white;
+    transition: none !important;
+}
+
+.navbar-toggler-text {
+    background-color: transparent;
+    transition: none;
+}
+
+.navbar-toggler-text:hover {
+    background-color: transparent; 
+    transition: none;
+}
+
+
+
+#dropdownLevel i {
+    margin-left: 8px; 
+}
+
+.montserrat-level {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.course-card--new {
+    border-radius: 25px;
+}
+
+@media (max-width: 1400px) {
+    .courses-banner__titles-container {
+        max-width: 540px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .courses-banner__titles-container {
+        max-width: 445px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .courses-banner__titles-container {
+        max-width: 310px;
+    }
+}
+
+@media (max-width: 770px) {
+    .courses-banner__titles-container {
+        max-width: 340px;
+    }
+
+    .courses-banner__title {
+        font-size: 32px;
+    }
+}

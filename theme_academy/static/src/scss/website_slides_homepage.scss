@@ -1,0 +1,134 @@
+/* Content */
+
+/* Banner */
+
+.overlay-container {
+  background-color: transparent; // transparent
+  background-image: url(/theme_academy/static/src/img/homepage_background_6016w.jpg); 
+  background-size: cover; 
+  background-position: 55% 65%;
+}
+
+.overlay-container::before {
+  content: ""; /* Required for pseudo-elements */
+  position: absolute; /* Positioning it absolutely within the container */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(32, 52, 73, 0.6); /* Blue color with 60% opacity */
+  z-index: 0; /* Places the overlay above the background image */
+}
+
+.courses-homepage-banner__title {
+  color: #03C4FF;
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.courses-homepage-banner {
+  height: 300px;
+}
+
+.courses-homepage-banner__titles-container {
+  margin-left: 20px; /* Add margin to the left */
+  max-width: 730px; /* Set a maximum width for the text container */
+  padding: 10px; /* Optional: Add padding inside the text container */
+}
+
+.courses-homepage-banner__subtitle {
+  color: white;
+  font-size: 16px;
+  padding: 40px 0 0 0;
+}
+
+/* Search Bar */
+
+.courses-search-navbar__search-bar {
+  background-color: white;
+  color: black;
+}
+
+.courses-search-navbar__search-button {
+  background-color: #03C4FF;
+}
+
+.courses-search-navbar {
+  background-color: #202529 !important;
+}
+
+.courses-search-navbar__link {
+  color: #ffffff !important;
+}
+
+/* Courses section */
+
+.course-card--new {
+  border-radius: 25px;
+  -webkit-border-radius: 25px; /* Safari and Chrome */
+  -moz-border-radius: 25px; /* Firefox */
+}
+
+@media (max-width: 1400px) {
+  /* Content */
+  /* Banner */
+  .courses-homepage-banner__titles-container {
+    max-width: 560px;
+  }
+
+  .courses-homepage-banner__title {
+    font-size: 68px;
+  }
+
+  .overlay-container {
+    background-image: url(/theme_academy/static/src/img/homepage_background_3008w.jpg); 
+  }
+}
+
+@media (max-width: 1200px) {
+  /* Content */
+  /* Banner */
+  .courses-homepage-banner__titles-container {
+    max-width: 445px;
+  }
+
+  .courses-homepage-banner__title {
+    font-size: 52px;
+  }
+}
+
+@media (max-width: 1000px) {
+  /* Content */
+  /* Banner */
+  .courses-homepage-banner__titles-container {
+    max-width: 310px;
+  }
+
+  .courses-homepage-banner__title {
+    font-size: 38px;
+  }
+
+  .courses-homepage-banner {
+    height: 300px;
+  }
+}
+
+@media (max-width: 770px) {
+  /* Content */
+  /* Banner */
+  .courses-homepage-banner__titles-container {
+    max-width: 340px;
+  }
+
+  .courses-homepage-banner__title {
+    font-size: 32px;
+  }
+
+  .courses-homepage-banner {
+    height: 300px;
+  }
+
+  .overlay-container {
+    background-image: url(/theme_academy/static/src/img/homepage_background_1504w.jpg); 
+  }
+}
