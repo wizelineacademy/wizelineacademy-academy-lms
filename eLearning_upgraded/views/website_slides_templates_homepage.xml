@@ -6,10 +6,10 @@
         <div id="wrap" class="wrap o_wslides_wrap">
             <div class="oe_structure oe_empty">
             <section class="s_banner overflow-hidden overlay-container" data-snippet="s_banner">
-                <div class="container align-items-center d-flex mb-5 mt-lg-5 pt-lg-4 pb-lg-1 courses-banner">
-                    <div class="courses-banner__titles-container">
-                        <h1 class="display-3 mb-0 courses-banner__title">Start your learning journey today.</h1>
-                        <h3 class="mb-4 courses-banner__subtitle">Our on-demand online learning experiences are available to you anytime, anywhere</h3>
+                <div class="container align-items-center d-flex mb-5 mt-lg-5 pt-lg-4 pb-lg-1 courses-homepage-banner">
+                    <div class="courses-homepage-banner__titles-container">
+                        <h1 class="display-3 mb-0 courses-homepage-banner__title">Start your learning journey today</h1>
+                        <h3 class="mb-4 courses-homepage-banner__subtitle">Our on-demand online learning experiences are available to you anytime, anywhere</h3>
                     </div>
                 </div>
             </section>
