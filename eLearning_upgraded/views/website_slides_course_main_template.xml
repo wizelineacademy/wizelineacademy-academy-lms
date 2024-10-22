@@ -80,7 +80,50 @@
                                     </div>
 
                                     <t t-if="channel.channel_type == 'training'" t-call="website_slides.course_slides_list"/>
-                                    <t t-else="" t-call="website_slides.course_slides_cards"/>
+                                    <t t-else="">
+
+                                        <!-- Featured lesson  -->
+                                        <t t-if="channel.promote_strategy != 'none'">
+                                            <t t-call="website_slides.course_promoted_slide"/>
+                                        </t>
+
+                                        <div class="container py-2">
+
+
+                                            <t t-foreach="category_data" t-as="category">
+                                                <div class="mb-2" t-if="(category['slides'] or channel.can_publish) and (search_category and search_category.id == category['id'] or not search_category)">
+                                                    <t t-set="is_empty_editable" t-value="not category['slides'] and channel.can_publish"/>
+                                                    <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-3" t-if="category['id'] and query_string != '?search_uncategorized=1'">
+                                                        <h5 t-attf-class="m-0 #{'text-muted' if is_empty_editable else ''}">
+                                                            <t t-esc="category['name']"/>
+                                                        </h5>
+                                                        <a t-if="category['id'] and not is_empty_editable" t-attf-href="/slides/#{channel.id}/category/#{category['id']}?#{keep_query('invite_hash', 'invite_partner_id') if invite_preview else ''}">View all</a>
+                                                    </div>
+                                                    <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-3" t-if="not category['id'] and len(category['slides']) &gt; 0">
+                                                        <h5 t-if="len(category_data) &gt; 1" t-attf-class="m-0 #{'text-muted' if is_empty_editable else ''}">
+                                                            <t t-esc="category['name']"/>
+                                                        </h5>
+                                                        <a t-attf-href="/slides/#{channel.id}?uncategorized=1&amp;#{keep_query('invite_hash', 'invite_partner_id') if invite_preview else ''}">View all</a>
+                                                    </div>
+                                                    <div class="row mx-n2">
+                                                        <t t-foreach="category['slides']" t-as="slide">
+                                                            <div class="col-12 col-sm-6 col-lg-4 px-2 d-flex" t-call="website_slides.lesson_card"/>
+                                                        </t>
+                                                    </div>
+                                                </div>
+                                            </t>
+
+                                            <div class="row">
+                                                <div class="col" t-field="channel.description_html"/>
+                                            </div>
+                                        </div>
+                                        <t t-if="search_category or search_uncategorized">
+                                            <div class="d-flex justify-content-center pb-5">
+                                                <t t-call="website_profile.pager_nobox"/>
+                                            </div>
+                                        </t>
+                                    </t>
+
                                 </div>
                                 <div t-if="channel.allow_comment" t-att-class="'tab-pane fade %s' % ('show active' if active_tab == 'review' else '')" id="review" role="tabpanel" aria-labelledby="review-tab">
                                     <div class="custom_review_component">

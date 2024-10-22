@@ -94,14 +94,13 @@ $blue-200: var(--Blue-200, #101E2D);
 }
 
 .custom_course_name {
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 700;
 }
 
 .custom_course_description {
     font-family: $font-nunito;
     font-size: $font-size-medium;
-    font-weight: $font-weight-bold;
 }
 
 .custom_course_sidebar {
@@ -263,7 +262,7 @@ $blue-200: var(--Blue-200, #101E2D);
 
 @media (min-width: 768px) {
     .o_wslides_course_main .o_wslides_nav_tabs {
-        margin-top: -2.9rem;
+        margin-top: -2.85rem;
     }
 
 }
