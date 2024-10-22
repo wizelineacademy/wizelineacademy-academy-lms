@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <odoo>
     <data>
-        <template id="my_slides_courses_all" inherit_id="website_slides.courses_all">
+        <template id="my_slides_courses_all" inherit_id="website_slides.courses_all" priority="57">
             <xpath expr="//div[@id='wrap']" position="replace">
                 <div id="wrap" class="wrap o_wslides_wrap">
                     <div class="oe_structure oe_empty">
