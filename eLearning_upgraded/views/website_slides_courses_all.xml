@@ -7,51 +7,39 @@
                     <div class="oe_structure oe_empty">
                         <section class="s_banner overflow-hidden overlay-container_all" data-snippet="s_banner">
                             <div class="container d-flex mb-5 mt-lg-5 pt-lg-4 pb-lg-1 courses-banner">
-                                <div class="courses-banner__titles-container">
-                                    <h1 class="display-3 mb-0 courses-banner__title">All Courses</h1>
+                                <div class="courses-banner__titles-container-all">
+                                    <h1 class="display-3 mb-0 courses-banner__title-all">All Courses</h1>
                                 </div>
                             </div>
                         </section>
                     </div>
 
-                    <!--Search bar-->
+                    <!-- Search bar and button to return to main page -->
                     <div class="container-black">
-                        <nav class="container navbar navbar-expand-lg courses-search-navbar shadow-sm">
-                            <t t-call="website.website_search_box_input">
+                        <nav class="container navbar navbar-expand-lg courses-search-navbar-all shadow-sm">
+                            <!-- Button to return to the previous page (left-aligned) -->
+                            <div class="navbar-collapse-all" id="navbarSlidesHomepage">
+                                <a href="javascript:history.back()" class="btn btn-secondary dropdown-toggle-all">
+                                    <i class="fa fa-arrow-left"></i>
+                                    <span class="ms-2 navbar-toggler-text">Go back to courses Main page</span> 
+                                </a>
+                            </div>
+
+                            <!-- Search bar -->
+                            <div class="search-container-all">
+                                <t t-call="website.website_search_box_input">
                                 <t t-set="_form_classes" t-valuef="o_wslides_nav_navbar_right order-lg-3"/>
                                 <t t-set="search_type" t-valuef="slides"/>
                                 <t t-set="action" t-valuef="/slides/all"/>
                                 <t t-set="display_description" t-valuef="true"/>
                                 <t t-set="display_detail" t-valuef="false"/>
                                 <t t-set="placeholder">Search courses</t>
-                            </t>
-                            <button class="navbar-toggler px-2 order-1 d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSlidesHomepage" aria-controls="navbarSlidesHomepage" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                                
-                            </button>
-
-                            <!-- Button to return to the previous page-->
-                            <div class="collapse navbar-collapse order-2" id="navbarSlidesHomepage">
-                                <a href="javascript:history.back()" class="btn btn-secondary dropdown-toggle-all courses-search-navbar__link">
-                                    <i class="fa fa-arrow-left"></i>
-                                    <span class="ms-2 navbar-toggler-text">Go back to courses Main page</span> 
-                                </a>
-                                <!-- Button Level -->
-                                <!-- <div class="dropdown">
-                                    <a class="btn btn-secondary dropdown-toggle-all courses-search-navbar__link" href="#" role="button" id="dropdownLevel" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Your Level <i class="fa fa-chevron-down"></i>
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownLevel">
-                                        <li><a class="dropdown-item" href="#">Basic</a></li>
-                                        <li><a class="dropdown-item" href="#">Intermediate</a></li>
-                                        <li><a class="dropdown-item" href="#">Advanced</a></li>
-                                    </ul>
-                                </div> -->
+                                </t>
                             </div>
-                        </nav>                        
+                        </nav>
                     </div>
 
-                    <!-- ALL COURSES  -->
+                    <!-- ALL COURSES -->
                     <div class="container o_wslides_home_main mt80">
                         <div class="row">
                             <t t-set="has_side_column" t-value="False"/>
@@ -62,9 +50,9 @@
                                 </div>
 
                                 <!-- Courses List -->
-                                <div class="row mx-n2 mt8">
+                                <div class="courses-list row mx-n2 mt8">
                                     <t t-foreach="channels" t-as="channel">
-                                        <div class="col-md-4 col-sm-6 px-2 col-xs-12 d-flex"> 
+                                        <div class="col-md-4 col-sm-6 px-2 col-xs-12 d-flex course-card-container"> 
                                             <t t-call="website_slides.course_card"/>
                                         </div>
                                     </t>

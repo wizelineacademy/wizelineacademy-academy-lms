@@ -1,13 +1,24 @@
-
-
 .overlay-container_all {
     background-image: url(/theme_academy/static/src/img/header_course_all.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 300px;
+    height: 200px;
     width: 100%;
     position: relative;
+    
+    //image header
+    @media (min-width: 1440px) {
+        height: 300px;
+    }
+    
+    @media (max-width: 1000px) {
+        height: 150px;
+    }
+    
+    @media (max-width: 768px) {
+        height: 100px;
+    }
 }
 
 .overlay-container_all::before {
@@ -18,148 +29,218 @@
     right: 0;
     bottom: 0;
     z-index: 1;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(32, 52, 73, 0.5);
 }
 
-.courses-banner__title {
+.courses-banner__title-all {
     font-family: "Montserrat", sans-serif;
-    font-weight: 800;
+    font-weight: bold !important;
     font-size: 70pt;
     line-height: 77pt;
     color: #ffffff;
     position: relative;
     z-index: 2;
+    
+    // fonts header
+    @media (max-width: 1000px) {
+        font-size: 50pt;
+        line-height: 55pt;
+    }
+    
+    @media (max-width: 768px) {
+        font-size: 35pt;
+        line-height: 40pt;
+    }
+    
+    @media (max-width: 576px) {
+        font-size: 25pt;
+        line-height: 30pt;
+    }
 }
 
-.dropdown-toggle-all {
-    background-color: #202529;
-    color: white;
-    border: none;
-    box-shadow: none;
-    transition: color 0.3s ease;
-    font-size: 16px;
-    line-height: 1;
-    padding: 8px 16px;
-    font-weight: bold;
-}
 
-.dropdown-toggle-all:focus,
-.dropdown-toggle-all:hover,
-.dropdown-toggle-all:active {
-    color: #03C4FF;
-    background-color: #101E2D; 
-    box-shadow: none;
-    margin: 25px 30px; //change
-}
 
-.dropdown-menu {
-    background-color: #ffffff;
-}
 
-.dropdown-item:hover {
-    color: #03C4FF;
-    background-color: transparent;
-}
 
-.dropdown-item {
-    font-size: 14px;
-}
 
-.row.mx-n2.mt8 {
-    justify-content: center;
-}
-
-.col-md-4.col-sm-6.px-2.col-xs-12.d-flex {
-    max-width: 350px;
-}
-
-.courses-banner__titles-container {
-    margin-left: 20px;
-    max-width: 730px;
-    padding: 10px;
-}
-
-.courses-search-navbar__search-bar {
-    background-color: white;
-    color: #101E2D;
-}
-
-.courses-search-navbar {
-    background-color: #101E2D !important;
+// Style the search bar
+.courses-search-navbar-all {
+    display: flex;
+    align-items: center;
+    background-color: #101E2D;
     width: 100%;
     max-width: 100%;
 }
 
-.courses-search-navbar__link {
-    background-color: #101E2D;
+
+.courses-search-navbar-all input {
+    background-color: #ffffff;
+    color: #101E2D;
+    border: 1px solid #d3d3c4;
+    padding: 8px;
+    width: 180px !important;
+    box-shadow: none;
 }
 
-.courses-search-navbar input[type="search"] {
-    background-color: #ffffff !important;
-    color: #101E2D; 
-    border: 1px solid #cccccc;
+.courses-search-navbar-all button {
+    background-color: #03c4ff;
+    color: #ffffff;
+    border-radius: 0 8px 8px 0;
+    border: none;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.courses-search-navbar-all input::placeholder {
+    color: #4e5154;
+}
+
+
+//This make to center courses
+.courses-list {
+    justify-content: center;
+    margin-bottom: 200px;
+    gap: 50px;
+}
+
+//this sets the width in the courses
+.course-card-container {
+    max-width: 380px;
+    margin-top: -60px !important;
+    margin-bottom: 10px;
+    margin-left: -50px;
     
+    // Courses cards
+    @media (max-width: 1000px) {
+        max-width: 320px;
+        margin-left: 0px;
+    }
+    
+    @media (max-width: 768px) {
+        max-width: 280px;
+        margin-left: 0px;
+    }
+    
+    @media (max-width: 576px) {
+        max-width: 240px;
+        margin-left: 0px;
+    }
 }
 
-.navbar-toggler-text {
-    font-family: 'Nunito Sans', sans-serif; 
-    font-weight: 400; 
-    font-size: 10pt; 
-    line-height: 14pt; 
-    color: white;
-    transition: none !important;
-}
-
-.navbar-toggler-text {
-    background-color: transparent;
-    transition: none;
-}
-
-.navbar-toggler-text:hover {
-    background-color: transparent; 
-    transition: none;
-}
-
-
-
-#dropdownLevel i {
-    margin-left: 8px; 
-}
-
-.montserrat-level {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.course-card--new {
-    border-radius: 25px;
-}
-
-@media (max-width: 1400px) {
-    .courses-banner__titles-container {
+//container to header
+.courses-banner__titles-container-all {
+    margin-left: 20px;
+    max-width: 730px;
+    padding: 10px;
+    
+    @media (max-width: 1400px) {
         max-width: 540px;
     }
-}
-
-@media (max-width: 1200px) {
-    .courses-banner__titles-container {
+    
+    @media (max-width: 1200px) {
         max-width: 445px;
     }
-}
-
-@media (max-width: 1000px) {
-    .courses-banner__titles-container {
+    
+    @media (max-width: 1000px) {
         max-width: 310px;
     }
+    
+    @media (max-width: 768px) {
+        max-width: 240px;
+    }
 }
+
+//container to search-bar and button "Go back"
 
 @media (max-width: 770px) {
-    .courses-banner__titles-container {
-        max-width: 340px;
-    }
-
-    .courses-banner__title {
+    .courses-banner__title-all {
         font-size: 32px;
     }
+    .courses-banner__titles-container-all {
+        max-width: 340px;
+    }
 }
+
+
+.dropdown-toggle-all:hover {
+    background-color: #101E2D;
+    color: #03c4ff;
+}
+
+.button-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 12pt;
+    line-height: 14pt;
+    padding-left: 5px;
+
+}
+
+.button_return:hover {
+    background-color: #101E2D;
+    color: #03c4ff;
+}
+
+.search-container-all{
+    padding-left: 700px;
+}
+
+
+//button styles "Go back to Main page"
+.dropdown-toggle-all {
+    background-color: #101E2D;
+    color: white;
+    border: none;
+    box-shadow: none;
+    font-size: 14px;
+    //padding-right: 700px;
+    font-weight: normal;
+    margin-left: 120px;
+
+    
+    @media (max-width: 1000px) {
+        font-size: 12px;
+        margin-left: 60px;
+    }
+    
+    @media (max-width: 768px) {
+        font-size: 10px;
+        margin-left: 30px;
+    }
+    
+    @media (max-width: 576px) {
+        font-size: 8px;
+        margin-left: 10px;
+    }
+}
+
+.dropdown-toggle-all:focus, .dropdown-toggle-all:active, .dropdown-toggle-all:focus-visible {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+
+
+// Style for button level (This is commented)
+/* .dropdown-item:hover {
+    color: #fcf9f9;
+    background-color: transparent;
+} */
+
+/* .dropdown-item {
+    font-size: 14px;
+} */
+
+/* #dropdownLevel i {
+    margin-left: 8px;
+} */
+
+/* .dropdown-menu {
+    background-color: #ffffff;
+} */
+
