@@ -21,25 +21,27 @@
 }
 
 .courses-homepage-banner__title {
-  color: #03C4FF;
+  color: #FFFFFF;
   font-size: 80px;
   font-weight: 700;
 }
 
 .courses-homepage-banner {
   height: 300px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .courses-homepage-banner__titles-container {
-  margin-left: 20px; /* Add margin to the left */
-  max-width: 730px; /* Set a maximum width for the text container */
-  padding: 10px; /* Optional: Add padding inside the text container */
+  max-width: 760px; /* Set a maximum width for the text container */
+  padding: 10px 10px 10px 0; /* Optional: Add padding inside the text container */
 }
 
 .courses-homepage-banner__subtitle {
-  color: white;
-  font-size: 16px;
-  padding: 40px 0 0 0;
+  color: #FFFFFF;
+  font-size: 20px;
+  padding-top: 24px;
+  font-weight: 600;
 }
 
 /* Search Bar */
@@ -59,6 +61,16 @@
 
 .courses-search-navbar__link {
   color: #ffffff !important;
+}
+
+.courses-search-navbar .container::before,
+.courses-search-navbar .container::after {
+    content: none !important;
+    display: none !important;
+}
+
+.navbar-toggler-icon {
+  background-image: $navbar-dark-toggler-icon-bg;
 }
 
 /* Courses section */
@@ -110,6 +122,8 @@
 
   .courses-homepage-banner {
     height: 300px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 }
 
@@ -124,11 +138,27 @@
     font-size: 32px;
   }
 
+  .courses-homepage-banner__subtitle {
+    font-size: 16px;
+    padding-top: 16px;
+  }
+
   .courses-homepage-banner {
     height: 300px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 
   .overlay-container {
     background-image: url(/theme_academy/static/src/img/homepage_background_1504w.jpg); 
+  }
+}
+
+@media (max-width: 500px) {
+  .courses-homepage-banner {
+    height: 300px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    justify-content: center;
   }
 }

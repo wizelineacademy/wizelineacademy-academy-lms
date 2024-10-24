@@ -13,7 +13,7 @@
             <!-- Who Should Take This Course Section -->
             <div t-att-class="'tab-pane fade %s' % ('show active' if active_tab == 'audience' else '')" id="audience" role="tabpanel" aria-labelledby="audience-tab">
                 <div id="audience_section">
-                    <div class="mb-2">
+                    <div class="mt-2 mb-2">
                         <div class="col mx-n2">
                             <h2 style="font-weight:bold;">Who Should Take This Course?</h2>
                             <div class="oe_no_empty" t-field="channel.who_should_take" t-options="{'widget': 'html'}"/>
